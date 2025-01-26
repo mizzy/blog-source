@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Gosuke Miyashita]]></title>
+  <link href="https://mizzy.org/atom.xml" rel="self"/>
+  <link href="https://mizzy.org/"/>
+  <updated>{{ formatDate (index . 0).Date "2006-01-02T15:04:05-07:00" }}</updated>
+  <id>https://mizzy.org/</id>
+  <author>
+    <name><![CDATA[Gosuke Miyashita]]></name>
+  </author>
+  <generator uri="https://github.com/mizzy/nebel/">Nebel</generator>
+
+{{ range . }}
+  <entry>
+    <title type="html"><![CDATA[{{ .Title }}]]></title>
+    <link href="https://mizzy.org{{ .Path }}/" />
+    <updated>{{ formatDate .Date "2006-01-02T15:04:05-07:00" }}</updated>
+    <id>https://mizzy.org{{ .Path }}/</id>
+    <content type="html"><![CDATA[
+{{ .ParsedContent }}
+]]></content>
+  </entry>
+{{ end }}
+
+</feed>
