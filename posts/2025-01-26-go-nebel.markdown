@@ -1,0 +1,37 @@
+---
+title: Ruby製の静的サイトジェネレータをGoで再実装した
+date: 2025-01-26 19:32:42 +0900
+---
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ブログ3年ぐらい更新してなくて、もう少しマメに書くか、という機運になってきたので、ブログツール書き始めた。</p>&mdash; mizzy (@gosukenator) <a href="https://twitter.com/gosukenator/status/1883311289768063332?ref_src=twsrc%5Etfw">January 26, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+このブログは、マークダウン形式で記事を書いて、[Nebel](https://github.com/mizzy/ruby-nebel)というRubyで実装したお手製の静的サイトジェネレータでHTMLに変換してGitHub Pagesでホストしている。
+
+が、久々に書くか、と思ってNebelを動かしてみたところ、エラーで動かない。具体的には、ローカルでの確認用サーバのために利用しているeventmachine gemがビルドに失敗してインストールできない。
+
+エラーの原因を調べて直すのもよいのだけど、13年ぐらい前につくって全然メンテしてないし、今となっては不要な機能もあるので、[Goで再実装した](https://github.com/mizzy/nebel)。
+
+といっても、Ruby版のすべての機能を実装したわけではない。Ruby版にはプラグイン機構があって、様々なプラグインが動いているが、プラグイン機構や各種プラグインは未実装。
+
+例えばgistプラグインは
+
+```
+{% gist 37401088bc6e3564addf7a27d698f6fb %}
+```
+
+と書いておくと
+
+```html
+<div><script src='https://gist.github.com/37401088bc6e3564addf7a27d698f6fb.js?file='></script>
+<noscript><pre><code></code></pre></noscript></div>
+```
+
+といったHTMLに変換してくれる。自分でつくっておいてなんだけど、プラグインで変換しなくてもgistのページからEmbed用コードを簡単にコピーできるので、別にいらなかったな、と思ってる。
+
+もしかしたら必要なプラグインもあるかもだけど、必要になってから実装すればいいやと思っている。
+
+プラグイン利用前提で書いた過去記事はGo版では正しく変換してくれないことになるが、過去記事を再生成する必要はいまのところないので特に問題なさそう。
+
+またRuby版には、コマンド一発で確認用のローカルサーバを立ち上げてブラウザで開き、記事を保存したら自動でHTMLに変換してブラウザも自動リロード、という、機能があるのだけど、これはあれば便利だけどなくても困らないので未実装。
+
+とりあえず最低限必要な機能は実装でき、この記事もGo版で生成している。
