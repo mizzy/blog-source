@@ -21,8 +21,7 @@ date: 2025-05-24 18:36:10 +0900
 - [電子公文書の XML と XSL を Python で１つのHTMLに変換する方法 - ガンマソフト](https://gammasoft.jp/blog/convert-xml-and-xsl-to-one-html-by-python/)
 - [電子公文書(XML+XSL)をChromeで表示する](https://zenn.dev/sora_kumo/articles/xsl-viewer-html)
 
-この方法でばっちり表示されたのだが、PDFで保存した場合にもきれいにレイアウトしたい、と思い、[Claude](https://claude.ai/)
-に社会保険料額情報HTMLジェネレーターつくってもらった。
+この方法でばっちり表示されたのだが、PDFで保存した場合にもきれいにレイアウトしたい、と思い、[Claude](https://claude.ai/)に社会保険料額情報HTMLジェネレーターつくってもらった。
 
 ジェネレーターはひとつのHTMLファイルで構成されていて、開くとこのような画面になる。
 
