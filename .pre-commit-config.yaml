@@ -1,0 +1,41 @@
+# See https://pre-commit.com for more information
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.md$
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ["--maxkb=5000"]
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      - id: check-merge-conflict
+      - id: check-case-conflict
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.39.0
+    hooks:
+      - id: markdownlint
+        args: ["--fix"]
+        files: \.(md|markdown)$
+        exclude: ^static/
+
+  # YAML formatting
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        types_or: [yaml]
+        exclude: ^static/
+
+  # Check for broken links in markdown files
+  - repo: https://github.com/tcort/markdown-link-check
+    rev: v3.12.1
+    hooks:
+      - id: markdown-link-check
+        args: ["--config", ".markdown-link-check.json"]
+        files: \.(md|markdown)$
+        exclude: ^(static/|posts/2.*\.markdown$)
