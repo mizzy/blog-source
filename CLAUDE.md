@@ -11,7 +11,9 @@ The generated static files are deployed to the `mizzy.github.com` repository (sy
 
 ### Directory Structure
 
-- `posts/` - Markdown blog posts with YAML frontmatter (format: `YYYY-MM-DD-title.markdown`)
+- `posts/` - Markdown blog posts with YAML frontmatter
+  - Format: `YYYY-MM-DD-title.markdown`
+  - Use simple English filenames without Japanese characters
 - `layouts/` - HTML templates using Go template syntax
 - `static/` - Static assets (CSS, JS, images, favicon)
 - `public/` - Symlink to `../mizzy.github.com` where generated files are output
@@ -52,6 +54,7 @@ pre-commit run --all-files
 1. **Creating posts**: Use `nebel new` to create posts with proper naming and frontmatter
 2. **Post format**: Posts use Markdown with YAML frontmatter including `title` and `date` fields
 3. **Building**: Run `nebel generate` to rebuild the site after changes
+   - IMPORTANT: Run `nebel generate` after every file update
 4. **Deployment**: Generated files are output to the symlinked `public/` directory (points to `../mizzy.github.com`)
 
 ## Template System
