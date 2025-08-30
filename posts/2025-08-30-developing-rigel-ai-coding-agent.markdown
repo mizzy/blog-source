@@ -1,6 +1,7 @@
 ---
 title: RigelというAI Coding Agentを開発している
 date: 2025-08-30 21:31:14 +0900
+updated: 2025-08-30 22:00:00 +0900
 ---
 
 ## きっかけ
@@ -11,7 +12,7 @@ tokuhiromさんの[ashronというAI Coding Agentを開発している](https://
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ashron っていう、Coding Agent を書いている - Blog::Amrta <a href="https://t.co/fKU4l0QTQq">https://t.co/fKU4l0QTQq</a></p>&mdash; tokuhirom (@tokuhirom) <a href="https://twitter.com/tokuhirom/status/1960847865967780266?ref_src=twsrc%5Etfw">August 29, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- markdownlint-enable MD013 -->
 
-Clineがいい、Cursorだ、いやClaude Codeだ、Codexだ、みたいな流行に振り回されたくないし、ローカルLLMをうまく扱えるコーディングエージェントもなかなか見つからない。
+Clineがいい、Cursorだ、いやClaude Codeだ、Codexだ、みたいな流行に振り回されたくないし、ローカルLLMをうまく扱えるコーディングエージェントもなかなか見つからない。CodexがローカルLLM対応してるけど、期待したとおりに動いてくれない。
 
 なので、自分でAI Coding Agentを作るのがよいかもしれない、と考えていた。
 
