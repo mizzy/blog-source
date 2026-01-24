@@ -1,0 +1,143 @@
+---
+title: CarinaというTerraformライクなツールをつくりはじめた
+date: 2026-01-24 13:47:59 +0900
+---
+
+## きっかけ
+
+gfxさんの[個人が静的型付き言語のコンパイラをゼロから作れる時代が来た！](https://gfx.hatenablog.com/entry/2026/01/23/212644)という記事を読んで、自分も何か、以前だったらつくろうと思っても面倒で手が出なかったようなものをつくってみよう、と思ってつくりはじめた。
+
+自分のことを知ってる方ならご存じかと思うが、自分はInfrastructure as Codeが大好きで、普段からIaCのことばかり考えている。最近だとこんなことを考えて発表した。
+
+<script defer class="speakerdeck-embed" data-id="facd81a255fb4c32ab2d80c559f1ede1" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+
+Terraformは好きで、公私ともにとてもお世話になっているのだが、こうなっているといいな、と思う点が色々ある。だが、Terraformはそれなりに歴史も実績もあるツールで、とてもよくできているので、自分でいちからつくって、Terraformと同レベルで使えるようになるまで育てるのは大変すぎるな、と思っていた。が、gfxさんの記事を読んで、今ならいけそうだな、と思って、つくりはじめた。
+
+---
+
+## Carinaについて
+
+[Carina](https://github.com/mizzy/carina)は、Rustで実装したTerraformライクなインフラ管理ツール。
+
+基本的にはTerraformと同じなんだけど、今のところ違う点を挙げると以下のような感じ。
+
+- 独自DSLによるインフラ定義
+  - 今のところHCLをかなり参考にしているけど、微妙に違う部分もある
+  - Terraformを使っていて、もっとこうなってるといいのにな、と思う部分を改善していく予定
+- 型がより厳密に定義されている
+  - 例えばTerraform aws providerではregionは文字列で`ap-northeast-1`と書くが、Carina aws providerではenumで定義されていて、`aws.Region.ap_northeast_1`のように書く
+
+ちなみに、自分はツールに名前をつけるときは天体に関連する言葉を使うことが多い。Carinaはりゅうこつ座のことで、竜骨は船の重要な骨格部分。インフラを支えるツールにふさわしいかな、と思ってこの名前にした。
+
+---
+
+## なぜRustか
+
+言語選定はClaude Codeと相談して決めた。候補としてはRust、Go、TypeScriptあたりが挙がった。
+
+Rustを選んだ理由としては、
+
+- 強力な型システムで信頼性の高いインフラツールを作れる
+- パーサーライブラリのpestが使いやすい
+- 非同期処理のエコシステム（tokio）が成熟している
+- AWS SDK for Rustが利用可能
+- シングルバイナリで配布しやすい
+
+といったあたりをClaude Codeが挙げてくれたけど、まあなんとなくRust使ってみるか、ぐらいで決めた。自分はRustにあまり馴染みがないけど、Claude Codeに書いてもらうなら問題ないだろうし、Rustを学ぶ良い機会になるかな、と。
+
+---
+
+## DSL
+
+`.crn`という拡張子のファイルにインフラを定義する。
+
+```
+provider aws {
+    region = aws.Region.ap_northeast_1
+}
+
+# 匿名リソース
+aws.s3.bucket {
+    name = "my-app-logs"
+    region = aws.Region.ap_northeast_1
+    versioning = true
+    expiration_days = 90
+}
+
+# 名前付きリソース
+let backup = aws.s3.bucket {
+    name = "my-app-backup"
+    region = aws.Region.ap_northeast_1
+}
+```
+
+Terraformと似たような感じだけど、以下の点が異なる。
+
+- リソースタイプの指定が`aws.s3.bucket`のようにドット区切り
+  - Terraformの場合は`aws_s3_bucket`のようにアンダースコア区切り
+- 名前付きリソースは`let`で宣言
+  - Terraformの場合は`resource "aws_s3_bucket" "backup"`のように書くし、リソース名が必須になるが、Carinaでは、他リソースから参照する必要がなければ、匿名にできるようにしている
+- Data Sourceのことはまだ考えてなかったので、区別するためのキーワードが必要になりそうだけど、まだ決めていない
+
+Terraformだと、`resource "aws_s3_bucket" "my_app_logs"`のように書くが、リソースタイプがアンダースコア区切りなので、それに合わせてリソース名もアンダースコア区切りにすべきか、それともハイフン区切りにすべきか、といつも悩む。別にどちらでもいいんだけど、どちらでもいいということは、その時々で判断がぶれてしまうので、ぶれないようにしたい、このような設計にした理由の一つ。
+
+---
+
+## 使い方
+
+Terraformと同様に`validate`、`plan`、`apply`というコマンドがある。
+
+```bash
+$ carina validate example.crn
+Validating...
+✓ 2 resources validated successfully.
+  • s3_bucket.my-app-logs
+  • s3_bucket.my-app-backup
+
+$ carina plan example.crn
+Using AWS provider (region: ap-northeast-1)
+Execution Plan:
+
+  + s3_bucket.my-app-logs
+      name: "my-app-logs"
+      versioning: true
+      expiration_days: 90
+  + s3_bucket.my-app-backup
+      name: "my-app-backup"
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+$ carina apply example.crn
+Applying changes...
+
+  ✓ Create s3_bucket.my-app-logs
+  ✓ Create s3_bucket.my-app-backup
+
+Apply complete! 2 changes applied.
+```
+
+---
+
+## アーキテクチャ
+
+```
+DSL (.crn) → Parser → Resources → Differ → Plan (Effects) → Interpreter → Provider → Infrastructure
+```
+
+- **Parser**: pestを使ってDSLをパース
+- **Differ**: 現在の状態と望む状態を比較してEffectを生成
+- **Plan**: Effectのコレクション
+- **Interpreter**: PlanをProviderに渡して実行
+- **Provider**: 実際のインフラ操作を行うトレイト
+
+Effectは`Create`、`Update`、`Delete`、`Read`の4種類があり、それぞれが値として扱われる。
+
+---
+
+## 今後
+
+現状、AWSのS3バケットのみ対応している。今後、Terraformこうなっているといいのにな、と思っていることが実際に実現できるのか、を実験する場にしていこうと考えている。
+
+リポジトリはこちら。
+
+[mizzy/carina: A functional infrastructure management tool](https://github.com/mizzy/carina)
