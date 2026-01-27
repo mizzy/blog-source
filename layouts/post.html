@@ -9,6 +9,18 @@
     <meta name="author" content="Gosuke Miyashita"/>
     <meta name="description" content="A fantastic blog that is fantastic."/>
 
+    <!-- OGP -->
+    <meta property="og:title" content="{{ .Title }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://mizzy.org{{ .Path }}/"/>
+    <meta property="og:image" content="https://mizzy.org{{ .OGImagePath }}"/>
+    <meta property="og:site_name" content="Gosuke Miyashita"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="{{ .Title }}"/>
+    <meta name="twitter:image" content="https://mizzy.org{{ .OGImagePath }}"/>
+
     <link rel="alternate" type="application/rss+xml" href="/atom.xml"/>
 
     <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection"/>
