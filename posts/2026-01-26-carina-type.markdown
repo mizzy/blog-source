@@ -1,6 +1,6 @@
 ---
 title: Carinaの型システムについて
-date: 2026-01-26 21:18:37 +0900
+date: 2026-01-27 09:54:37 +0900
 ---
 Terraformライクなツール[Carina](https://github.com/mizzy/carina)をつくりはじめた動機のひとつに、「型システムの強化」がある。
 
