@@ -35,7 +35,7 @@ Error: provider aws: Validation failed: Invalid region 'ap-northeast-1a', expect
 
 また、CarinaではAWSリージョンはEnum型として定義されているため、以下のようにリージョンを指定することもできる。
 
-```
+```crn
 provider aws {
   region = aws.Region.ap_northeast_1
 }
@@ -53,7 +53,7 @@ provider aws {
 
 例えば、以下のように不正なプレフィックス長を指定したとする。
 
-```
+```crn
 let main_vpc = aws.vpc {
     name       = "main-vpc"
     cidr_block = "10.0.0.0/33"
