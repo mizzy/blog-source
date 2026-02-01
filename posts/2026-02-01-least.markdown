@@ -3,7 +3,7 @@ title: least - TerraformコードからIAMポリシーを自動生成するツ�
 date: 2026-02-01 09:20:53 +0900
 ---
 
-[least](https://github.com/mizzy/least)というツールをつくった。Terraformのコードをみて、plan/applyに必要な権限を持つIAMポリシーを自動生成するツール。
+[least](https://github.com/mizzy/least)というツールをつくっている。Terraformのコードをみて、plan/applyに必要な権限を持つIAMポリシーを自動生成するツール。
 
 ---
 
