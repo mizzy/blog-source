@@ -1,0 +1,69 @@
+---
+title: least - TerraformコードからIAMポリシーを自動生成するツール
+date: 2026-02-01 09:20:53 +0900
+---
+
+[least](https://github.com/mizzy/least)というツールをつくった。Terraformのコードをみて、plan/applyに必要な権限を持つIAMポリシーを自動生成するツール。
+
+---
+
+## きっかけ
+
+TerraformでGitHub Actions等から自動plan/applyを実行する際、plan/apply用ロールのIAMポリシーをどうするのが良いのか、いつも悩む。最小権限の原則は理想ではあるが、必要な権限を手動で調べてポリシーを作成するのは非常に面倒で、果たしてその苦労に見合うのか、と常々思っている。
+
+最初に大きめの権限を与えておいて、IAM Access Analyzerを利用して後から権限を絞る、というアプローチもあるが、できれば最初から最小権限に近い状態で始めたい。
+
+そんなことを考えていたところ、[Carina](https://github.com/mizzy/carina)のawscc provider開発中に、[CloudFormation resource provider schema](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/resource-type-schemas.html)には各リソースタイプの作成・更新・削除に必要なIAMアクションが`handlers`という属性で定義されている、ということに気づいた。
+
+例えば、S3バケット（`AWS::S3::Bucket`）のスキーマでは`handlers`は以下のように定義されている。
+
+```json
+{
+  "create": {
+    "permissions": [
+      "s3:CreateBucket",
+      "s3:PutBucketTagging",
+      "..."
+    ]
+  },
+  "read": {
+    "permissions": [
+      "s3:GetAccelerateConfiguration",
+      "s3:GetLifecycleConfiguration",
+      "..."
+    ]
+  },
+  "update": {
+    "permissions": [
+      "s3:PutBucketAcl",
+      "s3:PutBucketTagging",
+      "..."
+    ]
+  },
+  "delete": {
+    "permissions": [
+      "s3:DeleteBucket",
+      "s3:ListBucket"
+    ]
+  },
+  "list": {
+    "permissions": [
+      "s3:ListAllMyBuckets"
+    ]
+  }
+}
+```
+
+この情報を活用すればTerraformコードから必要なIAMポリシーを自動生成でき、労せず最小権限の原則を満たせるのでは、と思いついた。
+
+思いついた時は[SRE Kaigi 2026](https://2026.srekaigi.net/)に参加中でPCを持参していなかったので、[Claude Code on the web](https://code.claude.com/docs/ja/claude-code-on-the-web)にスマホからアクセスし、こんなのつくって、とお願いしてつくってもらった。
+
+ちなみにまだコードは見てないし、動作確認もしてない。
+
+## 機能
+
+機能的には、TerraformコードでIAMポリシーを生成する`generate`コマンドと、既存のIAMポリシーが持つ権限がTerraformコードに対して過不足がないかチェックする`check`コマンドを提供している。`check`コマンドは主にCIでの利用を想定している。
+
+## 今後
+
+まだ動作確認すらしてないので、とりあえず動作確認するところから。
