@@ -7,7 +7,7 @@ date: 2026-02-04 09:40:42 +0900
 
 実際にコードを読んでみると、awscc providerはAWS Cloud Control APを利用しているので、aws-sdk-cloudcontrol crateだけを利用すればいいはずなのに、なぜかaws-sdk-ec2 crateも利用している、といったおかしなことになっていた。
 
-また、プロバイダー用スキーマは、[CloudFormation resource provider schemas](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/resource-type-schemas.html)から自動生成できるはずだがそうなっておらず、Carinaが手動？でスキーマを定義していた。（これはそのように指示を出していない自分が悪いのだが。）
+また、プロバイダー用スキーマは、[CloudFormation resource provider schemas](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/resource-type-schemas.html)から自動生成できるはずだがそうなっておらず、Claude Codeが手動？でスキーマを定義していた。（これはそのように指示を出していない自分が悪いのだが。）
 
 というわけで自動生成するようにしてもらった。こんな感じで、スキーマをRustコードの形で自動生成してくれる。
 
