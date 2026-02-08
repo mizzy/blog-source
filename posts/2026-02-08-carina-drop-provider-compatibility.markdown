@@ -9,7 +9,7 @@ date: 2026-02-08 12:34:04 +0900
 
 ## やめた理由
 
-aws providerはSDKを直接叩くので、SDKのAPI構造に合わせた方が自然だし、パフォーマンスや機能面でも有利になる。無理にawscc providerと同じスキーマに合わせると、SDKの良さを活かしきれない。
+aws providerはSDKを直接叩くので、SDKのAPI構造に合わせた方が自然だし、パフォーマンスも有利になる。無理にawscc providerと同じスキーマに合わせると、SDKの良さを活かしきれない。
 
 一方、awscc providerはCloud Control APIを使っているので、CloudFormationのスキーマにそのまま合わせるのが最も自然。両者の性質が異なるのに、無理に互換性を持たせようとすると後々無理が出てきそうだな、と思った。
 
