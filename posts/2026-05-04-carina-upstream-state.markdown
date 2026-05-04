@@ -280,7 +280,7 @@ Terraformでは参照先のstateが無いとremote stateの読み込みで失敗
 
 Terraformのremote stateで気になる点と、Carinaの`upstream_state`での対応を並べるとこんな感じ。
 
-| Terraformのremote state | Carinaの`upstream_state` |
+| Terraformのremote state | Carinaのupstream_state |
 |---|---|
 | 参照側がbackend設定を書く必要があり、設定のtypoは`plan`まで気付けない | `source`にディレクトリを指定するだけ。パスの間違いは`carina validate`で検出できる |
 | `data.terraform_remote_state.network.outputs.vpc_id`と長い | `let`で束縛して`network.vpc_id` |
