@@ -30,9 +30,8 @@
 
 <body>
 <header class="head">
-  <span class="name">Gosuke Miyashita</span>
+  <a href="/" class="name">Gosuke Miyashita</a>
   <span class="nav">
-    <a href="/">posts</a>
     <a href="https://gosu.ke/" target="_blank" rel="noopener">about</a>
     <a href="/atom.xml">feed</a>
   </span>
@@ -46,7 +45,7 @@
 
 <footer class="foot">
   {{ if .PrevPost }}<a href="{{ .PrevPost.Path }}" rel="next">← older</a>{{ else }}<span></span>{{ end }}
-  <span>mizzy.org · since 2005</span>
+  <a href="/" class="home">mizzy.org · since 2005</a>
   {{ if .NextPost }}<a href="{{ .NextPost.Path }}">newer →</a>{{ else }}<span></span>{{ end }}
 </footer>
 
