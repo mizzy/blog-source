@@ -43,9 +43,10 @@ git diffだと差分周辺しか表示されないけど、それより広い範
 
 ## Iris
 
-![Irisのスクリーンショット](/images/2026/06/iris-screenshot.png)
+[Iris](https://github.com/mizzy/iris)はgitのdiff出力にシンタックスハイライトをかけるツール。
 
-[Iris](https://github.com/mizzy/iris)はgitのdiff出力にシンタックスハイライトをかけるツール。`git config --global core.pager iris`と設定すると、すべてのgitサブコマンドのページャーとして使えるようになる。
+![Irisのスクリーンショット](/images/2026/06/iris-screenshot.png)
+`git config --global core.pager iris`と設定すると、すべてのgitサブコマンドのページャーとして使えるようになる。
 
 stdinからunified diffを読んで、変更されたファイルの拡張子から言語を検出し、シンタックスハイライトをかけた状態で出力する。diffのフォーマット自体（ヘッダー、`+`/`-`マーカー、ハンク情報）はそのまま残す。
 
