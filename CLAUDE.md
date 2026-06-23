@@ -13,7 +13,8 @@ The generated static files are deployed to the `mizzy.github.com` repository (sy
 
 - `posts/` - Markdown blog posts with YAML frontmatter
   - Format: `YYYY-MM-DD-title.markdown`
-  - Use simple English filenames without Japanese characters
+  - **Filenames must be ASCII only** — no Japanese or other non-ASCII characters
+  - `nebel new` uses the post title as the filename, so after running it, rename the file to an ASCII-only name
 - `layouts/` - HTML templates using Go template syntax
 - `static/` - Static assets (CSS, JS, images, favicon)
 - `public/` - Symlink to `../mizzy.github.com` where generated files are output
@@ -79,3 +80,5 @@ Templates in `layouts/` use Go template syntax with available variables:
 
 記事を書くときは必ず @WRITING.md を参照してください。
 また必ず最近の記事をランダムに数記事ピックアップし、それらの文体をできる限り模倣して作るようにしてください。
+
+アルファベットと日本語の間に空白を入れない。
