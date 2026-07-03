@@ -3,7 +3,7 @@ layout: post
 title: "Assurer にシェルモード"
 date: 2007-02-12 19:56
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://assurer.jp/trac"><span class="icon"></span>Assurer</a> についてその後あんまり書いてないですが、何もしてないわけではなく、リトライをハンドリングできるようにしたり、並列実行できるようにしたりと、ちょこちょこと開発は進めています。
@@ -17,7 +17,7 @@ shell> uptime
 [www.mizzy.org]  02:59:34 up 4 days,  3:39,  1 user,  load average: 0.21, 0.23, 0.22
 [svn.mizzy.org]  02:59:34 up 4 days,  3:39,  1 user,  load average: 0.21, 0.23, 0.22
 [ftp.mizzy.org]  02:59:34 up 4 days,  3:39,  1 user,  load average: 0.21, 0.23, 0.22
-shell> 
+shell>
 </pre>
 <p>
 --role がなければ、config.yaml で列挙されているホスト全部で実行します。

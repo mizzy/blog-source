@@ -3,7 +3,7 @@ layout: post
 title: "puppet でファイルが変更されたら指定したコマンドを実行するレシピ"
 date: 2007-03-19 21:02
 comments: true
-categories: 
+categories:
 ---
 <p>
 puppet で <a class="ext-link" href="http://mizzy.org/linux/puppet03.html"><span class="icon"></span>ファイルの配布</a> ができたので、次はファイルが変更されたら特定のコマンドを実行、にチャレンジ。これは <a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/FrequentlyAskedQuestions#how-do-i-run-a-command-whenever-a-file-changes"><span class="icon"></span>FAQ</a> にやり方書いてました。
@@ -44,7 +44,7 @@ info: //www.mizzy.org/web/httpd[httpd settings]/file=/etc/httpd/conf.d/perl.conf
 notice: //www.mizzy.org/web/httpd[httpd settings]/file=/etc/httpd/conf.d/perl.conf/source: source changed '{md5}b78c3e53dd7fef842c99f105e9e4204f' to '{md5}a28770c2cdfc4c23faa2ea41b2e67397'
 info: //www.mizzy.org/web/httpd[httpd settings]/file=/etc/httpd/conf.d/perl.conf: Scheduling refresh of exec[httpd restart]
 notice: //www.mizzy.org/web/httpd[httpd settings]/exec=/etc/init.d/httpd restart: Triggering 'refresh' from 1 dependencies
-notice: Finished configuration run in 7.42 seconds    
+notice: Finished configuration run in 7.42 seconds
 </pre>
 <p>
 ファイルが更新されてない場合はこうなる。

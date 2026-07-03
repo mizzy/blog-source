@@ -3,7 +3,7 @@ layout: post
 title: "FFmpeg::Command - A wrapper class for ffmpeg command line utility #2"
 date: 2006-07-31 13:51
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://search.cpan.org/~mizzy/FFmpeg-Command-0.01/"><span class="icon"></span>FFmpeg-Command-0.01</a> を CPAN にアップしました。

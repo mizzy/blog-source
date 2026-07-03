@@ -3,7 +3,7 @@ layout: post
 title: "Filter::Audio #2"
 date: 2006-08-28 23:49
 comments: true
-categories: 
+categories:
 ---
 <p>
 IRC #plagger-ja チャネルにて、音量や音質のノーマライズの話が出てて、「Filter::Audio で当然サポートするよね？」という声が聞こえた気がした（誰もそんなこと言ってない）ので、<a class="ext-link" href="http://sox.sourceforge.net/"><span class="icon"></span>SoX</a> で音量をノーマライズする様に <a class="ext-link" href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/Filter/Audio.pm"><span class="icon"></span>Filter::Audio</a> を修正してみた。<a class="ext-link" href="http://trac.mizzy.org/public/changeset/247"><span class="icon"></span>trac のチェンジセットはこちら</a>。

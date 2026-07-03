@@ -3,7 +3,7 @@ layout: post
 title: "feedbringerをremixin' #6"
 date: 2005-11-23 18:31
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="/js/feedbringer2.user.js" target="_blank">feedbringer用greasemonkeyユーザスクリプト</a>から呼び出しているcssを若干変更。

@@ -29,19 +29,19 @@ Serverspec は「ひとつのことをうまくやれ」という UNIX 哲学に
 本書の構成は以下の通りですので、購入するかどうかの検討材料にどうぞ。
 
 > 1章はServerspecが生まれた背景や、Serverspecとはそもそも何か、その利用目的は、といった概要の説明、Serverspec開発における哲学など、Serverspecの概要を俯瞰した内容となっています。
-> 
+>
 > 2章ではServerspecの基本的な使い方を通じて、Serverspecのエッセンスについて紹介しています。
-> 
+>
 > 3章ではServerspecを実践で利用するにあたって必要となる知識やテクニックについて解説しています。
-> 
+>
 > 4章ではソースコードを元に、Serverspecの内部や、拡張方法について詳しく解説しています。
-> 
+>
 > 5章ではServerspecと組み合わせることで、より便利に活用できるツールを紹介しています。
-> 
+>
 > 6章ではServerspecを使用していて問題に遭遇した場合に、調査すべきポイントについて解説しています。
-> 
+>
 > 7章ではServerspecの今後について、筆者の考えを述べています。
-> 
+>
 > 付録では、リファレンスとして活用するのに便利なリソースタイプ一覧、v2での変更点、Serverspecが強く依存しているSpecinfraというライブラリの、Serverspec以外の利用例、Windows OSのテスト方法を解説しています。
 
 [naoya](https://twitter.com/naoya_ito) さんによる「まえがき」もありますよ。
@@ -50,5 +50,3 @@ Serverspec は「ひとつのことをうまくやれ」という UNIX 哲学に
 
 <blockquote class="twitter-tweet" lang="en"><p>全身痒くて眠れないので修羅の門 第弐門をKindleで買って読んでる。</p>&mdash; Gosuke Miyashita (@gosukenator) <a href="https://twitter.com/gosukenator/status/516652343245299713">September 29, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-

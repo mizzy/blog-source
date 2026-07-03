@@ -3,7 +3,7 @@ layout: post
 title: "RSSフィードにタグをカテゴリとして埋め込む for blosxom"
 date: 2005-05-18 00:32
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.technorati.com/" target="_blank">technorati</a>はRSSフィード中のcategory要素をタグとして認識くれる、っつーことで、このブログではせっかく<a href="http://mizzy.org/?topic=/program/blosxomWithTagging09" target="_blank">taggingプラグイン</a>を作ってタグづけしてるので、RSSフィードにタグをカテゴリとしてつっこんでみることにした。

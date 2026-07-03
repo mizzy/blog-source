@@ -3,7 +3,7 @@ layout: post
 title: "bloglines mobile gateway #1"
 date: 2005-05-13 21:55
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/web/bloglines.xhtml" target="_blank">bloglinesモバイルゲートウェイ</a>を久々にアップデート。
@@ -23,7 +23,7 @@ categories:
 </p>
 
 <p class="entryBody">
-既読にした直後にも、既読にする前の記事が表示されてしまいますが、記事を読んでから既読にするまでの間に、更に新着記事があったりすると、その記事まで既読にされてしまうので、こういった仕様になってます。 
+既読にした直後にも、既読にする前の記事が表示されてしまいますが、記事を読んでから既読にするまでの間に、更に新着記事があったりすると、その記事まで既読にされてしまうので、こういった仕様になってます。
 </p>
 
 <p class="entryBody">

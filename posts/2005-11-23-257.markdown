@@ -3,7 +3,7 @@ layout: post
 title: "Bloglines用greasemonkeyユーザスクリプト"
 date: 2005-11-23 18:34
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 俺は<a href="http://www.bloglines.com" target="_blank">Bloglines</a>を愛用しているのですが、フォルダが一階層しか作れないので、登録フィード数が増えてくると、ひとつのフォルダ開くだけで、縦にスクロールする量が大きくてなって、うざいんですよね。なので、一度に開くフォルダはひとつだけにしたいのですが、いちいち閉じて開いてするのもまたうざいです。

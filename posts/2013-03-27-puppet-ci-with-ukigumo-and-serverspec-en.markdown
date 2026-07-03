@@ -6,7 +6,7 @@ date: 2013-03-27 22:36:46 +0900
 I made Puppet CI enviroment with [Ukigumo](http://ukigumo.github.com/ukigumo/) . I realize following things.
 
  * Manage Puppet manifests by Git repository
- * Set up [Ukigumo Server](http://ukigumo.github.com/Ukigumo-Server/) 
+ * Set up [Ukigumo Server](http://ukigumo.github.com/Ukigumo-Server/)
  * Make LXC system containers with [puppet-lxc-test-box](/blog/2013/03/24/1)
  * Run [my own Ukigumo Client script](https://gist.github.com/mizzy/5252543) periodically by cron
    * If master branch of Puppet manifests repository is updated, pull manifests, apply them to LXC system containers and post results to Ukigumo Server.

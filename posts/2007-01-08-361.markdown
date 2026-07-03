@@ -3,7 +3,7 @@ layout: post
 title: "Assurer - サーバテスティングフレームワーク #2"
 date: 2007-01-08 01:19
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/Assurer"><span class="icon"></span>Assurer</a> (<a class="ext-link" href="http://svn.mizzy.org/public/library/perl/trunk/Assurer/"><span class="icon"></span>SVN</a>) をまた修正。

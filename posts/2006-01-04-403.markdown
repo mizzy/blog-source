@@ -3,7 +3,7 @@ layout: post
 title: "subversion + trac ではまりまくり"
 date: 2006-01-04 17:07
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 そろそろ何かバージョン管理ツールを覚えないと、と思い、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4274066134/httshemizorg-22/ref=nosim" target="_blank">Subversion実践入門―達人プログラマに学ぶバージョン管理</a> を見ながら subversion を一通り触ってみた。
@@ -46,7 +46,7 @@ PYTHON_SITE = /usr/local/lib/python2.4/site-packages
 
 <p class="entryBody">
 を追加して make install を実行すると今度は正常に完了。
-</p> 
+</p>
 
 <p class="entryBody">
 そしていよいよ trac のセットアップ。これは正常に完了。が、

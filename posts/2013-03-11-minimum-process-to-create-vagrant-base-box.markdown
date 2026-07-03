@@ -27,5 +27,3 @@ $ vagrant up
 ただし、[Vagrant Documentation - Documentation - Base Boxes](http://docs-v1.vagrantup.com/v1/docs/base_boxes.html) にあるような、vagrant ユーザの作成とか、鍵の設定なんかはしてないため、``vagrant ssh`` ではログインできないので、``ssh root@localhost -p 2222 `` で、パスワードは root でログインする。
 
 この辺の設定もシェルスクリプトに組み込んじゃえばいいんだろうけど、まずは base box を簡単に作れるかどうかだけ確かめたかったので、今日はここまで。
-
-

@@ -3,7 +3,7 @@ layout: post
 title: "Plagger と YouTube #2"
 date: 2006-05-13 07:44
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 今回のネタは、最近はやりの YouTube 動画をダウンロード、変換して iPod につっこむ、を Plagger で自動化する、というものです。ゴールデンウィーク中にプラグイン作ってたのですが、<a href="http://wiki.shibuya.pl/?PlaggerConference" target="_blank">Plagger Conference</a> のライトニングトークネタとして暖めていました。以下のことが可能です。

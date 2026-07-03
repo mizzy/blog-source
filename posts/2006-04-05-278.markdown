@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::Amazon"
 date: 2006-04-05 21:19
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/Filter/Amazon.pm" target="_blank">P::P::Filter::Amazon</a> を作ってみました。<a href="http://mizzy.org/program/iTunesRecentPlay01.html" target="_blank">以前 CustomFeed::iTunesRecentPlay に Amazon Web Service からの情報取得機能をつけた</a> のですが、宮川さんから「Filter でやったほうがよい」というコメントを頂きましたので、Filter プラグインとして分離しました。

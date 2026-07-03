@@ -3,7 +3,7 @@ layout: post
 title: "Plagger で Amazon2iCal 改良"
 date: 2006-08-22 16:40
 comments: true
-categories: 
+categories:
 ---
 <p>
 自分好みに使いやすくするために、<a class="ext-link" href="http://trac.mizzy.org/public/changeset/230"><span class="icon"></span>CustomFeed::AmazonWebService と Publish::iCal を修正してみました</a>。
@@ -48,5 +48,5 @@ ORGANIZER<strong>:</strong>CN=Gosuke Miyashita:MAILTO:gosukenator@gmail.com
 </p>
 <p>
 あと、リンクも含めておけば amazon のページに飛べて便利かも、と思って、<a class="ext-link" href="http://trac.mizzy.org/public/changeset/231"><span class="icon"></span>こんな感じで url property をセットするようにした</a> のですが、これもまた Google Calendar 上ではどこに表示されるのかがさっぱり分かりません。
- 
+
 </p>

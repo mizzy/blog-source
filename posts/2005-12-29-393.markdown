@@ -3,7 +3,7 @@ layout: post
 title: "ActiveRecord で Validation （Rails勉強中 #5）"
 date: 2005-12-29 00:53
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Rails の実装で、ああこれ面白いなー、よさげだなー、と思ったものをメモ。

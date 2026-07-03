@@ -3,7 +3,7 @@ layout: post
 title: "puppetrun を試すならやっぱ trunk 版の方がよさげ"
 date: 2007-03-24 23:21
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/linux/puppet07.html"><span class="icon"></span>puppet 今試すなら バージョン 0.22.1 を使え、そして gem で入れるな</a> というエントリを書いたわけですが、puppetrun で特に exec を使って puppet クライアントで何かコマンドを実行させたい、ということであれば、今は trunk 版を使ったほうがいいかも。
@@ -28,7 +28,7 @@ $ sudo puppetmasterd
 次に puppet クライアント側で puppetd を起動。
 </p>
 <pre class="wiki">
-$ sudo puppetd --listen --no-client --server kenny.southpark -v 
+$ sudo puppetd --listen --no-client --server kenny.southpark -v
 </pre>
 <p>
 そして、puppet サーバ側で puppetrun を起動して、設定した exec をクライアントで実行させる。

@@ -3,7 +3,7 @@ layout: post
 title: "lighttpdをテスト用のwebサーバとして利用する（Rails 勉強中 #8）"
 date: 2006-01-06 09:05
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 どこかで見たことあるようなエントリタイトルだと思ったあなた、正解です。
@@ -30,7 +30,7 @@ ib/ruby/gems/1.8/gems/rails-1.0.0/configs/lighttpd.conf
 
 <p class="entryBody">
 それにしても、ここの rails に関するエントリでは、必ず gorou さんのサイトを引き合いに出していますね。頭が下がる思いです、ほんと。
-</p> 
+</p>
 
 <p class="entryBody">
 gorou さん、面識はありませんが、はてなへの転職おめでとうございます。今後の一層のご活躍を楽しみにしております。gorou さんのような方が perl 陣営に加わるのは、同じ perl 使いとして大変うれしいです。

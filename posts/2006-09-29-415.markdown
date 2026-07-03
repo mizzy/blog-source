@@ -3,7 +3,7 @@ layout: post
 title: "Using svk with plagger"
 date: 2006-09-29 22:55
 comments: true
-categories: 
+categories:
 ---
 <p>
 うちでは 普段実行している plagger は<a class="ext-link" href="http://svn.bulknews.net/repos/plagger/trunk/plagger"><span class="icon"></span>本家 trunk</a> から持ってきていて、自分で作ったプラグインは <a class="ext-link" href="http://svn.mizzy.org/public/plagger/trunk"><span class="icon"></span>svn.mizzy.org</a> に置いてあるのですが、以下の様なプロセスで開発してました。
@@ -21,7 +21,7 @@ categories:
 </p>
 <pre class="wiki">
 $ svk mirror //mirror/plagger-trunk http://svn.bulknews.net/repos/plagger/trunk/plagger
-$ svk sync //mirror/plagger-trunk --skipto HEAD  
+$ svk sync //mirror/plagger-trunk --skipto HEAD
 $ svk cp -p //mirror/plagger-trunk //local/plagger-trunk
 </pre>
 <p>
@@ -42,7 +42,7 @@ local/
  plagger-trunk/
 mirror/
  plagger-mizzy/
- plagger-trunk/   
+ plagger-trunk/
 </pre>
 <p>
 ローカルディレクトリにチェックアウト

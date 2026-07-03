@@ -3,7 +3,7 @@ layout: post
 title: "Webiblo - web to ebook project"
 date: 2012-01-10 20:17
 comments: true
-categories: 
+categories:
 ---
 
 I've started the project [webiblo](https://github.com/mizzy/webiblo).This is the improved fork of [web-to-mobi](https://github.com/mizzy/web-to-mobi).

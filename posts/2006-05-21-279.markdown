@@ -3,7 +3,7 @@ layout: post
 title: "lighttpd の認証を LDAP で"
 date: 2006-05-21 15:17
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://trac.mizzy.org/public/" target="_blank">おうち trac</a> が認証を一切せずに、誰でも wiki の書き換えができたり、ticket の発行ができたり、という状態だったので、それはまずかろうってことで認証かけることにした。

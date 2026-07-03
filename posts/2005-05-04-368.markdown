@@ -3,7 +3,7 @@ layout: post
 title: "redirect_permalinkプラグイン"
 date: 2005-05-04 23:35
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 permalinkは変わらないからこそpermalinkなわけですが、事情があってpermalinkを変更せざるを得ないこともあると思います。

@@ -3,7 +3,7 @@ layout: post
 title: "『ふつうの Haskell』を読む前に"
 date: 2006-07-18 22:01
 comments: true
-categories: 
+categories:
 ---
 <p>
 『<a class="ext-link" href="http://www.amazon.co.jp/exec/obidos/ASIN/4274065979/httshemizorg-22/ref=nosim"><span class="icon"></span>ハッカーと画家</a>』を読んだ時に、関数型言語を何かひとつ、かじる程度でいいから学びたいなぁ、と思っていたのですが、当時はどこから学んで良いのかもよく分からない状態でした。

@@ -3,7 +3,7 @@ layout: post
 title: "Javascriptの皮を被ったXML #2"
 date: 2005-07-02 15:18
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/javaScriptOverXml01.html" target="_blank">Javascriptの皮を被ったXML #1</a>の続きです。del.icio.us direc.torのGreasemonkey版<a href="http://mizzy.org/js/dboot.user.js" target="_blank">dboot.user.js</a>のHTMLを外部ファイルに分離し、GM_xmlhttpRequestでHTMLを取得するようにしてみました。
@@ -33,24 +33,24 @@ function init() {
 
 	document.body.innerHTML = "";
 	document.body.innerHTML = d;
-	
+
 	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
 	  if(a.getAttribute("rel").indexOf("style") != -1) {
 	    a.disabled = true;
 	  }
 	}
-	
+
 	var ns = document.createElement("link");
 	ns.rel = "stylesheet";
 	ns.type = "text/css";
 	ns.href = "http://johnvey.com/features/deliciousdirector/d.css";
 	document.body.appendChild(ns);
-	
+
 	var js = document.createElement("script");
 	js.language = "javascript";
 	js.src = "http://johnvey.com/features/deliciousdirector/d.js";
 	document.body.appendChild(js);
-	
+
 	document.title += " (Direc.tor)";
 }
 </pre>

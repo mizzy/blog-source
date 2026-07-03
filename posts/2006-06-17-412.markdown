@@ -3,7 +3,7 @@ layout: post
 title: "Text::Trac - Trac Wiki 記法パーサ #0"
 date: 2006-06-17 01:11
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://d.hatena.ne.jp/drawnboy/" target="_blank">id:drawnboy</a> さんがつくった <a href="http://d.hatena.ne.jp/drawnboy/20060616/1150384749">Catlxom::Plugin::Format::Hatena</a> を見て、「お、それいい！」と思ったんだけど、そもそも自分ははてダ使っていなくて、この手の記法で唯一使ってるのは <a href="http://projects.edgewall.com/trac/wiki/WikiFormatting" target="_blank">Trac の Wiki 記法</a> なので、Catlxom::Plugin::Format::Trac が欲しいな、と思ったわけですが、Perl のパーサがないんですよね。
@@ -18,7 +18,7 @@ svn co http://svn.mizzy.org/public/library/perl/trunk/Text-Trac
 </pre>
 
 <p class="entryBody">
-もうほとんど <a href="http://search.cpan.org/~jkondo/Text-Hatena/" target="_blank">Text::Hatena</a> のコードそのまんまです。<a href="http://d.hatena.ne.jp/jkondo/" target="_blank">id:jkondo さん</a> と <a href="http://d.hatena.ne.jp/tociyuki/" target="_blank">id:tociyuki さん</a> に感謝感謝です。 
+もうほとんど <a href="http://search.cpan.org/~jkondo/Text-Hatena/" target="_blank">Text::Hatena</a> のコードそのまんまです。<a href="http://d.hatena.ne.jp/jkondo/" target="_blank">id:jkondo さん</a> と <a href="http://d.hatena.ne.jp/tociyuki/" target="_blank">id:tociyuki さん</a> に感謝感謝です。
 </p>
 
 <p class="entryBody">

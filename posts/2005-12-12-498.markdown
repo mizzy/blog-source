@@ -3,7 +3,7 @@ layout: post
 title: "NBA 2.0"
 date: 2005-12-12 15:03
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 CNET Japan で <a href="http://japan.cnet.com/news/media/story/0,2000047715,20092624,00.htm" target="_blank">NBAの「Web 2.0」な英断--全映像をアーカイブ化、ファンに「解放」へ</a> という記事が！

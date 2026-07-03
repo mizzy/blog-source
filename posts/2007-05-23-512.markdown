@@ -3,7 +3,7 @@ layout: post
 title: "write はユーザプロセスを待たせない？"
 date: 2007-05-23 00:24
 comments: true
-categories: 
+categories:
 ---
 [naoyaグループ - naoyaの日記 -  I/O, iowait](http://naoya.g.hatena.ne.jp/naoya/20070522/1179830475) にちょっと反応してみます。
 

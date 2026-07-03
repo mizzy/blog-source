@@ -3,7 +3,7 @@ layout: post
 title: "Shibuya.pm テクニカルトーク #8 でしゃべってきました"
 date: 2007-10-01 23:18
 comments: true
-categories: 
+categories:
 ---
 プレゼン途中にバッテリーが切れるという失態をやらかしたため、yusukebeさん言うところの「お口で」のみのプレゼンとなってしまいました。ごめんなさい。[会場でお見せできなかった幻の資料はこちらにアップしておきます](http://mizzy.org/archives/2007/pushmi_shibuya_pm_8.pdf)。
 

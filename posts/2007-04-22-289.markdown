@@ -3,10 +3,10 @@ layout: post
 title: "SVN::TracWiki #0"
 date: 2007-04-22 04:55
 comments: true
-categories: 
+categories:
 ---
 <p>
-<a class="ext-link" href="http://trac.mizzy.org/public/browser/SVN-TracWiki"><span class="icon"></span>SVN::TracWiki</a> というツールをつくってみました。<a class="ext-link" href="http://svn.mizzy.org/public/SVN-TracWiki/"><span class="icon"></span>svn repos はこちら</a>。 
+<a class="ext-link" href="http://trac.mizzy.org/public/browser/SVN-TracWiki"><span class="icon"></span>SVN::TracWiki</a> というツールをつくってみました。<a class="ext-link" href="http://svn.mizzy.org/public/SVN-TracWiki/"><span class="icon"></span>svn repos はこちら</a>。
 </p>
 <p>
 何をするものかというと、Subversion の post-commit スクリプトとして動作して、コミットされたファイルからテキストを抽出、そのファイルの実体へのリンクを付加して、Trac の Wiki へ自動ポストするというもの。

@@ -3,7 +3,7 @@ layout: post
 title: "Plagger と Google Video #1"
 date: 2006-03-30 23:36
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/CustomFeed/GoogleVideo.pm" target="_blank">CustomFeed::GoogleVideo</a> をアップデートしてみた。

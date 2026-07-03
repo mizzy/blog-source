@@ -3,7 +3,7 @@ layout: post
 title: "daapdでAACのメタデータを扱う"
 date: 2005-09-26 23:23
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 2004年初めに<a href="http://mizzy.org/linux/itunes.xhtml" target="_blank">こんなページを</a>書いたものの、家では子供がうるさくてゆっくり音楽聴くことができないため、せっかく構築した環境がほったらかしになってました。

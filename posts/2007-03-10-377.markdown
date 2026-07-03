@@ -3,7 +3,7 @@ layout: post
 title: "Assurer 近況"
 date: 2007-03-10 02:53
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://assurer.jp/trac"><span class="icon"></span>Assurer</a> の最近の状況など。
@@ -46,7 +46,7 @@ assurer> !with /web|mail/ do uptime
 assurer> !test SSH on app1.foo.com
 assurer> !test SSH on /.*.foo.com/
 assurer> !test SSH with web
-assurer> !test SSH with /web|mail/ 
+assurer> !test SSH with /web|mail/
 </pre>
 <h3 id="並列度のコントロールと分散処理">並列度のコントロールと分散処理</h3>
 <p>

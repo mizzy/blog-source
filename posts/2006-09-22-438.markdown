@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::FFmpeg #5"
 date: 2006-09-22 13:01
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://d.hatena.ne.jp/shimibow/20060921/1158852346"><span class="icon"></span>id:shimibow さんが Filter::FFmpeg のパッチを書いてくださいました</a>。いつもありがとうございます。これを参考に、以下の様な修正を行いました。
@@ -62,11 +62,11 @@ Index: library/perl/trunk/FFmpeg-Command/lib/FFmpeg/Command.pm
  use strict;
 -our $VERSION = '0.04';
 +our $VERSION = '0.05';
- 
+
  use base qw( Class::Accessor::Fast Class::ErrorHandler );
 @@ -11,5 +11,5 @@
  use Carp qw( carp );
- 
+
 -my %option = (
 +our %option = (
      format              => '-f',

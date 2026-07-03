@@ -3,7 +3,7 @@ layout: post
 title: "puppet の言語構造"
 date: 2007-03-19 13:34
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/InstallationGuide"><span class="icon"></span>Installation Guide</a> を読めば、とりあえず puppet を動かすことはできるけど、やりたいことをやろうと思ってもすぐにできるわけでもない。というわけで、ドキュメントをちゃんと読んでみることにした。
@@ -16,7 +16,7 @@ categories:
 puppet 設定の基本構成単位。管理されるコンピュータ上のオブジェクト（ファイルとかパッケージとか）を表すもので、あらかじめ用意されたビルトインタイプ以外にも、自ら定義することも可能。
 </p>
 <pre class="wiki">
-file { "/etc/passwd": owner => root, mode => 644 } 
+file { "/etc/passwd": owner => root, mode => 644 }
 package { apache: install => true }
 </pre>
 <p>
@@ -77,12 +77,12 @@ define svnserve($source, $path, $user = false, $password = false) {
     $svncmd = $user ? {
         false => "/usr/bin/svn co --non-interactive $source/$name .",
         default => "/usr/bin/svn co --non-interactive --username $user --password '$password' $source/$name ."
-    }   
-    exec { $svncmd: 
+    }
+    exec { $svncmd:
         cwd => $path,
         require => file[$path],
         creates => "$path/.svn"
-    }   
+    }
 }
 
 svnserve { dist:

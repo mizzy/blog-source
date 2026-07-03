@@ -3,7 +3,7 @@ layout: post
 title: "Catalyst Tips #0 Catalystでファイルのアップロード"
 date: 2005-09-08 22:05
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 業務で使うウェブアプをCatalystで作っているのですが、ファイルのアップロード処理でちょっとだけはまったのでメモ。

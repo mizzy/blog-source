@@ -3,7 +3,7 @@ layout: post
 title: "jackass コレクターズセット"
 date: 2005-12-17 01:08
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody" style="vertical-align: top;">
 jackass が MTV で放送されていたのは、3,4年前ぐらいでしょうか。番組冒頭に映しだされる以下の警告に引き込まれ、そのままどっぷりとはまり込んでしまいました。

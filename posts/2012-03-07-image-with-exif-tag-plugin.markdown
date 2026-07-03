@@ -3,7 +3,7 @@ layout: post
 title: "Image with EXIF tag plugin"
 date: 2012-03-07 23:38
 comments: true
-categories: 
+categories:
 ---
 
 I've modified [Image tag plugin](https://github.com/imathis/octopress/blob/master/plugins/image_tag.rb) into [Image with EXIF tag plugin](https://github.com/mizzy/jekyll-plugins/blob/master/image_with_exif_tag.rb) based on [the idea of mattn-san's comment](/blog/2012/03/07/exif-tag-plugin). (Thanks, mattn-san!)

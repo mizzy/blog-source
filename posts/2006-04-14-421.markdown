@@ -3,7 +3,7 @@ layout: post
 title: "Shibuya.js Technical Talk 行けませんでした…"
 date: 2006-04-14 23:47
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 こんな大事な日に限って仕事でおおはまり。普段は早く帰れてるのに。行きたくても応募が締め切られて行けなかった方々に大変申し訳ないです。

@@ -3,7 +3,7 @@ layout: post
 title: "mod_dosdetector を Apache 2.0 系で動かすパッチ"
 date: 2007-07-26 22:32
 comments: true
-categories: 
+categories:
 ---
 "mod_dosdetecter 0.2":http://sourceforge.net/projects/moddosdetector/ を Apache 2.0 系で動かすパッチを書いてみた。修正ポイントは、
 
@@ -29,13 +29,13 @@ categories:
  #include "apr_shm.h"
  #include "apr_thread_mutex.h"
 +#include "apr_version.h"
- 
+
  //#define _DEBUG
- 
+
 @@ -102,7 +102,90 @@
  static apr_global_mutex_t *lock = NULL;
  static apr_shm_t *shm = NULL;
- 
+
 +/* apr version 0.x not support apr_shm_remove, I have to copy it from apr version 1.x */
 +#if (APR_MAJOR_VERSION < 1)
 +#ifdef HAVE_SYS_MMAN_H
@@ -59,7 +59,7 @@ categories:
 +#ifdef HAVE_SYS_FILE_H
 +#include <sys/file.h>
 +#endif
- 
+
 +static apr_status_t apr_shm_remove(const char *filename, apr_pool_t * pool)
 +{
 +#if APR_USE_SHMEM_SHMGET
@@ -124,9 +124,9 @@ categories:
  {
      ap_log_error(APLOG_MARK, APLOG_STARTUP, 0, NULL, "Notice: cleaning up shared memory");
 @@ -261,8 +344,8 @@
- 
+
  	address = r->connection->remote_ip;
- 
+
 -    ap_regmatch_t regmatch[AP_MAX_REG_MATCH];
 -    ap_regex_t **contenttype_regexp = (ap_regex_t **) cfg->contenttype_regexp->elts;
 +    regmatch_t regmatch[AP_MAX_REG_MATCH];
@@ -141,7 +141,7 @@ categories:
 -    char **ignore_contenttype = (char **) cfg->ignore_contenttype->elts;
 +    regex_t *regexp;
 +    char *type;
- 
+
 -    *(char **) apr_array_push(cfg->ignore_contenttype) = apr_pstrdup(parms->pool, arg);
 -
 -	int i;
@@ -154,7 +154,7 @@ categories:
 +      regexp = ap_pregcomp(parms->pool, type, REG_EXTENDED|REG_ICASE);
 +      *(regex_t **)apr_array_push(cfg->contenttype_regexp) = regexp;
      }
- 
+
      return NULL;
 </code></pre>
 

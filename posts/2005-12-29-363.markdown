@@ -3,7 +3,7 @@ layout: post
 title: "ネフ セラを買った"
 date: 2005-12-29 22:14
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.beyes.jp/" target="_blank">BEYES</a> で <a href="http://www.beyes.jp/shop/fathersgarden/625384.php?no=23" target="_blank">ネフ セラ</a> を買った。

@@ -3,7 +3,7 @@ layout: post
 title: "catlxom メモ #3"
 date: 2006-05-28 12:04
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 $self->stash でセットした値を、$self->stashall で取り出すと、以下の様なハッシュリファレンスが返ってきます。

@@ -3,7 +3,7 @@ layout: post
 title: "Apache での SSL クライアント証明書による認証"
 date: 2006-09-09 03:47
 comments: true
-categories: 
+categories:
 ---
 <p>
 Apache 2.x で SSL クライアント証明書による認証を行うためのメモ。ssl.conf があるので、そいつに以下の様な設定を入れる。（コメントアウトされてるので、# を外して適当に書き換える。）

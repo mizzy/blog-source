@@ -3,7 +3,7 @@ layout: post
 title: "ペパボでは技術スタッフ正社員を募集しています"
 date: 2007-05-25 20:51
 comments: true
-categories: 
+categories:
 ---
 [プログラマ](http://www.paperboy.co.jp/recruit/job/070523.php) と [サーバーエンジニア](http://www.paperboy.co.jp/recruit/job/070403b.php) の枠で正社員募集中です。
 

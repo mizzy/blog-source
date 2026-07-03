@@ -32,9 +32,3 @@ Application は [こちらからダウンロード](https://github.com/mizzy/scr
 {% img https://raw.github.com/mizzy/screenshots/master/shot-20120826011222.png %}
 
 {% img https://raw.github.com/mizzy/screenshots/master/shot.png %}
-
-
-
-
-
-

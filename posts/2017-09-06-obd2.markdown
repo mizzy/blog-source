@@ -8,7 +8,7 @@ date: 2017-09-06 18:00:00 +0900
 まずは車両情報をパソコンから取得することにトライ。調べてみると、車両情報をパソコンやスマホから取得するためには、車に搭載された [OBD-II](https://ja.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E8%BB%8A%E3%81%AE%E8%87%AA%E5%B7%B1%E8%A8%BA%E6%96%AD%E6%A9%9F%E8%83%BD#OBD2) ポートに、[ELM Electronics 社](https://www.elmelectronics.com/) 製の ELM327 というチップを積んだアダプタを挿し、Bluetooth や Wi-Fi を経由して取得する、というやり方が一般的なようだ。
 
 
-というわけで、[Bluetooth 版](https://www.amazon.co.jp/gp/product/B00J7CC4T2) （写真左）と [Wi-Fi 版](https://www.amazon.co.jp/gp/product/B01IHV5VFM)（写真右）を買ってみた。 
+というわけで、[Bluetooth 版](https://www.amazon.co.jp/gp/product/B00J7CC4T2) （写真左）と [Wi-Fi 版](https://www.amazon.co.jp/gp/product/B01IHV5VFM)（写真右）を買ってみた。
 
 {% img /images/2017/09/elm327.jpg ELM327 %}
 
@@ -114,9 +114,8 @@ AUTO,ISO 15765-4 (CAN 11/500)
 7E906412000000001
 ```
 
-`7E806` や `7E903` といった部分が、Bluetooth 版のレスポンスにはないが、これはどうやら [CAN](https://ja.wikipedia.org/wiki/Controller_Area_Network) というプロトコルのデータフレームに含まれているもののようだ。 
+`7E806` や `7E903` といった部分が、Bluetooth 版のレスポンスにはないが、これはどうやら [CAN](https://ja.wikipedia.org/wiki/Controller_Area_Network) というプロトコルのデータフレームに含まれているもののようだ。
 
 [CAN通信におけるデータ送信の仕組みとは？ (1/3) - MONOist（モノイスト）](http://monoist.atmarkit.co.jp/mn/articles/0807/09/news140.html) を見ると、`7E8` や `7E9` が識別のための ID、続く `06` や `03` はコントロールフィールド中のデータレングスコードで、その後に続くデータフィールドの長さを表しているようだ。
 
 内部的には ECU 同士や ECU と OBD-IIアダプタ間では CAN で通信していて、Bluetooth 版アダプタは、CAN のデータフレームのうち、データフィールドしか出力しないけど、Wi-Fi版アダプタは、ID やコントロールフィールドも出力している、ということなのだろう。
-

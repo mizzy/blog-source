@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::FFmpeg &amp; FFmpeg::Command"
 date: 2006-07-31 23:57
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/plagger_and_itunes00.html"><span class="icon"></span>このエントリ</a> の <a class="ext-link" href="http://d.hatena.ne.jp/shimibow/"><span class="icon"></span>id:shimibow</a> さんからのコメントで、-title オプションでつけたタイトルが iTunes でも表示される、という情報頂きましたので、FFmpeg::Command で title をセットできるようにし、Plagger::Plugin::Filter::FFmpeg もそれに対応させてみました。（残念ながらうちの環境では、やはり iTunes では表示されませんでした…何が悪いのかなぁ…何かしょぼいミスとかしてそうな気がする…）

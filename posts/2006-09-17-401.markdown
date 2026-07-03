@@ -3,7 +3,7 @@ layout: post
 title: "SmartFeed::All で生成されるフィードには Filter::Rule は適用できない"
 date: 2006-09-17 18:28
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://d.hatena.ne.jp/toshi123/20060916#p1"><span class="icon"></span>いまさら聞けない？ 初心者向けPlagger設定覚え書き その5</a> というエントリで、

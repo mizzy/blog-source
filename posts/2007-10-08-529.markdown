@@ -3,7 +3,7 @@ layout: post
 title: "FLV::Info で ustream の FLV ファイル情報をとろうとするとエラーになる件"
 date: 2007-10-08 14:07
 comments: true
-categories: 
+categories:
 ---
 ustream の FLV をダウンロードして音声変換する方法は、"typesterさんのとこに詳しく書いてある":http://unknownplace.org/memo/2007/10/03 わけですが、sox に渡すときにサンプルレートを指定する必要があったりします。
 
@@ -122,7 +122,7 @@ sub read_tag {
 audio type: mono
 audio size: 16 bit
 audio rate: 11 Hz
-audio format: Nellymoser  
+audio format: Nellymoser
 </code></pre>
 
 あとは Plagger プラグインを書くだけ、という感じなのですが、リビドーが沸いてこないのでちょっと保留。FFmpeg で Nellymoser に対応する予定がある（既に SVN HEAD には Nellymoser という文字列がコード中にある）ようなので、それまで待ってもいいかなー、と。

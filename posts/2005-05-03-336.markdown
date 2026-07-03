@@ -3,7 +3,7 @@ layout: post
 title: "entries_in_this_pageプラグイン"
 date: 2005-05-03 15:10
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 現在のページに表示されているエントリのタイトルが一目で分かる様にしたいな、ってことで、
@@ -23,7 +23,7 @@ $entries = [
 	    { title => 'title2',
 	      path => 'path2',
 	      fn => 'fn2',
-	    }, 
+	    },
 	    ];
 </pre>
 

@@ -3,7 +3,7 @@ layout: post
 title: "iPod で映画を持ち歩く"
 date: 2006-01-16 01:35
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 またもやはまっちゃった系エントリです。iPod で映画を持ち歩くために、<a href="http://www.geocities.jp/h264ipod/henkankundvd.html" target="_blank">DVDの中身を携帯しよう</a> の「字幕とか音声とかを選んでエンコードしたい場合」にトライしてみたのですが、「用意するもの」にあるのと全く同じファイルがないために、かなりはまりました。
@@ -36,7 +36,7 @@ categories:
 
 <pre class="code">
 AudioDub(MPEG2Source("&lt;%InputFile%&gt;"),WavSource("&lt;%InputFilePath%&gt;&lt;%InputFileBase%&gt;.wav"))
-VobSub("&lt;%InputFilePath%&gt;&lt;%InputFileBase%&gt;.sub") 
+VobSub("&lt;%InputFilePath%&gt;&lt;%InputFileBase%&gt;.sub")
 </pre>
 
 <p class="entryBody">

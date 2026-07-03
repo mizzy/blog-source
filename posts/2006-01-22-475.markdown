@@ -3,7 +3,7 @@ layout: post
 title: "cygwin の sshd がエラーを吐くようになった"
 date: 2006-01-22 04:43
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 うちでは<a href="http://mizzy.org/mtv2000/index.xhtml?css=white" target="_blank">こんなことをして</a> 無理やりウェブから MTV2000 の録画予約しているのですが、cygwin のパッケージを色々アップデートしたら、cygwin の sshd に対して接続できなくなってしまいました。ちなみにエラーはこんな感じ。

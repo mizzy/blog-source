@@ -3,7 +3,7 @@ layout: post
 title: "フィードアグリゲータに求めること"
 date: 2005-08-28 02:56
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 feedbringer、使うのをやめることにしました。bloglines に戻ります。理由は、UI の改良により、HTML も修正されたため、自作の greasemonkey 用ユーザスクリプトならびに css ファイルがそのままでは使えなくなったから。修正するのも面倒だし、修正してまで feedbringer を使い続けるほどの魅力を感じなくなった。かといって、素の UI は改良されたとはいえ、正直あまり使いやすくはない。自分がカスタマイズしたものに似てはいるけど、微妙に使いづらいと感じるのは、他の誰かが言っているように、上下の幅が広くて圧迫感を感じるからだろう。それから逆スクロールは Shift + Space というのも嫌。Backspace に慣れてしまっているので。

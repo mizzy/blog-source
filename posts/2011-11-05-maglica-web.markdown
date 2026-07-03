@@ -3,7 +3,7 @@ layout: post
 title: "Maglica Web"
 date: 2011-11-05 13:35
 comments: true
-categories: 
+categories:
 ---
 
 [Maglica Web is on GitHub](https://github.com/mizzy/maglica-web)

@@ -3,7 +3,7 @@ layout: post
 title: "Plagger と YouTube #1"
 date: 2006-04-30 00:41
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 YouTube の HTML が変更されていたので、<a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/CustomFeed/YouTube.pm" target="_blank">Plagger::Plugin::CustomFeed::YouTube</a> を修正。ついでに以下の機能もつけました。

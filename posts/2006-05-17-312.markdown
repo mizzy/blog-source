@@ -3,7 +3,7 @@ layout: post
 title: "mod_rpaf よりも mod_extract_forwarded"
 date: 2006-05-17 09:54
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 リバースプロキシな環境では <a href="http://stderr.net/apache/rpaf/" target="_blank">mod_rpaf</a> 使ったりすることが多いと思いますが、バックエンドの apache でアクセス制限かける場合には、<a href="http://www.openinfo.co.uk/apache/index.html">mod_extract_forwarded</a> を使ったほうが良いよ、というお話。

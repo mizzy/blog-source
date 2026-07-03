@@ -3,7 +3,7 @@ layout: post
 title: "ソーシャルブックマークのRSSをブラウザのブックマークに取り込む #0"
 date: 2005-04-23 15:54
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://d.hatena.ne.jp/naoya/" target="_blank">はてなのnaoyaさん</a>が<a href="http://b.hatena.ne.jp/naoya/" target="_blank">naoyaのブックマーク</a>にて、「del.icio.us の RSS をブックマークのお気に入りに取り込めるようにしたいなあ。」と呟いていたのを見て、こんなものを作ってみた。（naoyaさんが考えているものと違うかもしれませんが。もしかしてはてなブックマークのお気に入りのこと？）

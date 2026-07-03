@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::FFmpeg #3"
 date: 2006-08-24 20:56
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/plagger_and_ffmpeg02.html#comments"><span class="icon"></span>このエントリのコメント</a> にて sumikawa さんより指摘があった点について修正しました。
@@ -31,7 +31,7 @@ Index: plagger/trunk/lib/Plagger/Plugin/Filter/FFmpeg.pm
  use FFmpeg::Command;
 +
 +$Plagger::Util::mimetypes->addType( MIME::Type->new(type => 'video/mp4', extensions => [ qw(mp4 m4v) ]) );
- 
+
  sub register {
 @@ -54,4 +57,5 @@
      $e->enclosure->local_path($output_file);

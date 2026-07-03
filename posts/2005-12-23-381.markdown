@@ -3,7 +3,7 @@ layout: post
 title: "Rails 勉強中 #0"
 date: 2005-12-23 21:51
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.amazon.co.jp/exec/obidos/ASIN/097669400X/httshemizorg-22/ref=nosim" target="_blank">Agile Web Development With Rails</a> を読みながら勉強中。
@@ -50,4 +50,3 @@ end
 <p class="entryBody">
 あと、ライブドアのテクノロジセミナーで、変なあだなで有名な人が次期 Sledge の話をしていて、その開発に貢献できるようになりたいな、と。Sledge によってウェブプログラミングの楽しさを知って、スキルも飛躍的に向上したので、恩返しがしたいですね。
 </p>
-

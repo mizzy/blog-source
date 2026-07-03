@@ -3,7 +3,7 @@ layout: post
 title: "blosxom + Text::Hatena #0"
 date: 2005-11-01 23:12
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 どこかで blosxom と Text::Hatena を組み合わせた、みたいなエントリを見かけたんだけど、具体的なやり方が何も書いてなかったので、自分で blosxom 用プラグイン作ってみた。 <a href="http://mizzy.org/archives/text_hatena" target="_blank">plugin: text_hatena</a>

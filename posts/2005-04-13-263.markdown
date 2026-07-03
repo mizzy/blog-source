@@ -3,7 +3,7 @@ layout: post
 title: "LinuxをiTunesのServerにする"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 もう1年以上前に書いたものですが、いまだに結構アクセスがあるので、一応ここからリンクしておきます。<a href="http://mizzy.org/linux/itunes.xhtml">http://mizzy.org/linux/itunes.xhtml</a>

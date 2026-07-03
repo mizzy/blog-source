@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #2"
 date: 2005-04-13 22:32
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 taggingプラグインをアップデート。タグで絞り込んで表示することができるようになりました。ファイルはここ。<a href="/archives/tagging">taggingプラグイン</a>

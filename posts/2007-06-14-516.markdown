@@ -3,7 +3,6 @@ layout: post
 title: "紫色の何かを口に押し付けている…"
 date: 2007-06-14 12:34
 comments: true
-categories: 
+categories:
 ---
 会社に紫色のブツがあったので…
-

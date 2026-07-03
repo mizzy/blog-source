@@ -3,7 +3,7 @@ layout: post
 title: "bloglines mobile gateway"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 こちらもちらほらとアクセスがあるので、リンクしておく。<a href="http://mizzy.org/web/bloglines.xhtml">http://mizzy.org/web/bloglines.xhtml</a>

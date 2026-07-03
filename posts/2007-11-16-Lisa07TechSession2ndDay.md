@@ -127,4 +127,3 @@ RepuScore で興味深かったのは、不正なレポートを行う（Sybil a
 他のレピュテーションシステムとしては、[SenderPath's Sender Score](http://www.returnpath.net/) や [Habeas' SenderIndex](http://www.habeas.com/en-US/Receivers/SenderIndex/) といったものがあるが、これらは IP アドレスベースのレピュテーションであり、RepuScore はドメインベースのレピュテーションである、という違いがある。（IPアドレスは組織間でシェアされていることもあるので、こういったレピュテーションシステムには向いていない、という記述もある。）
 
 Gmail も自前でユーザに通知させるレピュテーションの仕組みを持っているが、Gmail の中で閉じられている。
-

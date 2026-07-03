@@ -3,7 +3,7 @@ layout: post
 title: "ajaxでdel.icio.usを使いやすく #0"
 date: 2005-04-24 15:51
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 話的には<a href="/program/rss2xbel01.html" target="_blank">前回</a>の続きなんだけど、もはやRSSは関係ないのでタイトル変えます。

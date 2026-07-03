@@ -3,7 +3,7 @@ layout: post
 title: "blosxom のエントリを OpenID でアクセス制限"
 date: 2005-11-08 22:10
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 単なるテスト目的の実装ではおもしろくないので、OpenID の応用例として、blosxom のエントリに OpenID でアクセス制限をかけるプラグインを作ってみました。<a href="/archives/auth_openid" target="_blank">auth_openid プラグイン</a>

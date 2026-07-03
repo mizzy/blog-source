@@ -3,7 +3,7 @@ layout: post
 title: "Filter::Rule と Filter::CloneFeed"
 date: 2006-09-05 20:53
 comments: true
-categories: 
+categories:
 ---
 <p>
 最近は Plagger いじりの記録と化してるこのブログですが、今日もまた Plagger ネタですよ。
@@ -30,7 +30,7 @@ Index: plagger/trunk/lib/Plagger/Plugin/Filter/Rule.pm
 +        }
 +        return unless $status;
 +    }
- 
+
      for my $entry ($args->{feed}->entries) {
 </pre>
 <p>
@@ -93,7 +93,7 @@ sub clone {
     config:
       expression: $args->{feed}->type eq 'clone'
 
-  - module: Publish::iCal 
+  - module: Publish::iCal
     config:
       dir: /home/miya/ical
       filename: %t.ics
@@ -135,7 +135,7 @@ sub clone {
       keywords:
         - 川原正敏
 
-  - module: Publish::iCal 
+  - module: Publish::iCal
     config:
       dir: /home/miya/ical
       filename: %t.ics

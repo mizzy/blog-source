@@ -3,7 +3,7 @@ layout: post
 title: "名刺作りました"
 date: 2005-12-25 02:46
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 最近、ウェブ業界の方々とお会いすることが多いのですが、いま自分が属している会社はウェブとはぜんぜん関係がないので、会社の名刺をお渡しするのって、なんか違和感があるんですよね。会社の人間としてではなく、個人として会ってる、というのもあるので。
@@ -58,9 +58,9 @@ use Sledge::Template::TT;
 use Parse::CPAN::Authors;
 my $p = Parse::CPAN::Authors->new;
 my $author = $p->author('MIZZY');
-print 'NAME: ', $author->name , "\n";  
-print 'URL:  ', $author->url  , "\n";   
-print 'MAIL: ', $author->email, "\n"; 
+print 'NAME: ', $author->name , "\n";
+print 'URL:  ', $author->url  , "\n";
+print 'MAIL: ', $author->email, "\n";
 
 NAME: Gosuke Miyashita
 URL:  http://mizzy.org/

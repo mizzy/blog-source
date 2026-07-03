@@ -3,7 +3,7 @@ layout: post
 title: "puppet 今試すなら バージョン 0.22.1 を使え、そして gem で入れるな"
 date: 2007-03-24 14:49
 comments: true
-categories: 
+categories:
 ---
 <p>
 <strong>追記</strong><br />
@@ -18,7 +18,7 @@ executables:
 - puppetd
 - puppetmasterd
 - puppetdoc
-- puppetca  
+- puppetca
 </pre>
 <p>
 とりあえず<a class="ext-link" href="http://reductivelabs.com/trac/puppet/ticket/561"><span class="icon"></span>チケットに入れておいた</a>。
@@ -46,7 +46,7 @@ Failed to load ruby LDAP library. LDAP functionality will not be available
         from /usr/local/bin/puppetrun:343
         from /usr/local/bin/puppetrun:335:in `fork'
         from /usr/local/bin/puppetrun:335
-kenny.southpark finished with exit code 1 
+kenny.southpark finished with exit code 1
 </pre>
 <p>
 これは puppetrun に以下の一行を追加すれば直る。

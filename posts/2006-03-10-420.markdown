@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::CustomFeed::iTunesRecentPlay #0"
 date: 2006-03-10 10:42
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 PLAYLOG が関係なくなったので、タイトル変更。Publish::MTWidget と組み合わせて、MT + <a href="http://www.majordojo.com/projects/SidebarManager/" target="_blank">Sidebar Manager</a> の環境で、サイドバーに iTunes で最近聴いた曲を表示できるように、エントリの title に曲名とアーティスト名をセットするようにしてみました。こんな感じで表示されます。

@@ -3,7 +3,7 @@ layout: post
 title: "Software Design 2006年10月号に寄稿しました"
 date: 2006-09-16 20:14
 comments: true
-categories: 
+categories:
 ---
 <p>
 『特別企画 Plagger 3分 Hacking』の『Chapter 03: 俺流 Plagger 3分 Hacking』の中で、「Plagger で YouTube Casting」というお題で書かせて頂きました。

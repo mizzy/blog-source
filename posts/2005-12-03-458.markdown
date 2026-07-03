@@ -3,7 +3,7 @@ layout: post
 title: "heteml ローンチパーティ いってきました"
 date: 2005-12-03 00:05
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://heteml.jp" target="_blank">heteml</a> のローンチパーティ <a href="http://www.apmt.jp/" target="_blank">APMT SP</a> にお呼ばれしたので行ってきました。

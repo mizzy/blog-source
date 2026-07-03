@@ -3,7 +3,7 @@ layout: post
 title: "The Inbox Makeover with ajax 構想"
 date: 2005-11-30 02:33
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 7ヶ月近く完全放置の <a href="http://mizzy.org/?topic=/program/ajaxWebMail" target="_blank">ajax なウェブメール</a>ですが、そもそもネイティブアプリ（この場合は Wanderlust ）と同じような操作性のものを作ろうと考えたのが敗因のような気がします。（ウェブメールに限らず、ajax でネイティブアプリと同じようなものを作る、という発想は何か間違っているのではないかと最近思う。）

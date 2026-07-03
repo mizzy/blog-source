@@ -3,7 +3,7 @@ layout: post
 title: "Filter::Audio #0"
 date: 2006-08-27 17:38
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://subtech.g.hatena.ne.jp/miyagawa/20060827/1156610704"><span class="icon"></span>Convert Apache index to Podcasts</a> とか <a class="ext-link" href="http://www.hsbt.org/diary/20060827.html#p03"><span class="icon"></span>RubyKaigi2006の音声ファイルをPlaggerで色々</a> を見て、音声ファイル変換用のプラグインがあれば便利かな、と思い、<a class="ext-link" href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/Filter/Audio.pm"><span class="icon"></span>Filter::Audio</a> をつくってみました。

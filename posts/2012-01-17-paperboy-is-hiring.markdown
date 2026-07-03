@@ -3,7 +3,7 @@ layout: post
 title: "paperboy is hiring"
 date: 2012-01-17 20:56
 comments: true
-categories: 
+categories:
 ---
 
 今まで[ペパボ](http://www.paperboy.co.jp/)の人事評価制度では、管理職のキャリアプランしか想定されていなかったのですが、今年から導入された制度では、管理職とは別に、技術職用の等級が設けられ、能力に応じて待遇が向上する仕組みが導入されました。

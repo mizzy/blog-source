@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::TinyURL"
 date: 2006-04-02 19:46
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/Filter/TinyURL.pm" target="_blank">P::P::Filter::TinyURL</a> を意味もなくアップデート。

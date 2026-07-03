@@ -3,7 +3,7 @@ layout: post
 title: "Text::Trac のバグフィックス・機能追加とテスト駆動開発"
 date: 2006-10-29 20:47
 comments: true
-categories: 
+categories:
 ---
 <p>
 rt.cpan.org でバグレポートと機能追加要望があがっていたので、久々に <a class="ext-link" href="http://search.cpan.org/~mizzy/Text-Trac/lib/Text/Trac.pm"><span class="icon"></span>Text::Trac</a> に手を入れました。

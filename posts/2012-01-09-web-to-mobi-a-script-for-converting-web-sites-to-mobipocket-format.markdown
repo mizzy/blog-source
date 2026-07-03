@@ -3,7 +3,7 @@ layout: post
 title: "Web-to-mobi - A script for converting web sites to mobipocket format"
 date: 2012-01-09 03:46
 comments: true
-categories: 
+categories:
 ---
 
 I've written a script to convert [Getting Real](http://gettingreal.37signals.com/toc.php) into mobipocket format.

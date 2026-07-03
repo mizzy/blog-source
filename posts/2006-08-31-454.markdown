@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Filter::FFmpeg #4"
 date: 2006-08-31 12:37
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/ffmpeg03.html#comments"><span class="icon"></span>こちらのエントリのコメント</a> にて、sumikawa さんより Filter::FFmpeg の PSP での動作報告や、パッチなどを頂きました。ありがとうございます！

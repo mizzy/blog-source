@@ -3,7 +3,7 @@ layout: post
 title: "catlxom の プラグイン機構を plagger ライクに #2 (catlxom メモ #7)"
 date: 2006-06-14 23:15
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/catlxom_memo_06.html" target="_blank">前回のエントリ</a>で、catlxom のプラグイン機構を plagger っぽくしてみたのですが、

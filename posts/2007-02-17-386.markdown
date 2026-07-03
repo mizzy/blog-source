@@ -3,7 +3,7 @@ layout: post
 title: "デブサミ出張 Shibuya イベントの補足"
 date: 2007-02-17 20:57
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/archives/assurer_devsumi.pdf"><span class="icon"></span>デブサミ発表資料</a>中に、テストプラグインがどういうコードなのかを書いていたのですが、時間がなくてまったく説明できなかったので、ここで補足しておきます。
@@ -52,7 +52,7 @@ sub connect {
 (C) ではテストを行うメソッドを登録しています。複数登録する場合には、
 </p>
 <pre class="wiki">
-$self->register_tests( qw/ test1 test2 test3 / ); 
+$self->register_tests( qw/ test1 test2 test3 / );
 </pre>
 <p>
 といった記述をします。この場合、test1(), test2(), test3() の順で実行されます。

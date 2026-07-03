@@ -3,7 +3,7 @@ layout: post
 title: "Blog Hackers Conference 2005に行ってきました"
 date: 2005-05-28 01:57
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://hacks.bloghackers.net/archives/2005/05/blog_hackers_co_1.html" target="_blank">Blog Hackers Conference 2005</a>から帰ってきました。3時間半ほど前に。家庭がある身なので、「打倒naoya！はてなTシャツ争奪ジャンケンバトル」（呼び捨てすんません）に2nd Roundで敗れて早々会場を後にしたわけですが、あの後も何かおもしろいことあったんですかね。

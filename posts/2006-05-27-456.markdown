@@ -3,7 +3,7 @@ layout: post
 title: "catlxom メモ #0"
 date: 2006-05-27 20:05
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 今イタリアにいるらしい <a href="http://unknownplace.org/memo/" target="_blank">typester さん</a> 作の Catalyst meets Blosxom な <a href="http://catlxom.org/trac" target="_blank">catlxom</a> を最近触り始めました。（<a href="http://unknownplace.org/slides/catlxom/start.html" target="_blank">説明はこちら。</a>キャットルームと読むらしいです。）

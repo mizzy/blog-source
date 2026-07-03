@@ -3,7 +3,7 @@ layout: post
 title: "SiteBar 3.3を試してみた"
 date: 2005-04-21 22:34
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://sitebar.org/" target="_blank">SiteBar</a>という、PHPでできていて、自分でサーバに設置して利用できるオンラインブックマークツールを試してみました。

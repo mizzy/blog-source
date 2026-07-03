@@ -3,7 +3,7 @@ layout: post
 title: "catlxom メモ #2"
 date: 2006-05-28 02:11
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 catlxom の Template::TT プラグイン で、$self-&gt;classdata-&gt;{tt}-&gt;process() がエラーになっても、真っ白な画面が表示されるだけで、エラーログにも何も出なくてかなり悩む羽目になったので patch 。

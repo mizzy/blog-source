@@ -3,7 +3,7 @@ layout: post
 title: "Paperboy's engineer evaluation system"
 date: 2012-02-29 21:54
 comments: true
-categories: 
+categories:
 ---
 
 今年から新たに[ペパボ](http://www.paperboy.co.jp/)で導入された、技術者向けの評価制度については、[こちらのエントリ](/blog/2012/01/17/paperboy-is-hiring/) で書いたのですが、本日、その一次評価が完了しました。

@@ -3,10 +3,10 @@ layout: post
 title: "Qooqle Video Clippers!"
 date: 2006-06-01 17:14
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
-隣の席のオオヒダさんが、早速 JugemKey 認証 API を利用したステキサービスを作ってくれちゃいました。<a href="http://clippers.qooqle.jp/" target="_blank">Qooqle Video Clippers!</a> 
+隣の席のオオヒダさんが、早速 JugemKey 認証 API を利用したステキサービスを作ってくれちゃいました。<a href="http://clippers.qooqle.jp/" target="_blank">Qooqle Video Clippers!</a>
 </p>
 
 <p class="entryBody">

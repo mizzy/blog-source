@@ -7,7 +7,3 @@ date: 2012-04-23 01:32
 [guard-livereload](https://github.com/guard/guard-livereload) で、ファイル更新されたら勝手にブラウザ側でもリロードしてくれる。
 
 これは便利ですね。
-
-
-
-

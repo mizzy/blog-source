@@ -3,7 +3,7 @@ layout: post
 title: "Build on your own API"
 date: 2006-02-11 20:39
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 本職ウェブプログラマになった弊害として、ブログがちょっと書きにくくなってしまいました。今までのウェブ関連エントリは完全に趣味でやってたことなので、誰に憚ることもなかったわけですが、これからは仕事と絡む内容も多くなってしまうため、どこまで書いていいのかの線引きに悩んでしまいます。

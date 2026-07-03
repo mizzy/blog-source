@@ -3,7 +3,7 @@ layout: post
 title: "A Picture of Geminids"
 date: 2011-12-20 00:12
 comments: true
-categories: 
+categories:
 ---
 
 This is a picture of a shooting star of Gemnids I took on Dec. 15, 2011.I took over 2,000 pictures and only 3 pictures got a shooting star.

@@ -3,7 +3,7 @@ layout: post
 title: "puppet の通信の仕組みにちょっと立ち入ってみる"
 date: 2007-03-21 00:08
 comments: true
-categories: 
+categories:
 ---
 <p>
 puppet のクライアント/サーバ間通信は https + XMLRPC で、認証は SSLv3 の証明書認証が利用されています。
@@ -40,7 +40,7 @@ ca.pem  kenny.southpark.pem
 kenny.southpark.pem
 
 /etc/puppet/ssl/public_keys:
-kenny.southpark.pem 
+kenny.southpark.pem
 </pre>
 <p>
 あれ、CA 証明書っぽいものが二つある、と思ったら、ca/ca_crt.pem と certs/ca.pem はまったく同じものでした。
@@ -108,7 +108,7 @@ MgdEgBHT5jALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQEFBQADgYEA4AunKDmOCcyR
 hc4TGcGbuiHD2AnC7pOsjXaRGHoxAfxVi4TmaT/1o2LOzK+HIULUDasCYiZPwvSi
 Ik9SpQa9iExliZ6YTMuCzglQ4EtnWR7XJnUvbz3T1JJVeQZeVjkrFbBn2QB5CTeG
 GqEw4M7oKwoWknOjuB8WyGD3fcUkCWY=
------END CERTIFICATE-----    
+-----END CERTIFICATE-----
 </pre>
 <p>
 次にクライアント側ですが、こちらもはじめて puppetd（クライアント側で起動するデーモン）を実行した時に、秘密鍵、公開鍵、CSR を自動的に作成し、サーバに対して CSR への署名を求めることが、起動時のメッセージから読み取れます。

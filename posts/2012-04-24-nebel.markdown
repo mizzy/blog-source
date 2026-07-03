@@ -36,9 +36,9 @@ git clone して、必要な gems を bundle install します。nebel も一緒
     title: エントリのタイトル
     date: 2012-04-24 18:15:59 +0900
     ---
-    
+
     エントリの本文。Markdown 記法が使えます。
-    
+
 
 ## nebel コマンドの実行
 
@@ -76,7 +76,7 @@ thor post:create で、エントリファイルを作成します。
     title: entry-title
     date: 2012-04-24 19:25:34 +0900
     ---
-    
+
 ### nebel コマンドの自動実行
 
 同僚の [@banyan](https://github.com/banyan) が Guardfile をつくってくれたので、ファイルが変更されると自動的に nebel コマンドを実行して、コンテンツを再生成します。
@@ -99,5 +99,3 @@ thor post:create で、エントリファイルを作成します。
 
 
 こんな感じで、かなり便利になった。
-
- 

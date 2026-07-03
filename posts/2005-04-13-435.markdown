@@ -3,7 +3,7 @@ layout: post
 title: "ajaxなウェブメールを作る #1"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 ilohamil, IMP, SquirrelMail, ActiveMailと気分次第で使うものを変えているのですが、決定的にこれがいい、というものがないわけですよ。（だからこそ気分次第、なのですが。）

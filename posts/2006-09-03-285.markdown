@@ -3,7 +3,7 @@ layout: post
 title: "View Tickets のデフォルトを変える (trac tips #1)"
 date: 2006-09-03 03:49
 comments: true
-categories: 
+categories:
 ---
 <p>
 うちでは <a class="ext-link" href="http://trac.mizzy.org/public/"><span class="icon"></span>公開用 trac</a> の他に、プライベートな trac もあって、Wiki をメモ代わりにしたり、Tickets で TODO 管理（プログラミングとか関係なく、日常のこととかも）してたりします。

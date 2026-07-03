@@ -3,7 +3,7 @@ layout: post
 title: "SVN::TracWiki #2"
 date: 2007-05-01 00:30
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://trac.mizzy.org/public/browser/SVN-TracWiki"><span class="icon"></span>SVN::TracWiki</a> (<a class="ext-link" href="http://svn.mizzy.org/public/SVN-TracWiki/"><span class="icon"></span>svn repos</a>) をアップデート。以下の機能を実現するパッチを、Assurer の開発にも参加してくれている <a class="ext-link" href="http://search.cpan.org/~franckc/"><span class="icon"></span>franck</a> が送ってくれました。

@@ -3,7 +3,7 @@ layout: post
 title: "puppet file server"
 date: 2007-03-19 19:22
 comments: true
-categories: 
+categories:
 ---
 <p>
 puppet サーバ上のファイルをクライアントに配布するには、file server 機能を利用するらしい。というわけで、ドキュメント <a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/FileServingConfiguration"><span class="icon"></span>File Serving Configuration</a> から要点を抜き出してみる。

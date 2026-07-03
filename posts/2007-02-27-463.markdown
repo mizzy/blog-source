@@ -3,7 +3,7 @@ layout: post
 title: "「PlaggerになくてYahoo!pipesにあるもの」は書き方が悪かったのではなく Plagger を理解してないだけ"
 date: 2007-02-27 13:08
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://pythonbeginner.blog78.fc2.com/blog-entry-214.html"><span class="icon"></span>「PlaggerになくてYahoo!pipesにあるもの」は書き方が悪かった</a> について。

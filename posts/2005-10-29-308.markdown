@@ -3,7 +3,7 @@ layout: post
 title: "ブログエントリの全文/要約表示を読者に委ねる"
 date: 2005-10-29 12:31
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 「<a href="http://mizzy.org/web/sideBarPersonalize.html" target="_blank">ブログのサイドバーをパーソナライズ</a>」につづく、読者によるカスタマイズシリーズ第2弾。

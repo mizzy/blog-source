@@ -3,7 +3,7 @@ layout: post
 title: "PLAYLOG HACKS with Plagger #2"
 date: 2006-03-07 22:57
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Plagger Plugin の <a href="http://plagger.org/trac/browser/trunk/plagger/lib/Plagger/Plugin/CustomFeed/iTunesRecentPlay.pm" target="_blank">CustomFeed::iTunesRecentPlay</a> をアップデート。
@@ -20,4 +20,3 @@ Plagger Plugin の <a href="http://plagger.org/trac/browser/trunk/plagger/lib/Pl
 <p class="entryBody">
 あと、ローカルファイルの場合はファイルハンドルを while で回して処理、URL 指定の場合は一度変数にデータを格納してから処理、という違いがあり、この違いをエレガントに吸収する仕組みがすぐに思いつかなかった、という理由もあったりします。
 </p>
-

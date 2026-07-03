@@ -3,7 +3,7 @@ layout: post
 title: "Catalyst で Atom API テストツール #0"
 date: 2006-02-17 03:46
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <strong>2006/02/16 22:40 追記</strong><br />

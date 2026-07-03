@@ -3,7 +3,7 @@ layout: post
 title: "マルチプロセッサ/マルチスレッド メモリアロケータ Hoard"
 date: 2006-05-18 23:43
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.hoard.org/" target="_blank">Hoard</a> というメモリアロケータを、弊社サーバエンジニアの方から教えてもらいました。

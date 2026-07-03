@@ -3,7 +3,7 @@ layout: post
 title: "blosxomをAccount Auto-Discoveryに対応させるプラグイン #1"
 date: 2005-08-11 16:53
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 blosxom用<a href="http://mizzy.org/archives/account_auto_discovery" target="blank">account_auto_discoveryプラグイン</a>を修正しました。account_nameとaccount_service_homepageを、以下の様な感じで複数設定できるようにしています。

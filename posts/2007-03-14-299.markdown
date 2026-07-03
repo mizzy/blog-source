@@ -3,7 +3,7 @@ layout: post
 title: "Plagger について本に書きました"
 date: 2007-03-14 22:51
 comments: true
-categories: 
+categories:
 ---
 <p>
 タイトルは <a class="ext-link" href="http://www.9-ten.co.jp/bookdata/1654.php"><span class="icon"></span>MASHUP++</a> です。その名の通り、マッシュアップを主題とした本なのですが、主に自分でマッシュアップな開発をしてみたい、という方向けの本で、自分は「マッシュアップとプラガブルなフレームワーク」をテーマに、Plagger プラグインの開発方法について書きました。

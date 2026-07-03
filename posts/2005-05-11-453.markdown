@@ -3,7 +3,7 @@ layout: post
 title: "Sack of Ajax"
 date: 2005-05-11 13:04
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.twilightuniverse.com/2005/05/sack-of-ajax/" target="_blank">Sack of Ajax</a>というJavascriptライブラリがあるんですね。Simple AJAX Code Kitの略だそうです。
@@ -15,11 +15,11 @@ categories:
 
 <pre class="code">
 new Ajax.Updater(
-    'id', 
+    'id',
     '/url',
-    { 
+    {
       parameters: value,
-      onLoading: function(request){loading()} 
+      onLoading: function(request){loading()}
     });
 </pre>
 

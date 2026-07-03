@@ -3,7 +3,7 @@ layout: post
 title: "Shibuya.pm テクニカルトーク #7"
 date: 2006-10-21 01:59
 comments: true
-categories: 
+categories:
 ---
 <p>
 しゃべってきました。資料は後日 <a class="ext-link" href="http://shibuya.pm.org/blosxom/techtalks/200610.html"><span class="icon"></span>Shibuya.pm のサイト</a>にアップされると思いますが、とりあえず<a class="ext-link" href="http://mizzy.org/archives/using_svk_with_plagger.pdf"><span class="icon"></span>ここにも置いておきます</a>。

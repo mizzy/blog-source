@@ -3,7 +3,7 @@ layout: post
 title: "このサイトについて"
 date: 2005-04-25 23:28
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 特にコンセプトとか目的とかはないです。なんとく「俺」が滲み出てる、そんなサイトであればいいな、と。

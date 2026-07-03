@@ -3,7 +3,7 @@ layout: post
 title: "タグの関連性の可視化 #0"
 date: 2005-05-29 15:26
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.fladdict.net/blog-jp/" target="_blank">fladdict.net blog</a>の中の人が書かれている、<a href="http://www.fladdict.net/blog-jp/archives/2005/05/post_79.php" target="_blank">「ソーシャルブックマーク考　タギングの可視化について」</a>というエントリを見て、自分も最近別方向からのタグの可視化について考えていたので、それについて書いてみる。

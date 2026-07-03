@@ -3,7 +3,7 @@ layout: post
 title: "blosxom + Rast #2"
 date: 2005-05-03 19:24
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 blosxomのエントリを<a href="http://www.netlab.jp/rast/" target="_blank">Rast</a>で検索するためのプラグイン、<a href="/archives/rast" target="_blank">rastプラグイン</a>を修正しました。修正点は以下の通りです。

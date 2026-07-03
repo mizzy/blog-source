@@ -3,7 +3,7 @@ layout: post
 title: "Webiblo - web to ebook project"
 date: 2012-01-10 19:02
 comments: true
-categories: 
+categories:
 ---
 
 久々に日本語で書きます。（後で英語でも書く。）

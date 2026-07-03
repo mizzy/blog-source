@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Event"
 date: 2006-08-26 01:32
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/?topic=/program/amazon2ical"><span class="icon"></span>Amazon2iCal</a> で、本やCDなんかの発売日に Google Calendar でメール通知してもらおうと思って設定したのだけど、Google Calendar が通知してくれない。
@@ -40,7 +40,7 @@ Index: plagger/trunk/lib/Plagger/Entry.pm
  }
 @@ -102,4 +103,24 @@
  }
- 
+
 +sub add_event {
 +    my($self, $event) = @_;
 +    push @{ $self->{events} }, $event;
@@ -72,7 +72,7 @@ Index: plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm
 --- plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm (revision 233)
 +++ plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm (revision 241)
 @@ -35,17 +35,19 @@
- 
+
      for my $entry ($feed->entries) {
 -        my $address = ( Email::Address->parse($entry->author) )[0];
 -        my $mail = eval { $address->address } || 'nobody@example.com';
@@ -84,7 +84,7 @@ Index: plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm
 +        my $name = $address ? $address->name : $organizer;
 +        my $dtstart = $ev ? $ev->dtstart : $entry->date;
 +        my $dtend   = $ev ? $ev->dtend   : $entry->date;
- 
+
 -        my $date = $entry->date;
          my $event = Data::ICal::Entry::Event->new;
          $event->add_properties(
@@ -108,11 +108,11 @@ Index: plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm
  use Net::Amazon::Request::Keyword;
  use Encode;
 +use Plagger::Event;
- 
+
  sub register {
 @@ -59,4 +60,11 @@
              $entry->date($date);
- 
+
 +            my $event = Plagger::Event->new;
 +            $event->dtstart($date);
 +            $event->dtend( $date->clone->add( hours => 1 ) );
@@ -123,11 +123,11 @@ Index: plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm
              $feed->add_entry($entry);
          }
 @@ -91,5 +99,5 @@
- 
+
  *Net::Amazon::Property::Music::author = *Net::Amazon::Property::Music::artist;
 -*Net::Amazon::Property::DVD::author = sub { return ( $_[0]->starring() )[0] };
 +*Net::Amazon::Property::DVD::author   = sub { return ( $_[0]->starring() )[0] };
- 
+
  1;
 </pre>
 <p>

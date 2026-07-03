@@ -3,7 +3,7 @@ layout: post
 title: "Plagger と iTunes"
 date: 2006-04-02 17:08
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://plagger.org/trac/browser/trunk/plagger/lib/Plagger/Plugin/CustomFeed/iTunesRecentPlay.pm" target="_blank">Plagger::Plugin::CustomFeed::iTunesRecentPlay</a> をアップデートして本家に commit しました。修正点は以下の通り。

@@ -90,4 +90,3 @@ Twitter は優秀な職探しツール。
 * [フリーランスになって3年が経った - Gosuke Miyashita](http://mizzy.org/blog/2017/04/01/1/)
 * [フリーランスになって2年が経った - Gosuke Miyashita](http://mizzy.org/blog/2016/04/01/1/)
 * [フリーランスになって1年が経った - Gosuke Miyashita](http://mizzy.org/blog/2015/04/01/1/)
-

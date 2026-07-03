@@ -3,7 +3,7 @@ layout: post
 title: "test_helper.rb の Rails 本と Rails 1.0 の違い（Rails 勉強中 #3）"
 date: 2005-12-25 00:28
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.amazon.co.jp/exec/obidos/ASIN/097669400X/httshemizorg-22/ref=nosim" target="_blank">Agile Web Development With Rails</a> の内容と、最新バージョンである Rails 1.0 の食い違いにより、何度かはまっているわけなのですが、同じようにはまる人がいるかもしれないので、気づいた点はここにメモしていくことにします。

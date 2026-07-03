@@ -3,7 +3,7 @@ layout: post
 title: "blosxom + Template Toolkit #1"
 date: 2005-05-03 13:51
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="/archives/tt" target="_blank">ttプラグイン</a>を修正。

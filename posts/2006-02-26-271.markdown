@@ -3,7 +3,7 @@ layout: post
 title: "Six Apart ユーザーギャザリング vol.2 に行きます"
 date: 2006-02-26 18:31
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 どうしようか悩んでいたのですが、Ben Trott が来ると聞いて、<a href="http://www.sixapart.jp/movabletype/news/2006/02/15-1140.html" target="_blank">Six Apart ユーザーギャザリング vol.2</a> に行くことにしました。

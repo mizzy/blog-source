@@ -3,7 +3,7 @@ layout: post
 title: "Javascriptの皮を被ったXML #0"
 date: 2005-07-02 14:50
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://johnvey.com/features/deliciousdirector/" target="_blank">del.icio.us direc.tor</a>を見て、「APIが提供するXMLに、JavascriptでUIを被せるのはアリだな。」と思った方は多いのではないでしょうか。この辺りについては、ma.laさんが<a href="http://la.ma.la/blog/diary_200506291043.htm" target="_blank">「XMLはメタデータというより...」</a>というエントリでご指摘されている通りで、俺なんかから言うことは何もなかったりするのですが、この「del.icio.us direc.torメソッド」が普及、発展するためには、以下の2点がクリアになる必要があるのではないかな、と、名古屋出張帰りの新幹線の中で考えていました。

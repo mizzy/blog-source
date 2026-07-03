@@ -3,7 +3,7 @@ layout: post
 title: "Trac で Browse Source 時にハングする現象の解決法(trac tips #0)"
 date: 2006-03-02 11:00
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 trac で Browse Source しようとするとハングしてしまう現象が発生していました。strace で tracd の状態を見てみると、

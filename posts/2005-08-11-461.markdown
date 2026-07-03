@@ -3,7 +3,7 @@ layout: post
 title: "blosxomをAccount Auto-Discoveryに対応させるプラグイン #0"
 date: 2005-08-11 16:37
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 せっかくなので、このブログもAccount Auto-Discoveryに準拠した、はてなブックマークのポイント送信機能に対応させてみようと考え、「フレーバいじればいいんだろ。楽勝。」とか思っていたら、headフレーバでpermalinkを表示させる方法がわからない…

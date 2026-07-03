@@ -3,7 +3,7 @@ layout: post
 title: "Net::LDAPx::Simple と Catalyst::Model::LDAPx::Simple"
 date: 2007-01-12 23:31
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/net-ldap-abstract00.html"><span class="icon"></span>Net::LDAP::Alterntive あらため Net::LDAP::Abstract</a> ですが、この名前だと Net::LDAP の中のモジュールと区別がつかないし、パッと見何をやるモジュールなのか分からないので、<a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/Net-LDAPx-Simple"><span class="icon"></span>Net::LDAPx::Simple</a> (<a class="ext-link" href="http://svn.mizzy.org/public/library/perl/trunk/Net-LDAPx-Simple/"><span class="icon"></span>SVN</a>) とまた名称を変更しました。DBIx::Simple からの連想です。

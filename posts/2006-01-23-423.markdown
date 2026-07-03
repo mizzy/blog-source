@@ -3,7 +3,7 @@ layout: post
 title: "三十歳にしてプログラマに転向"
 date: 2006-01-23 17:17
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 一応会社でも部長から部のメンバーへ発表はあったので、ここでも書いちゃいます。転職します。2月から <a href="http://paperboy.co.jp/" target="_blank">paperboy&amp;co.</a> の中の人になります。しかもタイトル通り、三十歳にして初めて本職プログラマになります。

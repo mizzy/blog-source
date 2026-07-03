@@ -3,7 +3,7 @@ layout: post
 title: "ajaxでdel.icio.usを使いやすく #2"
 date: 2005-05-25 22:28
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 del.icio.usを使いやすくしようという目論見で開発中のツールですが、セッションまわりで意図した動作になっていなかったので微修正。<a href="/md/" target="_blank">サンプル</a>と<a href="/archives/MyDelicious.tar.gz">ソース</a>。

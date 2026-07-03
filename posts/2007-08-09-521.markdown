@@ -3,7 +3,7 @@ layout: post
 title: "Trac の SearchHyperEstraierPlugin を Trac 0.10.x で動かすパッチ"
 date: 2007-08-09 03:03
 comments: true
-categories: 
+categories:
 ---
 
 "SearchHyperEstraierPlugin":http://weekbuild.sakura.ne.jp/trac/wiki/TracDoc/SearchHyperEstraierPlugin が、Trac 0.10.x というか、うちの環境で動かないので、パッチ書いた。初 Python プログラミング。（というほどのものじゃないけど。）
@@ -26,8 +26,8 @@ categories:
  import time
 @@ -44,9 +45,9 @@
          browse_trac = self.env.config.get('searchhyperestraier', 'browse_trac','enabled')
- 
- 
+
+
 -        cmdline = "%s %s %s %s" % (estcmd_path,estcmd_arg,index_path,unicode(query,'utf-8').encode(estcmd_encode))
 +        cmdline = "%s %s %s %s" % (estcmd_path,estcmd_arg,index_path,' '.join(query))
          self.log.debug('SearchHyperEstraier:%s' % cmdline)

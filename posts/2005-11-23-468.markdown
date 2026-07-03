@@ -3,7 +3,7 @@ layout: post
 title: "コトノハ を remixin'"
 date: 2005-11-23 18:31
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 最近、<a href="http://kotonoha.cc" target="_blank">コトノハ</a> にはまってます。シンプルさとゆるさが心地いいっす。こいうのは知り合いのを見るのが楽しいので、知人にも声をかけてるところだったりします。<a href="http://kotonoha.cc/user/mizzy" target="_blank">俺のコトリスト</a>。

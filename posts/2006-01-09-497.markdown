@@ -3,7 +3,7 @@ layout: post
 title: "こだわりのブランド"
 date: 2006-01-09 01:30
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 ブランドとかにはあまりこだわりがなく、特に高級ブランドなんてお金がなくて縁がないわけですが、それでも好きなブランドはいくつかあるので、自分の為人を知ってもらうためにちょっと書いてみる。

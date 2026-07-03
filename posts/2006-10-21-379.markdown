@@ -3,7 +3,7 @@ layout: post
 title: "HTML::Widget::Kwalify #1"
 date: 2006-10-21 17:58
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/HTML-Widget-Kwalify"><span class="icon"></span>HTML::Widget::Kwalify</a> を修正しました。<a class="ext-link" href="http://mizzy.org/widget/index.cgi"><span class="icon"></span>動作サンプルはこちら</a>。

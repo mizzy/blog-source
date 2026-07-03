@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Aggregator::Simple の Media RSS サポート"
 date: 2006-05-23 22:31
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Google Video は Media RSS を吐くので、<a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/Aggregator/Simple.pm" target="_blank">Aggregator::Simple を Media RSS に対応させてみた</a>。<a href="http://trac.mizzy.org/public/changeset/124" target="_blank">diff はこちら</a>。

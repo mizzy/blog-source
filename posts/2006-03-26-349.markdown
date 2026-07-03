@@ -3,7 +3,7 @@ layout: post
 title: "開発合宿と Plagger と Google Video"
 date: 2006-03-26 06:32
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 現在、<a href="http://solvalou.net/" target="_blank">オオヒダさん</a>、<a href="http://yasuhisa.com/could/" target="_blank">ヤスヒサさん</a>、<a href="http://purpr.in/" target="_blank">purprin さん</a>、<a href="http://vgzh.dtdns.net/mt/index.html" target="_blank">モイモラさん</a>、ボンヌさん、タロさんと伊東の温泉旅館で開発合宿中です。

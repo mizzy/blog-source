@@ -101,4 +101,3 @@ Source: git://github.com/torvalds/linux.git, ref: dfdeb
 ```
 
 Build script will clone source files from this git url, build tar ball from these and build package.This idea is inspired by [Bundler](http://gembundler.com/).
-

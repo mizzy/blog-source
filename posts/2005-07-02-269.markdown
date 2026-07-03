@@ -3,7 +3,7 @@ layout: post
 title: "Javascriptの皮を被ったXML #1"
 date: 2005-07-02 15:17
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/javaScriptOverXml.html" target="_blank">前回のエントリ</a>について、<a href="http://amazie.jp/" target="_blank">nektixe</a>さんから、「Greasemonkey限定であれば、GM_xmlhttpRequest という関数を使うことで、外部ドメインのデータも受信可能みたいです」というコメントを頂きました。ありがとうございます。確かに、<a href="http://diveintogreasemonkey.org/api/gm_xmlhttprequest.html" target="_blank">「GM_xmlhttpRequest is not restricted to the current domain」</a>って書いてありますね。これは強力。
@@ -57,24 +57,24 @@ function init() {
 
 	document.body.innerHTML = "";
 	document.body.innerHTML = d;
-	
+
 	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
 	  if(a.getAttribute("rel").indexOf("style") != -1) {
 	    a.disabled = true;
 	  }
 	}
-	
+
 	var ns = document.createElement("link");
 	ns.rel = "stylesheet";
 	ns.type = "text/css";
 	ns.href = "http://johnvey.com/features/deliciousdirector/d.css";
 	document.body.appendChild(ns);
-	
+
 	var js = document.createElement("script");
 	js.language = "javascript";
 	js.src = "http://johnvey.com/features/deliciousdirector/d.js";
 	document.body.appendChild(js);
-	
+
 	document.title += " (Direc.tor)";
 }
 

@@ -3,7 +3,7 @@ layout: post
 title: "feedbringerをremixin' #0"
 date: 2005-11-23 18:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 俺はbloglinesを常用しているのですが、動作が重かったり、bloglinesおじさんがしばしば登場したりしても、他に魅力的なウェブベースのフィードアグリゲータがなかったので、特に乗り換えは考えていませんでした。

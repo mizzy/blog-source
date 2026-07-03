@@ -3,7 +3,7 @@ layout: post
 title: "JKL.ParseXMLを試してみた"
 date: 2005-05-29 18:44
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://prototype.conio.net/" target="_blank">prototype</a>, <a href="http://www.twilightuniverse.com/2005/05/sack-of-ajax/" target="_blank">Sack of Ajax</a>と、ajax関連のjavascriptライブラリをここでは取り上げて来ましたが、大本命と言えるものが登場してきました。<a href="http://zerobase.jp/blog/entry-215.html" target="_blank">ajax ml</a>で話題の、川崎さん作<a href="http://www.kawa.net/works/js/jkl/parsexml.html" target="_blank">JKL.ParseXML</a>です。

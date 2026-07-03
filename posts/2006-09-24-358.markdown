@@ -3,7 +3,7 @@ layout: post
 title: "Plagger プラグインの実行フェーズ"
 date: 2006-09-24 03:58
 comments: true
-categories: 
+categories:
 ---
 <p>
 Plagger プラグインの実行フェーズについて整理してみたので、載せておきます。

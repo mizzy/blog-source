@@ -3,7 +3,7 @@ layout: post
 title: "Catalyst で Atom API テストツール #2"
 date: 2006-02-18 11:24
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 パッチを送って頂いたので、Atom API テストツール 「A2T2」 をアップデート。Thanks, Brian!

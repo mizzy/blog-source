@@ -3,7 +3,7 @@ layout: post
 title: "coLinux をサービスとして動かすのにはまった"
 date: 2006-02-06 23:56
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 coLinux をサービスとして登録する場合、

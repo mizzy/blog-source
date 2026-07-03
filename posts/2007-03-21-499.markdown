@@ -3,7 +3,7 @@ layout: post
 title: "puppet の実行ファイル"
 date: 2007-03-21 00:34
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/PuppetExecutables"><span class="icon"></span>Puppet Executables</a> より。またもや超意訳、というかメモ。

@@ -3,7 +3,7 @@ layout: post
 title: "空前の use Perl; ブーム"
 date: 2006-11-03 02:04
 comments: true
-categories: 
+categories:
 ---
 <p>
 今 Perler の間では、<a class="ext-link" href="http://use.perl.org/"><span class="icon"></span>use Perl;</a> に英語で Perl ネタを書くのがアツイ、というわけで、自分もそのブームに<a class="ext-link" href="http://use.perl.org/~mizzy/journal/"><span class="icon"></span>便乗することにしました</a>。まだ何も書いてませんが。

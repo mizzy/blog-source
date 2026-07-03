@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #5"
 date: 2005-04-19 23:19
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 taggingプラグインをアップデート。約束通り、ajax（もどき）でタグを絞り込めるように改造。xmlHttpRequestに対応しているブラウザであれば、find tagフォームに文字を入れると、前方一致でダイナミックにタグが絞り込まれる様を見ることができます。対応していないブラウザでも、文字を入れてEnterを押せば同様にタグの絞込みができます。download: <a href="/archives/tagging">taggingプラグイン</a>

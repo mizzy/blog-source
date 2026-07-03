@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #11"
 date: 2005-06-21 21:19
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://kerolin.jspeed.jp/" target="blank">カエルチュウイホウ</a>さんの<a href="http://kerolin.jspeed.jp/Computer/blosxom/tagging050619.html" target="blank">taggingプラグイン</a>というエントリにて指摘されている問題を修正しました。こちらではカテゴリが1階層しかないため、全く気づいていませんでした。ご指摘感謝です。<br />

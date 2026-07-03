@@ -3,7 +3,7 @@ layout: post
 title: "PLAYLOG HACKS with Plagger #1"
 date: 2006-03-07 14:57
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Plagger Plugin の CustomFeed::iTunesRecentPlay と Publish::Playlog をアップデート。<a href="http://plagger.org/trac" target="_blank">本家サイト</a> にコミットしてますので、こちらをご参照ください。

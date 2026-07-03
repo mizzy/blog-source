@@ -3,7 +3,7 @@ layout: post
 title: "PPerl と plagger"
 date: 2006-06-25 18:19
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://www.amazon.co.jp/exec/obidos/ASIN/0596526741/httshemizorg-22/ref=nosim"><span class="icon"></span>Perl Hacks</a> に載ってた Hack <a class="ticket" href="/ticket/81">#81</a> の <a class="ext-link" href="http://search.cpan.org/dist/PPerl/"><span class="icon"></span>PPerl</a> を plagger で試してみよう、と思ったら <a class="ext-link" href="http://d.hatena.ne.jp/odz/20060524/1148529647"><span class="icon"></span>既に試していらっしゃる方</a> がおりました。
@@ -88,7 +88,7 @@ $ ps -eo pid,ppid,vsz,args|grep plagger|grep -v grep      [~/plagger]
 と、こんな感じで、ID 6475 のプロセスが大きくなってます。これがこのコンフィグで増えた Plagger Plugin モジュールのメモリ容量みたいですね。
 </p>
 <p>
-といったように、pperl を最初に起動した時のモジュールだけをメモリ上に確保するだけではなく、その後新たに読み込まれたモジュールもちゃんとメモリ上に確保してくれているようです。当たり前っちゃ当たり前の気もしますが、何となく気になったので。 
+といったように、pperl を最初に起動した時のモジュールだけをメモリ上に確保するだけではなく、その後新たに読み込まれたモジュールもちゃんとメモリ上に確保してくれているようです。当たり前っちゃ当たり前の気もしますが、何となく気になったので。
 </p>
 <p>
 他に気になった点として、起動するプロセスの数を増やしたり、制限したりできるのかな、と思ったところ、以下の様なオプションがあるので、この辺りも制御できるようですね。

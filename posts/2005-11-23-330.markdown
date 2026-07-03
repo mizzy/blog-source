@@ -3,7 +3,7 @@ layout: post
 title: "ajaxで「戻る」「進む」（feedbringerをremixin' #7）"
 date: 2005-11-23 18:28
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 feedbringer 使うのやめた、とか言っておきながら、feedbringer remix ネタ。別に feedbringer じゃなくても良かったのですが、 <a href="http://www.onjava.com/pub/a/onjava/2005/10/26/ajax-handling-bookmarks-and-back-button.html" target="_blank">ONJava.com: AJAX: How to Handle Bookmarks and Back Buttons</a> を見てたら実験したくなったのと、そういや feedbringer 使うのやめた理由のひとつは、「戻る」「進む」ボタンが使えないからだったなぁ、ということを思い出したので、上記 URL にあるテクニックを feedbringer に適用してみることにした。

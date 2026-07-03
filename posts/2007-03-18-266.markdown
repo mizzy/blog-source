@@ -3,7 +3,7 @@ layout: post
 title: "puppet の node 設定ではまる"
 date: 2007-03-18 22:10
 comments: true
-categories: 
+categories:
 ---
 <ul><li><a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/InstallationGuide"><span class="icon"></span>http://reductivelabs.com/trac/puppet/wiki/InstallationGuide</a></li>
 <li><a class="ext-link" href="http://reductivelabs.com/trac/puppet/wiki/TestingGuide"><span class="icon"></span>http://reductivelabs.com/trac/puppet/wiki/TestingGuide</a></li>
@@ -25,7 +25,7 @@ node nag.example.com {
 といった設定でターゲットとなるホストと、そのホストでどのようなタスクを実行するかを定義できるのですが、これで puppetmasterd を実行すると、
 </p>
 <pre class="wiki">
-Syntax error at '.' at /etc/puppet/manifests/site.pp:5 
+Syntax error at '.' at /etc/puppet/manifests/site.pp:5
 </pre>
 <p>
 と怒られます。そこで、

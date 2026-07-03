@@ -3,7 +3,7 @@ layout: post
 title: "ソーシャルブックマークのRSSをブラウザのブックマークに取り込む #1"
 date: 2005-04-24 01:44
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="/program/rss2xbel00.html">前回のエントリ</a>で、RSSをXBELに変換するゲートウェイについて触れましたが、Firefoxを使う限りにおいてはLive Bookmarks機能を使えばそれで済むので、せっかっく作ったゲートウェイがあまり意味がないことに気づきました。
@@ -28,4 +28,3 @@ categories:
 <p class="entryBody">
 これはLive Bookmarksではできないことなので、ちょっと満足しました。まあ、色々と足りないところはあるのですが、自分は<a href="http://www.spurl.net" target="_blank">Spurl</a>サイドバーで満足してるので、これを使うことはないですね。なので、要望があれば改良していきますが、なければこのままほっときます。
 </p>
-

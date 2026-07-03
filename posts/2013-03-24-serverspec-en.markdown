@@ -71,4 +71,3 @@ $ rake spec
 Finished in 0.99715 seconds
 6 examples, 0 failures
 ```
-

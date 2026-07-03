@@ -3,7 +3,7 @@ layout: post
 title: "Catalystでajax (HTML::Prototypeモジュールの使い方)"
 date: 2005-09-10 17:52
 comments: true
-categories: 
+categories:
 ---
 <h3>changelog</h3>
 <p class="entryBody">
@@ -232,7 +232,7 @@ print $prototype->link_to_function( '<strong>&lt;img src="really.png"/&gt;</stro
 </p>
 
 <pre class="code">
-$prototype->link_to_remote( 
+$prototype->link_to_remote(
 	<strong>'anchor'</strong>, {
 	        <strong>with</strong> => 'name=value',
 		url    => 'url',
@@ -256,8 +256,8 @@ $prototype->link_to_remote(
 </p>
 
 <pre class="code">
-print $prototype->link_to_remote( 
-				  'anchor', 
+print $prototype->link_to_remote(
+				  'anchor',
 				  {
 				      update => 'id',
 				      url    => 'url',
@@ -288,8 +288,8 @@ print $prototype->link_to_remote(
 </p>
 
 <pre class="code">
-print $prototype->observe_field( 
-				  'field_id', 
+print $prototype->observe_field(
+				  'field_id',
 				  {
 				      update => 'id',
 				      url    => 'url',
@@ -325,8 +325,8 @@ $prototype->observe_fieldと基本的に同じですが、$idで指定された�
 </p>
 
 <pre class="code">
-print $prototype->observe_form( 
-			'form_id', 
+print $prototype->observe_form(
+			'form_id',
 			{
 				update => 'id',
 				url    => 'url',

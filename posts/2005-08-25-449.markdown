@@ -3,7 +3,7 @@ layout: post
 title: "北方謙三 楊家将〈上〉〈下〉"
 date: 2005-08-25 02:06
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 たまには毛色の違うエントリを書いてみる。北方謙三著の歴史小説。中国の宋の時代の軍閥、楊一族の物語。

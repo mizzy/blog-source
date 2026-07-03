@@ -3,7 +3,7 @@ layout: post
 title: "PLAYLOG HACKS"
 date: 2006-03-04 20:23
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://playlog.jp/" target="_blank">PLAYLOG</a> で遊んでいます。が、似たようなサービスである <a href="http://www.last.fm/" target="_blank">last.fm</a> のクライアントソフトは、iPod で聴いた曲の情報もちゃんとアップしてくれてるのに、PLAYLOG のクライアントソフトは、リアルタイムに聴いてる曲しかアップしてくれないようです。

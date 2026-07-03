@@ -3,7 +3,7 @@ layout: post
 title: "Net::LDAP::Abstract #0"
 date: 2007-01-03 03:55
 comments: true
-categories: 
+categories:
 ---
 <p>
 Net::LDAP のラッパモジュール <a class="ext-link" href="http://mizzy.org/program/net-ldap-alternative.html"><span class="icon"></span>Net::LDAP::Alternative</a> を <a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/Net-LDAP-Abstract"><span class="icon"></span>Net::LDAP::Abstract</a> に変えて、少し修正しました。svn で取得するには以下のように実行して下さい。

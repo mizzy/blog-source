@@ -3,7 +3,7 @@ layout: post
 title: "puppet-mode.el のパッチ"
 date: 2007-08-30 00:30
 comments: true
-categories: 
+categories:
 ---
 Puppet で同じタイプのリソースを大量に記述する時には、
 
@@ -67,7 +67,7 @@ package { ssh:
 +               (if (bobp)
                     (setq not-indented nil)))))))
        (if cur-indent
-          (indent-line-to cur-indent) 
+          (indent-line-to cur-indent)
 </code></pre>
 
 他にもインデントまわりの動作で微妙なところはあるけど、ちょっとはましになった。インデントまわりの処理で参考になる emacs-lisp って何かないかな？

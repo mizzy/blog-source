@@ -113,4 +113,3 @@ The sample lxc conf is like this.
 	lxc.network.ipv4 = 1.2.3.4/24
 	lxc.network.ipv6 = 2003:db8:1:0:214:1234:fe0b:3596
 	
-

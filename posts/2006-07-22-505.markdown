@@ -3,7 +3,7 @@ layout: post
 title: "Fedora Core 4 への Courier-IMAP の導入"
 date: 2006-07-22 19:45
 comments: true
-categories: 
+categories:
 ---
 <p>
 訳あって Fedora Core 4 上でメールサーバを構築する必要があったので、<a class="ext-link" href="http://www.courier-mta.org/imap/"><span class="icon"></span>Courier-IMAP</a> を導入しました。mizzy.org のサーバでも使っていて慣れているし、今のところトラブルもないので安心して利用できるので。

@@ -3,7 +3,7 @@ layout: post
 title: "Plagger と YouTube #0"
 date: 2006-04-30 00:25
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 宣言どおり、<a href="http://trac.mizzy.org/public/browser/plagger/trunk/lib/Plagger/Plugin/CustomFeed/YouTube.pm" target="_blank">Plagger::Plugin::CustomFeed::YouTube</a> を作成しました。野良プラグインとして転がしときます。Publish::Gmail との組み合わせで以下の様になります。

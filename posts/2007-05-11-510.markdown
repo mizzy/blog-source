@@ -3,7 +3,7 @@ layout: post
 title: "Linux の iostat は何を見てるのか"
 date: 2007-05-11 01:54
 comments: true
-categories: 
+categories:
 ---
 Linux の iostat が出している数値が、正確には何なのか、ということを知る必要があり、調べてみたのでメモ。
 
@@ -41,5 +41,4 @@ r/s, w/s が実際にデバイスにリクエストされた I/O 数で、rrqm/s
 		   &sdev.wr_sectors, &sdev.wr_ticks,
 		   &sdev.ios_pgr, &sdev.tot_ticks, &sdev.rq_ticks) == 11);
 
-/proc/diskstat 内の sda 右横にあるカラム数とも一致してるので、ここと考えて良さそう。そうなると、r/s, rrqm/s が 1, 2番目のカラム、w/s と wrqm/s が 5,6 番目のカラム、ってことになる。 
-
+/proc/diskstat 内の sda 右横にあるカラム数とも一致してるので、ここと考えて良さそう。そうなると、r/s, rrqm/s が 1, 2番目のカラム、w/s と wrqm/s が 5,6 番目のカラム、ってことになる。

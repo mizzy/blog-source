@@ -3,7 +3,7 @@ layout: post
 title: "JugemKey リリース"
 date: 2006-04-21 17:32
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://jugemkey.jp" target="_blank">JugemKey</a> がリリースされました。現在はペパボの一部サービスのみ対応ですが、今後認証 API を実装してサードパーティアプリから利用できるようにすることを目論んでます。たぶん Flickr ライクな API になると思います。

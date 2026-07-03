@@ -3,7 +3,7 @@ layout: post
 title: "Six Apart ユーザーギャザリングに行ってきました"
 date: 2006-03-01 02:42
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Ben と会話することができました！ちょうど今日は Catalyst::Plugin::AtomServer を使ったプログラムを書いていたので、会話のネタもばっちりでした。以下、会話の概要。（<span style="color: crimson;">B:</span> Ben, <span style="color: blue;">M:</span> 自分）

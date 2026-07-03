@@ -37,6 +37,6 @@ date: 2012-08-07 00:05:03 +0900
  * [Perl Is unDead](http://conferences.yapcasia.org/ya2008/user/780) by Michael Schwern 氏
  * [Why I Stick With Perl](http://conferences.yapcasia.org/ya2009/user/1681) by Jonathan Rockway 氏
  * [The Tale of Plack](http://yapcasia.org/2010/talks/63D5EA98-BC8C-11DF-8791-B9FC0F276C45) by miyagawa さん
- * [Managing A Band Of Hackers](http://yapcasia.org/2011/talk/66) by hidek さん 
+ * [Managing A Band Of Hackers](http://yapcasia.org/2011/talk/66) by hidek さん
 
 とまあすごい顔ぶれで、なんで自分なんかが選ばれたんだろう、という感じなんですが、気負わず自分らしい話ができればいいな、と思っています。

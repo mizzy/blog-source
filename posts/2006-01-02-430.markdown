@@ -3,7 +3,7 @@ layout: post
 title: "Rails とウェブサービス（Rails 勉強中 #7）"
 date: 2006-01-02 07:55
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Rails とウェブサービスについては、<a href="http://d.hatena.ne.jp/secondlife/20051113/1131889978" target="_blank">川o・-・）＜2nd life - ActionWebServiceでxmlrpcサービスを作る</a>  で詳しく解説されておりますので、俺の出る幕なんかないわけですが、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/097669400X/httshemizorg-22/ref=nosim" target="_blank">Rails 本</a> の通りにしてもうまく動かなかったところがあるのでその回避方法のメモと、gorou さんのところに書かれていないもので、面白いものがあったのでここでとりあげてみます。

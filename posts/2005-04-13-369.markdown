@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #1"
 date: 2005-04-13 22:32
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 blosxomでtaggingに対応するプラグインを書いてみました。使い方とか全然書いてないし、まだ作りかけなのですが、置いておきます。<a href="/archives/tagging">taggingプラグイン</a>

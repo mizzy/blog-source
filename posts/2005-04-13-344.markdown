@@ -3,7 +3,7 @@ layout: post
 title: "Mac SafariでのxmlHttpRequest文字化け"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 このブログをカスタマイズしている過程で、Safari + xmlHttpRequestで取得したデータが文字化けする、という現象に悩んでいたのですが、&lt;?xml version="1.0" encoding="euc-jp"?&gt; という一文を入れてあげると、文字化けが解消されました。

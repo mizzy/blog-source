@@ -3,7 +3,7 @@ layout: post
 title: "Assurer - サーバテスティングフレームワーク #0"
 date: 2007-01-06 00:44
 comments: true
-categories: 
+categories:
 ---
 <p>
 構築したサーバがちゃんと動作するかどうかのテストを自動化したいなー、とスクリプトを書こうと思ったのですが、Perler としてはここはやはり、<a class="ext-link" href="http://plagger.org/trac"><span class="icon"></span>Plagger</a> とか <a class="ext-link" href="http://d.hatena.ne.jp/tokuhirom/20060929/1159495175"><span class="icon"></span>Archer</a> みたく、プラガブルで YAML で設定書けば OK みたいのを作るべきだろう、ってことで、<a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/Assurer"><span class="icon"></span>Assurer</a> (<a class="ext-link" href="http://svn.mizzy.org/public/library/perl/trunk/Assurer/"><span class="icon"></span>SVN</a>) というサーバテスティングフレームワークをでっちあげてみました。

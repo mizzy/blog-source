@@ -3,7 +3,7 @@ layout: post
 title: "PLAYLOG HACKS with Plagger #0"
 date: 2006-03-07 00:41
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/playlog_hacks.html" target="_blank">iTunes や iPod で聴いた曲情報を非同期で PLAYLOG へアップするスクリプト</a> を Plagger Plugin として書き直してみました。よくわかってないので、他の方がつくったプラグインの見様見真似で。

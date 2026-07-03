@@ -93,4 +93,3 @@ dbus crate を使って以下のようなコードを書けば良い。
 dbus crate は [サンプルコード](https://github.com/diwic/dbus-rs/tree/master/dbus/examples) もあるし、[ドキュメント](https://github.com/diwic/dbus-rs/blob/master/dbus/examples/argument_guide.md) もあるので、ドキュメントがほとんどない dbus-bytestream crate と比べると、比較的扱いやすいように思える（といっても、ドキュメント読めばすべてわかる、というわけではなく、コードも読んで色々試行錯誤したけど）。
 
 dbus-bytestream も同時に試したけど、取得した ActiveState の情報をデコードする方法がよくわからないまま、dbus crate の方が動いたので、途中で断念した。なので、GitHub 上にある dbus-bytestream を使ったコードはエラーで動かない。
-

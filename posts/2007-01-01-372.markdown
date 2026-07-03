@@ -3,7 +3,7 @@ layout: post
 title: "Net::LDAP::Alternative"
 date: 2007-01-01 04:10
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://search.cpan.org/~gbarr/perl-ldap/lib/Net/LDAP.pod"><span class="icon"></span>perl-ldap (Net::LDAP)</a> のインターフェースがわかりにくくて、たまにこいつでプログラムを書こうとすると、いつもど忘れして perldoc と睨めっこするはめになるので、違うインターフェースで LDAP アクセスできるラッパモジュールを書いてます。とりあえずプロトタイプ版の <a class="ext-link" href="http://trac.mizzy.org/public/browser/library/perl/trunk/Net-LDAP-Alternative"><span class="icon"></span>Net::LDAP::Alternative</a> を置いておきます。まだ未完成で pod すらちゃんと書いてないですが。

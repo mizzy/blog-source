@@ -3,7 +3,7 @@ layout: post
 title: "Trac の Wiki を emacs で直接編集"
 date: 2007-03-21 02:19
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://www.meadowy.org/~gotoh/projects/trac-wiki/"><span class="icon"></span>emacs trac-wiki mode</a> なんてものがあったんですね。これは便利。

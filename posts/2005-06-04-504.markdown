@@ -3,7 +3,7 @@ layout: post
 title: "same_topicプラグイン #1"
 date: 2005-06-04 22:18
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://ext3.jp.land.to/blosxom/customize10.html" target="_blank">Extension3 - blosxomのカスタマイズ#10</a>にて、same_topicプラグインのバグフィックス情報を頂きましたので、こちらのものに反映してみました。download: <a href="/archives/same_topic" target="_blank">same_topicプラグイン</a>

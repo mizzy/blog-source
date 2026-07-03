@@ -3,7 +3,7 @@ layout: post
 title: "catlxom 本家に mizzy ブランチができたよ (catlxom メモ #8)"
 date: 2006-06-15 22:12
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://catlxom.org/repos/" target="_blank">catlxom 本家の svn リポジトリ</a> に、<a href="http://catlxom.org/repos/branches/mizzy/catlxom/" target="_blank">mizzy ブランチ</a> ができました。<a href="http://catlxom.org/trac/browser/branches/mizzy/catlxom" target="_blank">trac から見る場合はこちら。</a> <a href="http://catlxom.org/trac" target="_blank">trac トップページ</a> の Authors にも名前いれてもらっちゃいました。typester さん、ありがとうございます！

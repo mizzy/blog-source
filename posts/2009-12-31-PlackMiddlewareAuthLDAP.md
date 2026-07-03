@@ -33,5 +33,3 @@ http://github.com/mizzy/p5-plack-middleware-auth-ldap
 [Plack::Middleware::Auth::Basic](http://search.cpan.org/~miyagawa/Plack/lib/Plack/Middleware/Auth/Basic.pm) を継承し、authorizer を追加する形で実装しています。
 
 ネームスペースは Plack::Middleware::Auth::Basic::LDAP の方がいいのかな、とか、ダイジェスト認証対応しようと思ったら、別モジュールにした方がいいのか、合わせてひとつのモジュールにした方がいいのか、その場合のネームスペースはどうすればいいのか、など、色々固まってない点があるので、まだ CPAN にはアップしない予定です。が、とりあえず自分で使う分には問題なく動いてるっぽいです。
-
-

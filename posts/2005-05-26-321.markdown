@@ -3,7 +3,7 @@ layout: post
 title: "JavaScript DB"
 date: 2005-05-26 12:11
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://jsdb.sourceforge.net/usarho.html" target="_blank">JavaScript DB</a>なるものを発見。名前の通り、Javascriptでできていて、クライアントサイドで動くDBエンジンですよ。これはおもしろそう。

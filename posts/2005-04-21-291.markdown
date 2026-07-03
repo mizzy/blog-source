@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #6"
 date: 2005-04-21 08:17
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="/archives/tagging">taggingプラグイン</a>、以下のバグ修正と仕様変更を行う。

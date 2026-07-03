@@ -3,7 +3,7 @@ layout: post
 title: "Carson Workshops Summit - The Future of Web Apps"
 date: 2006-01-07 04:47
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.carsonworkshops.com/summit/" target="_blank">こんなカンファレンス</a>が！行きて〜。2月8日ロンドンかー。会社のお金で行かせてくれないかなぁ…

@@ -3,7 +3,7 @@ layout: post
 title: "ウェブサイトのスタイルというものについて考えてみる　#0"
 date: 2005-04-21 11:15
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="/index.xhtml" target="_blank">旧サイト</a>から今のブログ形式に移行した理由のひとつは、ウェブサイトはどうあるべきか、という問いに対して、サイトスタイルを変えてみることにより、何か見えてくるものがあるんじゃないか、という実験的なものだったりします。

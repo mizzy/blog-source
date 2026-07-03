@@ -3,7 +3,7 @@ layout: post
 title: "FormValidator::Simple関連モジュール"
 date: 2005-10-03 20:55
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 今までフォームの validation は自前でモジュール書いていたのですが、 <a href="http://www.lost-season.jp/mt/2005/10/2005100121.html" target="_blank">CatalystでSledge風Validation</a> にある FormValidator::Simple がすごく良さげなので、さっそく使わせて頂くことにしました。

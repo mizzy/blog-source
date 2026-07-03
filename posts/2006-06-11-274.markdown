@@ -3,7 +3,7 @@ layout: post
 title: "catlxom の プラグイン機構を plagger ライクに #0 (catlxom メモ #5)"
 date: 2006-06-11 21:55
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/catlxom_memo_04.html" target="_blank">前回のエントリ</a>の続き。実際に plagger の hook 機構をパクってみた。
@@ -23,9 +23,9 @@ Index: plugins/Entry/Blosxom.pm
 --- plugins/Entry/Blosxom.pm	(revision 23)
 +++ plugins/Entry/Blosxom.pm	(working copy)
 @@ -9,6 +9,15 @@
- 
+
  __PACKAGE__-&gt;classdata-&gt;{entries} = [];
- 
+
 +sub register {
 +    my ($class, $c) = @_;
 +    $c-&gt;catlxom-&gt;register_hook(
@@ -37,7 +37,7 @@ Index: plugins/Entry/Blosxom.pm
 +
  sub setup {
      my ( $self, $c ) = @_;
- 
+
 @@ -44,20 +53,15 @@
                      )
                  }
@@ -46,35 +46,35 @@ Index: plugins/Entry/Blosxom.pm
              push @{ $self-&gt;classdata-&gt;{entries} }, $entry;
          }
      );
- 
+
 -    $self-&gt;entries-&gt;add( __PACKAGE__ );
 -
 -    $self-&gt;NEXT::setup($c);
 +    $c-&gt;catlxom-&gt;entries-&gt;add( __PACKAGE__ );
  }
- 
+
  sub update {
      my ( $self, $c ) = @_;
 -
 -    $self-&gt;NEXT::update($c);
  }
- 
+
  1;
 Index: plugins/Template/TT.pm
 ===================================================================
 --- plugins/Template/TT.pm	(revision 23)
 +++ plugins/Template/TT.pm	(working copy)
 @@ -10,15 +10,24 @@
- 
+
  our $VERSION = '0.01';
- 
+
 +my $template_dir = Catlxom::Util::load_dir('template');
 +my $path_root    = join '/', $template_dir-&gt;dir_list;
 +
  __PACKAGE__-&gt;classdata-&gt;{templates} = {};
 -__PACKAGE__-&gt;classdata-&gt;{tt}        = Template-&gt;new;
 +__PACKAGE__-&gt;classdata-&gt;{tt}        = Template-&gt;new( INCLUDE_PATH =&gt; $path_root );
- 
+
 +sub register {
 +    my ($class, $c) = @_;
 +    $c-&gt;catlxom-&gt;register_hook(
@@ -86,7 +86,7 @@ Index: plugins/Template/TT.pm
 +
  sub setup {
      my ( $self, $c ) = @_;
- 
+
 -    my $template_dir = Catlxom::Util::load_dir('template');
 -    my $path_root    = join '/', $template_dir-&gt;dir_list;
 -
@@ -100,7 +100,7 @@ Index: plugins/Template/TT.pm
 -
 -    $self-&gt;NEXT::setup($c);
  }
- 
+
  sub interpolate {
 @@ -78,16 +85,14 @@
              \$template-&gt;{template},
@@ -110,7 +110,7 @@ Index: plugins/Template/TT.pm
 -                entries =&gt; $self-&gt;entries-&gt;filtered,
 +                %{ $c-&gt;catlxom-&gt;stashall },
 +                entries =&gt; $c-&gt;catlxom-&gt;entries-&gt;filtered,
- 
+
                  c =&gt; $c,
              },
              \$c-&gt;res-&gt;{body},
@@ -120,14 +120,14 @@ Index: plugins/Template/TT.pm
 -
 -    $self-&gt;NEXT::interpolate($c);
  }
- 
+
  1;
 Index: lib/Catlxom/Context/Base.pm
 ===================================================================
 --- lib/Catlxom/Context/Base.pm	(revision 23)
 +++ lib/Catlxom/Context/Base.pm	(working copy)
 @@ -14,14 +14,8 @@
- 
+
  sub setup {
      my ($self, $c) = @_;
 -
@@ -140,12 +140,12 @@ Index: lib/Catlxom/Context/Base.pm
 -    }
 +    $self-&gt;run_hook($c, 'setup');
  }
- 
+
  sub initialize {
 @@ -30,34 +24,48 @@
      $self-&gt;_stash( {} );
  }
- 
+
 -sub start       { }
 -sub update      { }
 -sub sort        { }
@@ -162,7 +162,7 @@ Index: lib/Catlxom/Context/Base.pm
 +        };
 +    }
 +}
- 
+
 +sub run_hook {
 +    my($self, $c, $hook) = @_;
 +    for my $action (@{ $self-&gt;{hooks}-&gt;{$hook} }) {
@@ -175,22 +175,22 @@ Index: lib/Catlxom/Context/Base.pm
 +
  sub dispatch {
      my ( $self, $c ) = @_;
- 
+
 -    $self-&gt;initialize($c);
 +    $self-&gt;run_hook($c, 'initialize');
- 
+
 -    $self-&gt;start($c);
 -    $self-&gt;update($c);
 +    $self-&gt;run_hook($c, 'start');
 +    $self-&gt;run_hook($c, 'update');
- 
+
      $self-&gt;entries-&gt;filter($c);
 -    $self-&gt;sort($c);
 -    $self-&gt;paginate($c);
 +    $self-&gt;run_hook($c, 'filter');
 +    $self-&gt;run_hook($c, 'sort');
 +    $self-&gt;run_hook($c, 'paginate');
- 
+
 -    $self-&gt;fixedup($c);
 -    $self-&gt;interpolate($c);
 -    $self-&gt;end($c);
@@ -198,13 +198,13 @@ Index: lib/Catlxom/Context/Base.pm
 +    $self-&gt;run_hook($c, 'interpolate');
 +    $self-&gt;run_hook($c, 'end');
  }
- 
+
  sub stash {
      my $self   = shift;
 -    my $caller = caller(0);
 +    ( my $caller = lc caller(0) ) =~ s/Catlxom::Plugin:://i;
 +    $caller =~ s/::/_/g;
- 
+
      if (@_) {
          my $stash = @_ &gt; 1 ? {@_} : $_[0];
 Index: lib/Catlxom/Plugins.pm
@@ -214,10 +214,10 @@ Index: lib/Catlxom/Plugins.pm
 @@ -51,7 +51,7 @@
          ( my $plugin = 'Catlxom::Plugin::' . join( '::', @path ) . $file-&gt;basename )
              =~ s/\.pm$//;
- 
+
 -        unshift @Catlxom::Context::ISA, $plugin;
 +        $plugin-&gt;register($c);
      }
- 
+
      if ( $c-&gt;debug ) {
 </pre>

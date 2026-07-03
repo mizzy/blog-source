@@ -3,10 +3,10 @@ layout: post
 title: "Filter::FutureEvents"
 date: 2006-08-26 13:24
 comments: true
-categories: 
+categories:
 ---
 <p>
-<a class="ext-link" href="http://mizzy.org/program/plagger_event.html"><span class="icon"></span>このエントリ</a> の様な感じで、iCal データに時刻も入れたところ、ちゃんと Google Calendar で通知メールが来るようになりました。が、Google Calendar では終日イベントは背景がキレイに色づけされるのに、時刻が指定されたイベントは背景が色づけされないんですよね。こんな感じで。 
+<a class="ext-link" href="http://mizzy.org/program/plagger_event.html"><span class="icon"></span>このエントリ</a> の様な感じで、iCal データに時刻も入れたところ、ちゃんと Google Calendar で通知メールが来るようになりました。が、Google Calendar では終日イベントは背景がキレイに色づけされるのに、時刻が指定されたイベントは背景が色づけされないんですよね。こんな感じで。
 </p>
 <p>
 <img src="http://mizzy.org/img/events.jpg" alt="Google Calendar" />

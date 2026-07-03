@@ -3,7 +3,7 @@ layout: post
 title: "blosxom + Template Toolkit"
 date: 2005-04-29 16:45
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.blosxom.com/downloads/plugins/interpolate_fancy" target="_blank">interpolate_fancyプラグイン</a>は便利なのですが、<a href="http://html-template.sourceforge.net/" target="_blank">HTML::Template</a>や<a href="http://www.template-toolkit.org/" target="_blank">Template Toolkit</a>に慣れているとなんか物足りないし、やはり慣れた記法で記述したいですよね。

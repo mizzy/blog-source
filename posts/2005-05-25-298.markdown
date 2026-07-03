@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #10"
 date: 2005-05-25 22:49
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 このブログではタグづけなんかをしてるわけですが、ひとりでタグづけしてても、なんか虚しいんですよね。

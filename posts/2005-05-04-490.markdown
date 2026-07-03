@@ -3,7 +3,7 @@ layout: post
 title: "ajaxなウェブメールを作る #2"
 date: 2005-05-04 14:42
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/ajaxWebMail01.html" target="_blank">前回触れて以来</a>放置していたajaxなウェブメールですが、約束どおり<a href="http://mizzy.org/webmail/index.cgi" target="_blank">サンプルを公開します</a>。guest/guestでログインして下さい。

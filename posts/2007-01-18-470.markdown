@@ -3,7 +3,7 @@ layout: post
 title: "Assurer のプロジェクトサイト立ち上げました"
 date: 2007-01-18 01:19
 comments: true
-categories: 
+categories:
 ---
 <p>
 irc#assurer@freenode での会話が盛り上がったので、勢いで <a class="ext-link" href="http://assurer.jp/trac"><span class="icon"></span>ドメインを取得して、独立した trac と svn repos を立ち上げてみました</a>。（最低限の体裁だけ。しかも <a class="ext-link" href="http://plagger.org/"><span class="icon"></span>plagger.org</a> からコピペ。）

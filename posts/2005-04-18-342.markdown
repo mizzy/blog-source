@@ -3,7 +3,7 @@ layout: post
 title: "blosxomでtagging #4"
 date: 2005-04-18 23:12
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 taggingプラグインをアップデート。現在自分がいるカテゴリ内のエントリにあるタグだけを表示できる様にしてみました。カテゴリ移動時に左のtagsメニューにご注目頂ければ、どんな動作かおわかりになるかと思います。download: <a href="/archives/tagging">taggingプラグイン</a>

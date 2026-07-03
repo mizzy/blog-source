@@ -3,7 +3,7 @@ layout: post
 title: "Deduped::AnyDBM_File"
 date: 2006-09-16 00:11
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/dedeuped.html"><span class="icon"></span>前回のエントリ</a>について、宮川さんから「AnyDBM_File をつかうといいかも」というアドバイスを頂いたので、Deduped::AnyDBM_File を書いてみた。
@@ -70,14 +70,14 @@ Index: lib/Plagger/Rule/Deduped.pm
 --- lib/Plagger/Rule/Deduped.pm	(revision 1688)
 +++ lib/Plagger/Rule/Deduped.pm	(working copy)
 @@ -6,11 +6,19 @@
- 
+
  sub init {
      my $self = shift;
 +    my @dbms = qw( NDBM DB GDBM SDBM ODBM );
- 
+
 -    $self->{engine} ||= 'DB_File';
 +    $self->{engine} ||= 'DB';
- 
+
 -    my $class = "Plagger::Rule::Deduped::$self->{engine}";
 -    $class->require or Plagger->context->error("Error loading $class: $@");
 +    my $class;
@@ -89,7 +89,7 @@ Index: lib/Plagger/Rule/Deduped.pm
 +        $class = "Plagger::Rule::Deduped::$self->{engine}";
 +        $class->require or Plagger->context->error("Error loading $class: $@");
 +    }
- 
+
      my $deduper = $class->new($self);
      $self->{deduper} = $deduper;
 </pre>

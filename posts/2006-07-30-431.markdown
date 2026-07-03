@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::Publish::iTunes"
 date: 2006-07-30 05:08
 comments: true
-categories: 
+categories:
 ---
 <blockquote>
 <p>

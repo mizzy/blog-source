@@ -3,7 +3,7 @@ layout: post
 title: "vox で英語ブログはじめました"
 date: 2006-07-20 19:04
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://www.sixapart.com/vox/"><span class="icon"></span>ここ</a> でメールアドレスを登録しておいたら、招待状が届きました。というわけで、せっかくなので<a class="ext-link" href="http://mizzy.vox.com/"><span class="icon"></span>英語ブログ</a> をはじめることにしました。なんか最近ギークな人たちの間で英語ブログが流行ってるみたいなので、便乗してみます。

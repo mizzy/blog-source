@@ -3,7 +3,7 @@ layout: post
 title: "俺について"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 30歳男、サラリーマンです。身長167cm, 体重は65kg〜70kgの間を行ったり来たり。70超えもありますが。

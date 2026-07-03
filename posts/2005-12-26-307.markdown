@@ -3,7 +3,7 @@ layout: post
 title: "profiler と benchmarker スクリプトのパスが違う（Rails 勉強中 #4）"
 date: 2005-12-26 08:53
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://www.amazon.co.jp/exec/obidos/ASIN/097669400X/httshemizorg-22/ref=nosim" target="_blank">Agile Web Development With Rails</a> の内容と、Rails 1.0 の違いメモ。

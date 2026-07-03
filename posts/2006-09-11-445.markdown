@@ -3,7 +3,7 @@ layout: post
 title: "CustomFeed::DAAP と Filter::FetchDAAP #0"
 date: 2006-09-11 11:59
 comments: true
-categories: 
+categories:
 ---
 <p>
 思いつきで YAPC::NA 2006 での宮川さんのプレゼン 『 <a class="ext-link" href="http://blog.bulknews.net/mt/archives/iTunesHacks-YAPCNA.pdf"><span class="icon"></span>Hacking iTunes from Perl(PDF)</a> 』の 「 Hack <a class="ticket" href="/ticket/5">#5</a> Download songs from iTunes share 」を Plagger プラグインとして実装してみた。

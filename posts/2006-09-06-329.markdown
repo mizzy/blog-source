@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Plugin::SmartFeed の使い方"
 date: 2006-09-06 00:55
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/filter_rule_and_filter_clone_feed.html"><span class="icon"></span>前回のエントリ</a> について、それ SmartFeed でできるよ、と宮川さんに教えて頂きました。こんな感じで。

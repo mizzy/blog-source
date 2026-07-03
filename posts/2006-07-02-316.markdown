@@ -3,7 +3,7 @@ layout: post
 title: "Atom Threading Extensions"
 date: 2006-07-02 13:49
 comments: true
-categories: 
+categories:
 ---
 <p>
 IRC で miyagawa さんが貼っていた URL 経由で見つけたのですが、<a class="ext-link" href="http://www.ietf.org/internet-drafts/draft-snell-atompub-feed-thread-12.txt"><span class="icon"></span>Atom Threading Extensions</a> なんてものがあったのですね。

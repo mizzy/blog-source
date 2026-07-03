@@ -3,7 +3,7 @@ layout: post
 title: "Catalystでajax - 実践編"
 date: 2005-04-30 22:28
 comments: true
-categories: 
+categories:
 ---
 <h3>概要</h3>
 
@@ -91,7 +91,7 @@ Ajax->run;
 </p>
 
 <p class="entryBody">
-以上で完了です。Javascriptを一切書かずにajaxなウェブアプリが作れる、ということがお分かり頂けたと思います。	
+以上で完了です。Javascriptを一切書かずにajaxなウェブアプリが作れる、ということがお分かり頂けたと思います。
 </p>
 
 <p class="entryBody">

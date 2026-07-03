@@ -90,7 +90,7 @@ DVD がついてるけどそれは見てない。
 
 <a href="http://www.amazon.co.jp/dp/B00C0SEQ96"><img src="http://ecx.images-amazon.com/images/I/51sVhMbzMaL._SX346_BO1,204,203,200_.jpg" style="height: 350px;" /></a>
 <a href="http://www.amazon.co.jp/dp/4575937290"><img src="http://ecx.images-amazon.com/images/I/51BAAIrq8ML._SX344_BO1,204,203,200_.jpg" style="height: 350px;" /></a>
-    
+
 この本は、伊藤理佐さんの漫画が好きなので買ってみた。この漫画では建築家に依頼してるので、ハウスメーカーに依頼してる自分にはあまり参考にはならなかったけど、読み物としては面白い。
 
 ----

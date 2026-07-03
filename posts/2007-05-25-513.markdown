@@ -3,7 +3,7 @@ layout: post
 title: "write はユーザプロセスを待たせない？の答え"
 date: 2007-05-25 20:03
 comments: true
-categories: 
+categories:
 ---
 [前回のエントリ](http://blog.mizzy.org/articles/2007/05/23/linux-disk-io-00) について、naoya さんから[僕の期待以上の素晴らしい回答](http://d.hatena.ne.jp/naoya/20070523/1179938637)を頂きました。感謝感謝です。
 

@@ -3,7 +3,7 @@ layout: post
 title: "Publish::iCal patch"
 date: 2006-08-23 20:54
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://mizzy.org/program/amazon2ical01.html"><span class="icon"></span>『Plagger で Amazon2iCal 改良』</a> にて、Data::ICal で ORGANIZER をちゃんとしたフォーマットにする方法がわからん、と言っていたのですが、やりかたわかりました。
@@ -28,10 +28,10 @@ Index: plagger/trunk/lib/Plagger/Plugin/Publish/iCal.pm
  use Data::ICal;
  use Data::ICal::Entry::Event;
 +use Email::Address;
- 
+
  sub register {
 @@ -34,4 +35,8 @@
- 
+
      for my $entry ($feed->entries) {
 +        my $address = ( Email::Address->parse($entry->author) )[0];
 +        my $mail = eval { $address->address } || 'nobody@example.com';

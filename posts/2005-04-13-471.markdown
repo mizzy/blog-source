@@ -3,7 +3,7 @@ layout: post
 title: "shelf.mizzy.org"
 date: 2005-04-13 11:29
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://pitecan.com/Bookshelf/">本棚.org</a>や<a href="http://booklog.jp/">ブクログ</a>を見て、「俺だったらこんな風につくるなぁ」という思いを形にしてみたのが<a href="http://shelf.mizzy.org/" target="_blank">これ</a>。

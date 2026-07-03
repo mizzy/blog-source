@@ -3,7 +3,7 @@ layout: post
 title: "cfengine よりも puppet がよさげ"
 date: 2007-03-18 21:33
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://trombik.mine.nu/~cherry/w/index.php/2007/02/06/845/links-roundup-159"><span class="icon"></span>I, newbie &raquo; Links Roundup</a> 経由で puppet というシステム管理ツールを知って以来ずっと気になっていたのですが、このエントリの著者さんが <a class="ext-link" href="http://dev.gentoo.gr.jp/~trombik/pub/OSC2007/OSC2007.pdf"><span class="icon"></span>OSC2007 の発表資料(PDF)</a>で「Puppet is so sexy.」と書かれているのを見て、本気で触ってみることにしました。

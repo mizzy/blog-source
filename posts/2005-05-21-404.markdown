@@ -3,7 +3,7 @@ layout: post
 title: "ajaxでdel.icio.usを使いやすく #1"
 date: 2005-05-21 23:56
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 <a href="http://mizzy.org/program/deliciousBar00.html" target="_blank">前回</a>は、<a href="http://del.icio.us" target="_blank">del.icio.us</a>を使いやすくするための、Firefoxサイドバーを作ろうと試みたのですが、ものすごく中途半端な状態で放置するはめになりました。敗因は、「俺はブラウザの機能としてのサイドバーが嫌い」ということを忘れていたから、ですね。ブラウザのメイン画面が狭くなるのでいやなんですよ。自分で使う気がないものを作ったって、いいものになるわけがない。
@@ -11,7 +11,7 @@ categories:
 
 <p class="entryBody">
 で、今回は自分で使いたくなるようなものをちゃんと作ろう、ってことで作ってみました。
-<a href="http://mizzy.org/md/" target="_blank">サンプルはこちら</a>。で、<a href="http://mizzy.org/archives/MyDelicious.tar.gz">ソースはこちら</a>。 
+<a href="http://mizzy.org/md/" target="_blank">サンプルはこちら</a>。で、<a href="http://mizzy.org/archives/MyDelicious.tar.gz">ソースはこちら</a>。
 </p>
 
 <p class="entryBody">

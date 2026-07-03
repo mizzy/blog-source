@@ -3,7 +3,7 @@ layout: post
 title: "Plagger で Yahoo!Booksのランキングをとってくる"
 date: 2007-02-24 00:44
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://pythonbeginner.blog78.fc2.com/blog-entry-213.html"><span class="icon"></span>さすがにPlaggerでもこれは無理だと思いたい。PythonでYahoo!Booksのランキングをとってくる。</a> というエントリを見て、なんか釣りっぽいタイトルだけど敢えて釣られてみた。

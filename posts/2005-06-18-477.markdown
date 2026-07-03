@@ -3,7 +3,7 @@ layout: post
 title: "perlで人工無脳 #0"
 date: 2005-06-18 23:42
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 ちょっと興味と必要があって、人工無脳に手を出してみることになりました。まあ、人工無脳なんて今更って気もしますが、とりあえずやってみたことはどんなにしょぼくても公開する、というポリシーですので、<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4839917299/httshemizorg-22/ref=nosim" target="_blank">恋するプログラム―Rubyでつくる人工無脳</a>を参考にしながら、perlで実装していく過程をここに載せていきたいと思います。
@@ -100,7 +100,7 @@ sub setup {
 			-charset => 'euc-jp',
 			);
     $self->tmpl_path('/path/to/template');
-    
+
 }
 
 sub bot {

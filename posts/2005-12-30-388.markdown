@@ -3,7 +3,7 @@ layout: post
 title: "ActiveRecord のコールバックとオブザーバ（Rails勉強中 #6）"
 date: 2005-12-30 00:36
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 Rails の興味深い実装メモの続き。

@@ -3,7 +3,7 @@ layout: post
 title: "SVN::TracWiki #1"
 date: 2007-04-22 15:07
 comments: true
-categories: 
+categories:
 ---
 <p>
 <a class="ext-link" href="http://trac.mizzy.org/public/browser/SVN-TracWiki"><span class="icon"></span>SVN::TracWiki</a> (<a class="ext-link" href="http://svn.mizzy.org/public/SVN-TracWiki/"><span class="icon"></span>svn repos</a>) について、ブクマコメントで miyagawa さんから「File::Extract?」というアドバイス？を頂きましたので、テキスト抽出部分を File::Extract ベースに書き換えてみました。

@@ -3,7 +3,7 @@ layout: post
 title: "Plagger::Feed と Plagger::Entry と Plagger::Enclosure"
 date: 2006-09-25 22:11
 comments: true
-categories: 
+categories:
 ---
 <p>
 Plagger::Feed, Plagger::Entry, Plagger::Enclosure の関係と、それぞれが持つメソッド、プロパティを図にしてみた。（メソッドとプロパティの区分けは適当。）

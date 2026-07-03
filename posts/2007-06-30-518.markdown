@@ -3,7 +3,7 @@ layout: post
 title: "Puppet の連載はじめました"
 date: 2007-06-30 15:10
 comments: true
-categories: 
+categories:
 ---
 [gihyo.jp で Puppet に関する連載をはじめました。](http://gihyo.jp/admin/serial/01/puppet)
 

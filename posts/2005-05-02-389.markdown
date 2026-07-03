@@ -3,7 +3,7 @@ layout: post
 title: "Catalystでajax - 補足"
 date: 2005-05-02 21:46
 comments: true
-categories: 
+categories:
 ---
 <p class="entryBody">
 今回はCatalystはあんまり関係なくて、prototype.jsの使い方に関する補足、といった感じです。
@@ -54,7 +54,7 @@ function init() {
     <strong>
     var req1 = new XMLHttpRequest();
     if(req1){
-	req1.onreadystatechange = function() { 
+	req1.onreadystatechange = function() {
 	    if (req1.readyState == 4 &amp;&amp; req1.status == 200) {
 		eval('tagsListObj = ' +  req1.responseText);
 		displayTags();
@@ -66,7 +66,7 @@ function init() {
 
     var req2 = new XMLHttpRequest();
     if(req2){
-	req2.onreadystatechange = function() { 
+	req2.onreadystatechange = function() {
 	    if (req2.readyState == 4 &amp;&amp; req2.status == 200) {
 		eval('tagToLinkObj = ' +  req2.responseText);
 	    }
@@ -94,7 +94,7 @@ function init() {
 	    displayTags();
 	}
     });
-    
+
     new Ajax.Request( '/delside/index.cgi?rm=tagToLink',
     {
 	method: 'GET',

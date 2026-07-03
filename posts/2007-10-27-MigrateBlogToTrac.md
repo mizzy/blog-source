@@ -13,4 +13,3 @@ date: 2007-10-27 17:08:57 +0900
 
 
 過去エントリは [blog.mizzy.org](http://blog.mizzy.org/) にそのまま残しておきます。
-
