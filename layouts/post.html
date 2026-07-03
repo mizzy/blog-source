@@ -6,13 +6,14 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>{{ if not .Index }}{{ .Title }} - {{ end }}Gosuke Miyashita</title>
     <meta name="author" content="Gosuke Miyashita"/>
-    <meta name="description" content="A fantastic blog that is fantastic."/>
+    <meta name="description" content="{{ .Description }}"/>
 
     <!-- OGP -->
     <meta property="og:title" content="{{ .Title }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:url" content="https://mizzy.org{{ .Path }}/"/>
     <meta property="og:image" content="https://mizzy.org{{ .OGImagePath }}"/>
+    <meta property="og:description" content="{{ .Description }}"/>
     <meta property="og:site_name" content="Gosuke Miyashita"/>
 
     <!-- Twitter Card -->
