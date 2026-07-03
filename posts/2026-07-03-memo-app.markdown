@@ -1,0 +1,86 @@
+---
+title: 個人用メモアプリをつくっている
+date: 2026-07-03 21:30:00 +0900
+---
+
+Obsidianの代替として、個人用のメモツールWebアプリをつくりはじめた。リポジトリは[mizzy/memo](https://github.com/mizzy/memo)。Cloudflare上で動かしている。
+
+![memoアプリのデスクトップ表示](/images/2026/07/memo-desktop.png)
+
+---
+
+## なぜつくったか
+
+ObsidianはMarkdownが書けるメモツールとして常用していて、PC上での利用には特に不満はない。ただ、Obsidianの豊富な機能を使いこなしているわけでもなくて、メモを書いて読む、という基本的な使い方しかしていない。
+
+問題はiOSアプリで、挙動が不安定。特に、開いたときにindexingという表示のまま進まないことがよくある。同期まわりの問題だと思うけど、外出先でさっとメモを確認したいときに待たされていらつく。
+
+自分が求めているのは、Markdownで書けてPCとiPhoneで同期ができるメモツールなので、Obsidianを使い続けなくても、自分の使い方だけに特化したシンプルなツールをつくったほうがいいのでは、と考えた。データをサーバ側のDBに置くWebアプリなら、そもそも同期という概念自体が消える。PWAとしてiPhoneのホーム画面に追加すれば、起動もネイティブアプリに近い体験にできる。
+
+あと、[ホテルメモサイトをAstroで作り直した](/blog/2026/06/16/1/)ときにもObsidianの利用をやめたのだけど、生成AIのおかげで「既製ツールの不満を我慢しながら使い続ける」より「自分のユースケースだけ満たす専用ツールをさくっとつくる」ほうが早い、という状況になってきていると思う。
+
+---
+
+## 技術スタック
+
+| Layer | Tech |
+|---|---|
+| API | Hono + TypeScript |
+| Frontend | React + Vite + TypeScript |
+| Editor | Tiptap (ProseMirrorベース) |
+| DB | Cloudflare D1 + Drizzle ORM |
+| Storage | Cloudflare R2 (画像添付) |
+| Hosting | Cloudflare Workers |
+| Auth | Cloudflare Access |
+| Infra | Terraform (stateはR2に保存) |
+
+1つのWorkerで静的アセット(SPA)とAPIの両方を配信する、単一Worker構成にしている。当初はPagesとWorkersを分ける構成を考えていたけど、同一オリジンならCORSの設定が不要になるし、認証Cookieも何も考えなくても全リクエストに付いてくる。個人ツールでフロントとAPIを別々に更新したい場面はそもそも少ないので、分離は必要になってからで遅くない、という判断。
+
+認証まわりのコードはアプリ内には一切なくて、前段のCloudflare Accessで自分のGmailアカウントだけを許可している。アプリ本体は認証のことを何も知らないまま、Cloudflareのログイン画面で守られる。個人ツールならこれで十分。
+
+---
+
+## 機能
+
+今のところ実装しているのはこのあたり。
+
+- メモの作成・編集・一覧・検索
+- Vault機能(Obsidianと同様、常に1つのVaultを開いてスイッチャーで切り替える)
+- フォルダ機能(Vault内に任意深さのフォルダ木を持ち、デスクトップではフォルダツリー/メモ一覧/エディタの3ペイン構成)
+- 画像添付(R2にアップロード)
+- PWA対応(iPhoneのホーム画面に追加して利用)
+
+デスクトップはこんな感じ。左上のVaultスイッチャーでVaultを切り替える。
+
+![Vaultスイッチャー](/images/2026/07/memo-vault-switcher.png)
+
+モバイルはこんな感じ。ホームがフォルダツリーで、フォルダを開くとメモ一覧、メモを開くとエディタ、という画面遷移にしている。
+
+<div style="display:flex;gap:12px;">
+<img src="/images/2026/07/memo-mobile-home.png" alt="モバイルのフォルダツリー" style="width:calc(50% - 6px);max-width:280px;height:auto;">
+<img src="/images/2026/07/memo-mobile-editor.png" alt="モバイルのエディタ" style="width:calc(50% - 6px);max-width:280px;height:auto;">
+</div>
+
+---
+
+## デザイン
+
+見た目がそれっぽくないとモチベーションが上がらない、というのはホテルメモのときと同じなので、今回もビジュアルデザインはClaude Designにお願いした。まず方向性の違う3案(A: 紙とインク、B: ターミナル、C: 夜の書斎)のモックをHTMLでつくってもらって、並べて比較した。
+
+![デザイン方向性の比較](/images/2026/07/memo-design-compare.png)
+
+BとCで迷った結果、Cの雰囲気にBの道具っぽさを足したハイブリッドのD案「夜の書斎×道具」に決めた。ミッドナイトブルーの地にランプの琥珀色、本文はZen Kaku Gothic New、日付などのメタ情報はIBM Plex Mono、ロゴだけFraunces、という使い分けにしている。B案にあったプロンプト風の装飾やstatuslineみたいな、見た目だけターミナルをなぞった要素は、検討の過程で結局外した。
+
+ホテルメモのときは、Claude Designがローカルファイルを直接編集できないので、デザインを直すたびにClaude Designで実装指示書をつくってClaude Codeに渡し直す、というのが面倒だった。今はClaude CodeとClaude Designの連携がしやすくなっていて、Claude Codeからデザインファイルを直接Claude Designのプロジェクトに同期できる。なので今回は、モックや現状UIのスナップショットをリポジトリの`design/`に置いてClaude Design側と同期し、Claude Designが出してきた改善版デザインをClaude Codeが実装する、という流れで回している。
+
+---
+
+## 今後
+
+まだつくりはじめたばかりなので、しばらくは自分で使いながら不満点を潰していく予定。Obsidianに溜まっている既存のメモの移行もこれから。
+
+---
+
+参考:
+
+- [mizzy/memo](https://github.com/mizzy/memo)
