@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>{{ if not .Index }}{{ .Title }} - {{ end }}Gosuke Miyashita</title>
     <meta name="author" content="Gosuke Miyashita"/>
-    <meta name="description" content="{{ .Description }}"/>
+    <meta name="description" content="{{ if .Index }}A fantastic blog that is fantastic.{{ else }}{{ .Description }}{{ end }}"/>
 
     <!-- OGP -->
     <meta property="og:title" content="{{ .Title }}"/>
