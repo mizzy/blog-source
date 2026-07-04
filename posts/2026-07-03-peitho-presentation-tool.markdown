@@ -3,6 +3,8 @@ title: プレゼンツールPeithoをつくっている
 date: 2026-07-03 19:35:00 +0900
 ---
 
+**追記**: 発表者ツールまわりについて詳しく書いた記事「[Peithoの発表者ツールをつくっている](/blog/2026/07/04/1/)」も書いた。
+
 [前回の記事](/blog/2026/06/23/1/)でPyxis/Argus/Irisという最近つくっているOSSを紹介したけど、もうひとつ新しいものをつくりはじめた。[Peitho](https://github.com/mizzy/peitho)というプレゼンテーションツールで、Markdownをsource of truthとして、HTMLネイティブなスライドを生成し、ブラウザでの発表までやる。
 
 ビルドするとどんなスライドになるのかは、デモサイト[peitho.gosu.ke](https://peitho.gosu.ke/)で見られる。リポジトリの`examples/`を`peitho build`してそのまま配信したもの。発表のほうは手元でChromeで操作するので、これは後述する。
