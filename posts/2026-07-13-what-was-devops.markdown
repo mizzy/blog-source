@@ -105,7 +105,7 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 - メトリックの共有 → オブザーバビリティ、DORAの4キーメトリクス
 - IRCやIMのロボット → ChatOps
 
-という感じで、ほぼすべてが独立した言葉になり、実践とツールと市場を持つ領域に育った。（発表のリストにはもうひとつ「共有されたバージョンコントロール」があるけど、これは当たり前になりすぎて、対応する言葉を挙げるまでもない。）Infrastructure as Codeのように、言葉自体は当時からあったものもある（先に引用したAllspaw氏の2010年のコメントにも出てくる）ので、言葉の新しさがポイントではない。DevOpsの文脈の中の一要素だったものが、それぞれ、DevOpsという言葉を持ち出さなくても語れる独立した領域になった、ということがポイント。発表の核心にあった「安定性をとるか、変化をとるか」というDevとOpsの対立も、SREのエラーバジェットという形で仕組みに落とし込まれた。この構図を端的に表しているのが、GoogleがSRE本の文脈で使った「class SRE implements DevOps」という整理で、SREはDevOpsという抽象クラスの実装である、ということ。DevOpsは、具体的な実装を持つ言葉たちの上に浮かぶ抽象概念、という位置づけになった。
+という感じで、ほぼすべてが独立した言葉になり、実践とツールと市場を持つ領域に育った。（発表のリストにはもうひとつ「共有されたバージョンコントロール」があるけど、これは当たり前になりすぎて、対応する言葉を挙げるまでもない。）Infrastructure as Codeのように、言葉自体は当時からあったものもある（先に引用したAllspaw氏の2010年のコメントにも出てくる）ので、言葉の新しさがポイントではない。DevOpsの文脈の中の一要素だったものが、それぞれ、DevOpsという言葉を持ち出さなくても語れる独立した領域になった、ということがポイント。発表の核心にあった「安定性をとるか、変化をとるか」というDevとOpsの対立も、SREのエラーバジェットという形で仕組みに落とし込まれた。この構図を端的に表しているのが、「class SRE implements DevOps」——SREはDevOpsという抽象クラスの実装である——という整理。GoogleのLiz Fong-Jones氏とSeth Vargo氏が2018年の動画シリーズで打ち出したフレーズで、同年の「[The Site Reliability Workbook](https://sre.google/workbook/how-sre-relates/)」の章タイトルにもなっている。DevOpsは、具体的な実装を持つ言葉たちの上に浮かぶ抽象概念、という位置づけになった。
 
 そして、抽象概念だけになった言葉は、だんだん使われなくなっていく。Platform Engineeringの文脈では「DevOpsは死んだ」といった言説も見かけるようになった。2022年には「DevOps is dead, long live Platform Engineering!」という[Sid Palas氏のポスト](https://x.com/sidpalas/status/1580978289534914561)が大きな論争になったし、The New Stackの「[DevOps Is Dead. Embrace Platform Engineering](https://thenewstack.io/devops-is-dead-embrace-platform-engineering/)」という記事や、[同名のCNCFのウェビナー](https://www.cncf.io/online-programs/cncf-on-demand-webinar-devops-is-dead-embrace-platform-engineering/)もあった。象徴的なのはDORAの動きで、DORAはDevOps Research and Assessmentの頭字語で、毎年「Accelerate State of DevOps Report」という調査レポートを出していたのだけど、[2025年にレポート名を「State of AI-assisted Software Development」に変更した](https://dora.dev/insights/dora-2025-year-in-review/)。あわせてDORA自体も、頭字語ではない単独の名前ということになった。DevOpsという言葉は、レポートの名前からも、組織の名前からも消えたことになる。
 
@@ -113,9 +113,11 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 
 ## 問題は解決したのか
 
-ただ、何が具体化されて、何が残ったのかを見てみると、別の言葉になったのはどれも、ツールやプラクティスや職種として名前を付けられる部分——名乗れる部分、売り買いできる部分——だということに気づく。CAMSで言えば、AutomationとMeasurementには立派な後継の言葉ができた。だけど先頭にあったCulture、つまり部門間の分断や対立をどうにかする、という部分を引き受けた言葉は、見当たらない。
+ただ、何が具体化されて、何が残ったのかを見てみると、別の言葉になったのはどれも、ツールやプラクティスや職種として名前を付けられる部分——名乗れる部分、売り買いできる部分——だということに気づく。CAMSで言えば、AutomationとMeasurementには立派な後継の言葉ができた。
 
-じゃあ、引き受ける言葉が必要ないくらいその問題は解決したのか、というと、そうは見えない。
+じゃあ先頭にあったCulture、つまり部門間の分断や対立をどうにかする、という部分はどうか。候補が無いわけではない。チーム間の分断や認知負荷を正面から扱う[Team Topologies](https://teamtopologies.com/)や、blamelessなポストモーテムの系譜を引き継ぐLearning from Incidents、Resilience Engineeringは、Cultureの一部を引き受けていると言えると思う（ちなみにAllspaw氏自身が、Etsyを離れた後、[Adaptive Capacity Labs](https://www.adaptivecapacitylabs.com/)を共同創業してこの領域に進んでいる）。ただ、これらもやはり、本やカンファレンスやコンサルティングという、名乗れる・売り買いできる形になって流通している。Cultureですら、名乗れる形に整形された部分だけが生き延びている、と言えるのかもしれない。
+
+じゃあ、これらの言葉によって、部門間の分断という問題自体は解決したのかというと、そうは見えない。
 
 たとえばDevSecOps。この言葉が生まれたのは2013年頃とされていて、DevOpsの誕生からわずか4年ほどで、セキュリティを仲間に入れるための新しい言葉が必要とされていたことになる。部門の壁を壊す運動が機能しているのなら、セキュリティも当然そこに含まれているはずだ。先に見た通り、『Effective DevOps』の著者たちが小文字のdevopsを選んだ理由のひとつは、まさにこの語を作る動きへの応答だった。そしてDevSecOpsという言葉が[今も使われ続けている](https://www.practical-devsecops.com/devsecops-statistics-2026/)のは、壁が残り続けていることの現れだと思う。
 
