@@ -109,6 +109,8 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 
 そして、抽象概念だけになった言葉は、だんだん使われなくなっていく。Platform Engineeringの文脈では「DevOpsは死んだ」といった言説も見かけるようになった。2022年には「DevOps is dead, long live Platform Engineering!」という[Sid Palas氏のポスト](https://x.com/sidpalas/status/1580978289534914561)が大きな論争になったし、The New Stackの「[DevOps Is Dead. Embrace Platform Engineering](https://thenewstack.io/devops-is-dead-embrace-platform-engineering/)」という記事や、[同名のCNCFのウェビナー](https://www.cncf.io/online-programs/cncf-on-demand-webinar-devops-is-dead-embrace-platform-engineering/)もあった。象徴的なのはDORAの動きで、DORAはDevOps Research and Assessmentの頭字語で、毎年「Accelerate State of DevOps Report」という調査レポートを出していたのだけど、[2025年にレポート名を「State of AI-assisted Software Development」に変更した](https://dora.dev/insights/dora-2025-year-in-review/)。あわせてDORA自体も、頭字語ではない単独の名前ということになった。DevOpsという言葉は、レポートの名前からも、組織の名前からも消えたことになる。
 
+思えば、2010年に出た『[ウェブオペレーション](https://www.oreilly.co.jp/books/9784873114934/)』（Allspaw氏、Jesse Robbins氏編、日本語版は2011年）のまえがきで、Robbins氏はこの仕事を「技芸であり、科学ではない」、正規の学校教育・資格・標準は（少なくとも今はまだ）ない、と書いていた。そこからの15年で起きたのは、技芸が科学へと近づいていく流れだった。エラーバジェットは安定と変化のトレードオフを数値の問題に変え、DORAはソフトウェアデリバリーを大規模な調査で計測する研究プログラムになった。名前がつき、計測できるようになった部分から、科学になっていった。
+
 ---
 
 ## 問題は解決したのか
