@@ -107,6 +107,10 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 
 という感じで、ほぼすべてが独立した言葉になり、実践とツールと市場を持つ領域に育った。（発表のリストにはもうひとつ「共有されたバージョンコントロール」があるけど、これは当たり前になりすぎて、対応する言葉を挙げるまでもない。）Infrastructure as Codeのように、言葉自体は当時からあったものもある（先に引用したAllspaw氏の2010年のコメントにも出てくる）ので、言葉の新しさがポイントではない。DevOpsの文脈の中の一要素だったものが、それぞれ、DevOpsという言葉を持ち出さなくても語れる独立した領域になった、ということがポイント。Flickrの発表の核心にあった「安定性をとるか、変化をとるか」というDevとOpsの対立も、SREの[エラーバジェット](https://sre.google/sre-book/embracing-risk/)という形で仕組みに落とし込まれた。この構図を端的に表しているのが、「class SRE implements DevOps」——SREはDevOpsという抽象クラスの実装である——という整理。GoogleのLiz Fong-Jones氏とSeth Vargo氏が2018年の動画シリーズで打ち出したフレーズで、同年の「[The Site Reliability Workbook](https://sre.google/workbook/how-sre-relates/)」の章タイトルにもなっている。DevOpsは、具体的な実装を持つ言葉たちの上に浮かぶ抽象概念、という位置づけになった。
 
+分解される前の姿を写した本もある。2010年に出た『[ウェブオペレーション](https://www.oreilly.co.jp/books/9784873114934/)』（Allspaw氏、Jesse Robbins氏編、日本語版は2011年）の目次には、継続的デプロイ、コードとしてのインフラ、メトリクス、監視、ふりかえりと、後にそれぞれ独立した領域になるものが一冊に同居している。書き手も、10章がHammond氏、16章がShafer氏、6章がDebois氏と、原点の登場人物が勢揃いだ。
+
+そのまえがきでRobbins氏は、この仕事は「技芸であり、科学ではない」、正規の学校教育・資格・標準は（少なくとも今はまだ）ない、と書いている。だけどその後に起きたのは、技芸が科学へと近づいていく流れだった。エラーバジェットは安定と変化のトレードオフを数値の問題に変えたし、DORAはソフトウェアデリバリーを大規模な調査で計測する研究プログラムになった。名前がつき、計測できるようになった部分から、科学になって独立していった。
+
 そして、抽象概念だけになった言葉は、だんだん使われなくなっていく。Platform Engineeringの文脈では「DevOpsは死んだ」といった言説も見かけるようになった。2022年には「DevOps is dead, long live Platform Engineering!」という[Sid Palas氏のポスト](https://x.com/sidpalas/status/1580978289534914561)が大きな論争になったし、The New Stackの「[DevOps Is Dead. Embrace Platform Engineering](https://thenewstack.io/devops-is-dead-embrace-platform-engineering/)」という記事や、[同名のCNCFのウェビナー](https://www.cncf.io/online-programs/cncf-on-demand-webinar-devops-is-dead-embrace-platform-engineering/)もあった。象徴的なのはDORAの動きで、DORAはDevOps Research and Assessmentの頭字語で、毎年「Accelerate State of DevOps Report」という調査レポートを出していたのだけど、[2025年にレポート名を「State of AI-assisted Software Development」に変更した](https://dora.dev/insights/dora-2025-year-in-review/)。あわせてDORA自体も、頭字語ではない単独の名前ということになった。DevOpsという言葉は、レポートの名前からも、組織の名前からも消えたことになる。
 
 ---
