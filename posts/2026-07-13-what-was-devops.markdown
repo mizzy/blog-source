@@ -117,7 +117,7 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 
 じゃあ先頭にあったCulture、つまり部門間の分断や対立をどうにかする、という部分はどうか。候補が無いわけではない。チーム間の分断や認知負荷を正面から扱う[Team Topologies](https://teamtopologies.com/)や、blamelessなポストモーテムの系譜を引き継ぐLearning from Incidents、Resilience Engineeringは、Cultureの一部を引き受けていると言えると思う（ちなみにAllspaw氏自身が、Etsyを離れた後、[Adaptive Capacity Labs](https://www.adaptivecapacitylabs.com/)を共同創業してこの領域に進んでいる）。ただ、これらもやはり、本やカンファレンスやコンサルティングという、名乗れる・売り買いできる形になって流通している。Cultureですら、名乗れる形に整形された部分だけが生き延びている、と言えるのかもしれない。
 
-じゃあ、これらの言葉によって、部門間の分断という問題自体は解決したのかというと、そうは見えない。
+では、これらの言葉によって、部門間の分断という問題自体は解決したのかというと、そうは見えない。
 
 たとえばDevSecOps。この言葉が生まれたのは2013年頃とされていて、DevOpsの誕生からわずか4年ほどで、セキュリティを仲間に入れるための新しい言葉が必要とされていたことになる。部門の壁を壊す運動が機能しているのなら、セキュリティも当然そこに含まれているはずだ。先に見た通り、『Effective DevOps』の著者たちが小文字のdevopsを選んだ理由のひとつは、まさにこの語を作る動きへの応答だった。そしてDevSecOpsという言葉が[今も使われ続けている](https://www.practical-devsecops.com/devsecops-statistics-2026/)のは、壁が残り続けていることの現れだと思う。
 
