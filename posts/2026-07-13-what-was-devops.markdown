@@ -27,6 +27,10 @@ Agile Infrastructureというテーマが示す通り、二人の問題意識は
 
 そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉はこのカンファレンス名から生まれた。もっともDebois氏自身は、後の[インタビュー](https://www.youtube.com/watch?v=6oxNdNRBQhA)で、「Agile System Administration Days」では名前が長すぎたので短くしただけで、業界用語にするつもりはなかった、と語っている。（このインタビューは[nihonbusonさんに教えてもらった](https://x.com/nihonbuson/status/2076819621127377264)。）
 
+ちなみに、DevOpsという言葉そのものの初出については、以前こんなポストをしていた。
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">DevOpsという言葉そのものは、Andrew Clay Shafer氏がこのツイートにつけたハッシュタグがおそらく初出 <a href="https://t.co/Ta2NFNVTRn">https://t.co/Ta2NFNVTRn</a></p>&mdash; mizzy (@gosukenator) <a href="https://x.com/gosukenator/status/831370715827822592?ref_src=twsrc%5Etfw">February 14, 2017</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
 この経緯からわかるのは、DevOpsは元々、アジャイルを運用の世界まで広げたい、開発部門と運用部門という組織の分断をどうにかしたい、という問題意識から生まれた言葉だ、ということ。技術スタックのどこかのレイヤーを指す言葉でも、開発の時系列上のどこかの工程を指す言葉でも、特定のツール群を指す言葉でもない。
 
 ちなみに自分がこの言葉に出会ったのは2010年3月で、当時[DevOpsについての記事](/blog/2010/03/25/1/)を書いている。そこでは「開発者と運用者の間の壁を取り払うためのベストプラクティス」と自分なりにまとめていた。
