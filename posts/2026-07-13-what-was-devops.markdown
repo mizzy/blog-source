@@ -25,7 +25,7 @@ Agile Infrastructureというテーマが示す通り、二人の問題意識は
 
 次に2009年6月のVelocity 2009で、FlickrのJohn Allspaw氏とPaul Hammond氏が、有名な「[10+ Deploys per Day: Dev and Ops Cooperation at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4)」という発表をした。開発者と運用者が対立するのではなく、協力することで1日10回以上のデプロイを実現している、という話。
 
-そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉はこのカンファレンス名から生まれた。
+そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉はこのカンファレンス名から生まれた。もっともDebois氏自身は、後の[インタビュー](https://www.youtube.com/watch?v=6oxNdNRBQhA)で、「Agile System Administration Days」では名前が長すぎたので短くしただけで、業界用語にするつもりはなかった、と語っている。（このインタビューは[nihonbusonさんに教えてもらった](https://x.com/nihonbuson/status/2076819621127377264)。）
 
 この経緯からわかるのは、DevOpsは元々、アジャイルを運用の世界まで広げたい、開発部門と運用部門という組織の分断をどうにかしたい、という問題意識から生まれた言葉だ、ということ。技術スタックのどこかのレイヤーを指す言葉でも、開発の時系列上のどこかの工程を指す言葉でも、特定のツール群を指す言葉でもない。
 
@@ -35,7 +35,7 @@ Agile Infrastructureというテーマが示す通り、二人の問題意識は
 
 ## CAMS——初期の定義の輪郭
 
-DevOpsとは何か、を初期に言語化したものとしては、John Willis氏が2010年7月に書いた「[What Devops Means to Me](https://www.chef.io/blog/what-devops-means-to-me)」がある。ここで示されたのがCAMS、すなわちCulture（文化）、Automation（自動化）、Measurement（計測）、Sharing（共有）の4つ。
+言葉の生みの親であるDebois氏は、あえてdevopsを定義しなかった。定義を固定すると解釈を巡って争いが起き、新しいアイデアを取り入れる余地がなくなると考えたからだ（本人の理解は「サイロ間の摩擦を取り除くこと」だと、先のインタビューで語っている）。なので、初期の言語化は他の人たちが担うことになる。そのひとつが、John Willis氏が2010年7月に書いた「[What Devops Means to Me](https://www.chef.io/blog/what-devops-means-to-me)」で、ここで示されたのがCAMS、すなわちCulture（文化）、Automation（自動化）、Measurement（計測）、Sharing（共有）の4つ。
 
 注目したいのは、Cultureが先頭に来ていて、Automationは4つのうちの1つでしかない、というところ。ツールによる自動化はDevOpsの一部ではあるけど、それがDevOpsなのではない、ということが、この時点でははっきりしていた。
 
@@ -140,6 +140,7 @@ Platform Engineeringもそう。DevOpsの実践は「You build it, you run it」
 - [10+ Deploys per Day: Dev and Ops Cooperation at Flickr (YouTube)](https://www.youtube.com/watch?v=LdOe18KhtT4)
 - [10+ Deploys per Day 発表スライド (PDF)](https://paulhammond.org/2009/06/velocity/10deploys.pdf)
 - [about devopsdays](https://devopsdays.org/about/)
+- [Patrick Debois氏へのインタビュー (YouTube)](https://www.youtube.com/watch?v=6oxNdNRBQhA)
 - [DevOps (2010年3月に自分が書いた記事)](/blog/2010/03/25/1/)
 - [What Devops Means to Me - Chef Blog](https://www.chef.io/blog/what-devops-means-to-me)
 - [Incomplete Thought: The DevOps Disconnect - Rational Survivability](http://www.rationalsurvivability.com/blog/2010/05/incomplete-thought-the-devops-disconnect/)
