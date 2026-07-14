@@ -19,7 +19,7 @@ date: 2026-07-13 23:08:56 +0900
 
 DevOpsの起源としてよく挙げられるのは、次の3つの出来事。
 
-まず2008年、トロントで開催されたAgile 2008で、Andrew Clay Shafer氏が「Agile Infrastructure」というBoFセッションを企画した。だけど反応があまりに少なくて、Shafer氏本人は自分のセッションに現れなかった。そして会場に足を運んだのはたった一人、Patrick Debois氏だった。Debois氏はそれで諦めず、廊下でShafer氏を捕まえて話し込んだ。これがきっかけで、二人はAgile Systems Administrationというグループを立ち上げた。
+まず2008年、トロントで開催されたAgile 2008で、Andrew Clay Shafer氏が「Agile Infrastructure」というBoFセッションを企画した。だけど反応があまりに少なくて、Shafer氏本人は自分のセッションに現れなかった。そして会場に足を運んだのはたった一人、Patrick Debois氏だった。Debois氏はそれで諦めず、廊下でShafer氏を捕まえて話し込んだ。これがきっかけで、二人はAgile Systems Administrationというグループを立ち上げた。（この経緯は[New Relic](https://newrelic.com/blog/news/devops-name)や[DevOps.com](https://devops.com/the-origins-of-devops-whats-in-a-name/)の記事に詳しい。）
 
 Agile Infrastructureというテーマが示す通り、二人の問題意識は、開発の世界で広まっていたアジャイルのやり方を、インフラ運用の世界にも持ち込めないか、というものだった。アジャイルのカンファレンスでこのテーマに人が集まらなかったこと自体が、当時の開発と運用のコミュニティの距離を物語っている。
 
@@ -97,7 +97,7 @@ DevOpsとは何か、を初期に言語化したものとしては、John Willis
 
 ## 別の言葉へと分解されていくDevOps
 
-その後の流れを見ていくと、DevOpsという言葉が包含していたものが、それぞれ別の言葉として具体化されていったことがわかる。Velocity 2009のFlickrの発表で「ツール」として挙げられていた要素を、いま流通している言葉と突き合わせてみると、
+その後の流れを見ていくと、DevOpsという言葉が包含していたものが、それぞれ別の言葉として具体化されていったことがわかる。Velocity 2009のFlickrの発表で[「ツール」として挙げられていた要素](https://paulhammond.org/2009/06/velocity/10deploys.pdf)を、いま流通している言葉と突き合わせてみると、
 
 - インフラの自動化 → Infrastructure as Code
 - ワンステップビルド＆デプロイ → CI/CD
@@ -139,7 +139,21 @@ Platform Engineeringもそう。DevOpsの実践は「You build it, you run it」
 - [The Origins of DevOps: What's in a Name? - DevOps.com](https://devops.com/the-origins-of-devops-whats-in-a-name/)
 - [10+ Deploys per Day: Dev and Ops Cooperation at Flickr (YouTube)](https://www.youtube.com/watch?v=LdOe18KhtT4)
 - [10+ Deploys per Day 発表スライド (PDF)](https://paulhammond.org/2009/06/velocity/10deploys.pdf)
-- [What Devops Means to Me - Chef Blog](https://www.chef.io/blog/what-devops-means-to-me)
 - [about devopsdays](https://devopsdays.org/about/)
-- [Effective DevOps ―4本柱による持続可能な組織文化の育て方 - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873118352/)
 - [DevOps (2010年3月に自分が書いた記事)](/blog/2010/03/25/1/)
+- [What Devops Means to Me - Chef Blog](https://www.chef.io/blog/what-devops-means-to-me)
+- [Incomplete Thought: The DevOps Disconnect - Rational Survivability](http://www.rationalsurvivability.com/blog/2010/05/incomplete-thought-the-devops-disconnect/)
+- [DevOpsConference (2011年6月に自分が書いた記事)](/blog/2011/06/25/1/)
+- [Effective DevOps ―4本柱による持続可能な組織文化の育て方 - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873118352/)
+- [Embracing Risk - Site Reliability Engineering](https://sre.google/sre-book/embracing-risk/)
+- [How SRE Relates to DevOps - The Site Reliability Workbook](https://sre.google/workbook/how-sre-relates/)
+- [DevOps is dead, long live Platform Engineering! (Sid Palas氏のポスト)](https://x.com/sidpalas/status/1580978289534914561)
+- [DevOps Is Dead. Embrace Platform Engineering - The New Stack](https://thenewstack.io/devops-is-dead-embrace-platform-engineering/)
+- [CNCF On-Demand Webinar: DevOps is dead. Embrace platform engineering. - CNCF](https://www.cncf.io/online-programs/cncf-on-demand-webinar-devops-is-dead-embrace-platform-engineering/)
+- [DORA 2025: Year in review - DORA](https://dora.dev/insights/dora-2025-year-in-review/)
+- [ウェブオペレーション ―サイト運用管理の実践テクニック - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873114934/)
+- [DevSecOps Statistics in 2026 - Practical DevSecOps](https://www.practical-devsecops.com/devsecops-statistics-2026/)
+- [CNCF Platforms White Paper - CNCF TAG App Delivery](https://tag-app-delivery.cncf.io/whitepapers/platforms/)
+- [SRE NEXT 2026に参加しました (maruさんの参加レポート)](https://sizu.me/maruloop/posts/kiiwa97nez3u)
+- [Team Topologies](https://teamtopologies.com/)
+- [Adaptive Capacity Labs](https://www.adaptivecapacitylabs.com/)
