@@ -131,6 +131,8 @@ Platform Engineeringもそう。DevOpsの実践は「You build it, you run it」
 
 [2011年のDevOpsカンファレンスの記事](/blog/2011/06/25/1/)を読み返すと、帰り際に[marqsさん](https://x.com/marqs)と、みんな同じような問題意識を抱えていたのに、それを適切に表す言葉がいままでなかった、DevOpsという言葉が与えられたことで、それが共通認識としてはっきり浮かび上がった、それって素晴らしいことだよね、という話をして握手した、と書いてあった。DevOpsという言葉の一番の価値は、名前のなかった問題に名前を与えたことだったのだと思う。そして、その名前がモノの名前として消費し尽くされた今、問題は解決されないまま、また名前を失いつつあるのかもしれない。
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">でも考えてみると、「言葉の生みの親であるDebois氏は、あえてdevopsを定義しなかった」とあるように、元から本来の意味なんてものはなかったのかもしれない</p>&mdash; mizzy (@gosukenator) <a href="https://x.com/gosukenator/status/2076826606153367867?ref_src=twsrc%5Etfw">July 14, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
 ---
 
 参考:
