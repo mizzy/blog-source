@@ -25,9 +25,9 @@ Agile Infrastructureというテーマが示す通り、二人の問題意識は
 
 次に2009年6月のVelocity 2009で、FlickrのJohn Allspaw氏とPaul Hammond氏が、有名な「[10+ Deploys per Day: Dev and Ops Cooperation at Flickr](https://www.youtube.com/watch?v=LdOe18KhtT4)」という発表をした。開発者と運用者が対立するのではなく、協力することで1日10回以上のデプロイを実現している、という話。
 
-そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉はこのカンファレンス名から生まれた。もっともDebois氏自身は、後の[インタビュー](https://www.youtube.com/watch?v=6oxNdNRBQhA)で、「Agile System Administration Days」では名前が長すぎたので短くしただけで、業界用語にするつもりはなかった、と語っている。（このインタビューは[nihonbusonさんに教えてもらった](https://x.com/nihonbuson/status/2076819621127377264)。）
+そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉は、このカンファレンスをきっかけに広まっていった。もっともDebois氏自身は、後の[インタビュー](https://www.youtube.com/watch?v=6oxNdNRBQhA)で、「Agile System Administration Days」では名前が長すぎたので短くしただけで、業界用語にするつもりはなかった、と語っている。（このインタビューは[nihonbusonさんに教えてもらった](https://x.com/nihonbuson/status/2076819621127377264)。）
 
-ちなみに、DevOpsという言葉そのものの初出については、以前こんなポストをしていた。
+ちなみに、DevOpsという言葉そのものの初出は、Velocity 2009のFlickrの発表を聴いていたShafer氏が、その最中に#devopsというハッシュタグをつけてポストしたものらしい。カンファレンス名になるより先に、言葉はTwitter上に現れていたことになる。これについては以前こんなポストをしていた。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">DevOpsという言葉そのものは、Andrew Clay Shafer氏がこのツイートにつけたハッシュタグがおそらく初出 <a href="https://t.co/Ta2NFNVTRn">https://t.co/Ta2NFNVTRn</a></p>&mdash; mizzy (@gosukenator) <a href="https://x.com/gosukenator/status/831370715827822592?ref_src=twsrc%5Etfw">February 14, 2017</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
