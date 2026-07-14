@@ -27,7 +27,7 @@ Agile Infrastructureというテーマが示す通り、二人の問題意識は
 
 そしてこの発表に触発されたDebois氏が、2009年10月にベルギーのゲントで開催したのが、最初の[devopsdays](https://devopsdays.org/about/)。devとopsにdaysをつけてdevopsdays。DevOpsという言葉は、このカンファレンスをきっかけに広まっていった。もっともDebois氏自身は、後の[インタビュー](https://www.youtube.com/watch?v=6oxNdNRBQhA)で、「Agile System Administration Days」では名前が長すぎたので短くしただけで、業界用語にするつもりはなかった、と語っている。（このインタビューは[nihonbusonさんに教えてもらった](https://x.com/nihonbuson/status/2076819621127377264)。）
 
-ちなみに、DevOpsという言葉そのものの初出は、Velocity 2009のFlickrの発表を聴いていたShafer氏が、その最中に#devopsというハッシュタグをつけてポストしたものらしい。カンファレンス名になるより先に、言葉はTwitter上に現れていたことになる。これについては以前こんなポストをしていた。
+ちなみに、DevOpsという言葉そのものの初出は、Velocity 2009のFlickrの発表を聴いていたShafer氏が、その最中に#devopsというハッシュタグをつけてポストしたものと思われる。カンファレンス名になるより先に、言葉はTwitter上に現れていたことになる。これについては以前こんなポストをしていた。
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">DevOpsという言葉そのものは、Andrew Clay Shafer氏がこのツイートにつけたハッシュタグがおそらく初出 <a href="https://t.co/Ta2NFNVTRn">https://t.co/Ta2NFNVTRn</a></p>&mdash; mizzy (@gosukenator) <a href="https://x.com/gosukenator/status/831370715827822592?ref_src=twsrc%5Etfw">February 14, 2017</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
