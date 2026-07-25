@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Archive - Gosuke Miyashita</title>
+    <meta name="author" content="Gosuke Miyashita"/>
+    <meta name="description" content="Archive of all posts."/>
+    <meta name="Hatena::Bookmark" content="nocomment"/>
+    <link rel="author" href="https://www.hatena.ne.jp/MIZZY/"/>
+
+    <link rel="alternate" type="application/rss+xml" href="/atom.xml"/>
+
+    <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+
+    <style>
+      .archive-search {
+        width: 100%;
+        padding: 0.5em 0.75em;
+        margin: 1em 0 1.5em;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .archive-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .archive-list li {
+        padding: 0.35em 0;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        gap: 1em;
+        align-items: baseline;
+      }
+      .archive-list li.hidden {
+        display: none;
+      }
+      .archive-list .date {
+        color: #888;
+        font-size: 0.85em;
+        white-space: nowrap;
+        flex-shrink: 0;
+        min-width: 6em;
+      }
+      .archive-list a {
+        text-decoration: none;
+      }
+      .archive-count {
+        color: #888;
+        font-size: 0.9em;
+        margin-bottom: 1em;
+      }
+    </style>
+</head>
+
+<body>
+<header class="head">
+  <a href="/" class="name">Gosuke Miyashita</a>
+  <span class="nav">
+    <a href="/archive/">archive</a>
+    <a href="https://gosu.ke/" target="_blank" rel="noopener">about</a>
+    <a href="/atom.xml">feed</a>
+  </span>
+</header>
+
+<article>
+  <h1>Archive</h1>
+  <input type="search" id="archive-search" class="archive-search" placeholder="タイトルで検索..." autocomplete="off"/>
+  <div class="archive-count"><span id="archive-visible">{{ len . }}</span> / {{ len . }} 件</div>
+  <ul class="archive-list" id="archive-list">
+    {{ range . }}
+    <li data-title="{{ .Title }}">
+      <span class="date">{{ formatDate .Date "2006-01-02" }}</span>
+      <a href="{{ .Path }}/">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+
+<footer class="foot">
+  <span></span>
+  <a href="/" class="home">mizzy.org · since 2005</a>
+  <span></span>
+</footer>
+
+<script>
+(function () {
+  var input = document.getElementById('archive-search');
+  var list = document.getElementById('archive-list');
+  var counter = document.getElementById('archive-visible');
+  var items = Array.prototype.slice.call(list.getElementsByTagName('li'));
+  var titles = items.map(function (li) {
+    return (li.getAttribute('data-title') || '').toLowerCase();
+  });
+
+  function filter() {
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    for (var i = 0; i < items.length; i++) {
+      var match = q === '' || titles[i].indexOf(q) !== -1;
+      items[i].classList.toggle('hidden', !match);
+      if (match) visible++;
+    }
+    counter.textContent = visible;
+  }
+
+  input.addEventListener('input', filter);
+})();
+</script>
+
+</body>
+
+</html>
