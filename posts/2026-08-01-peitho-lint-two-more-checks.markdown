@@ -9,7 +9,7 @@ date: 2026-08-01 23:42:38 +0900
 
 ## 文字サイズの検査
 
-24ptを下回るテキストがあるスライドに警告を出すようにした。24ptという数字は、学会や大学が出している発表のアクセシビリティガイドラインでよく見る下限を採ったもの（[ARLのガイドライン](https://www.arl.org/accessibility-guidelines-for-powerpoint-presentations/)は「All slides should use a minimum font size of 24 points.」と書いている）。とはいえ普遍的な基準というわけでもなくて、用途別に12pt以上でいいとする資料もあれば、会場が大きいなら30pt以上と言う資料もある。固定値にしていて、frontmatterでは変えられない。必要になったらキーを足せばいいので、今は設定を増やさない側に倒している。
+24ptを下回るテキストがあるスライドに警告を出すようにした。24ptという数字は、学会や大学が出している発表のアクセシビリティガイドラインでよく見る下限を採ったもの（[ARLのガイドライン](https://www.arl.org/accessibility-guidelines-for-powerpoint-presentations/)は「All slides should use a minimum font size of 24 points.」と書いている）。とはいえ普遍的な基準というわけでもなくて、用途別に12pt以上でいいとする資料もあれば、会場が大きいなら30pt以上と言う資料もある。閾値は固定にしていて、今のところ設定で変えることはできない。必要になったらfrontmatterで指定できるようにすればいいので、まずは設定を増やさない側に倒している。
 
 ```
 warning: slide 3 has text at 18pt, below the recommended 24pt: "Some long caption that was shrunk to f…"
