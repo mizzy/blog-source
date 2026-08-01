@@ -53,18 +53,26 @@ warning: slide 1 content overflows the `body` slot vertically by 17px
 
 `katex-mathml`というクラス名で除外すれば済む話ではある。実際、文字サイズ検査のほうは`.peitho-footnotes`をクラス名で除外している。ただしそっちはPeitho自身が生成する構造で、KaTeXのそれは他人のライブラリの内部マークアップ。名前が変われば黙って壊れるし、同じパターンを使う次のライブラリ（`sr-only`とか）が出てくるたびに除外を足すことになる。
 
-除外したいものは「KaTeXのMathML」ではなく「視覚的に隠れている要素」なので、その性質を直接見る形にした。
+除外したいものは「KaTeXのMathML」ではなく「視覚的に隠れている要素」なので、その性質を直接見る形にした。ただ、この「隠れている」の判定を欲張ると、今度は本物の検出を潰すことになる。
+
+### 隠れていると判定しすぎて検出漏れになった
+
+最初はこう書いていた。1x1px以下に畳まれているか、`visibility`で消されているか、`clip`や`clip-path`で切り抜かれていれば隠れている、という判定。
 
 ```js
-function isVisuallyHidden(el, style) {
-  return el.clientWidth <= 1 || el.clientHeight <= 1
-      || style.visibility === "hidden" || style.visibility === "collapse";
-}
+// 最初のバージョン
+return el.clientWidth <= 1 || el.clientHeight <= 1
+    || style.visibility === "hidden" || style.visibility === "collapse"
+    || style.clip !== "auto" || style.clipPath !== "none";
 ```
 
-この述語は最初、`clip`と`clip-path`も見ていた。それを外したのは、実際に測ってみたら検出漏れのほうが大きかったから。`body`スロットで17pxのはみ出しを報告していたデッキが、`.body`に`clip-path: inset(0 round 12px)`——ただの角丸——を付けた途端に何も報告しなくなる。`clip-path`は普通に見えている要素に対する装飾として使われるものなので、これで隠れていると判定してはいけない。
+これで試したら、さっきの17pxを報告していたデッキが、`.body`に`clip-path: inset(0 round 12px)`を足した途端に何も報告しなくなった。ただの角丸である。`clip-path`は普通に見えている要素の装飾として当たり前に使うものなので、これが付いているだけで「隠れている」と判定してしまうと、まさに今回塞ごうとしている検出漏れを自分で作ることになる。
 
-一方でKaTeXのMathMLは`clientWidth: 1, clientHeight: 1, clipPath: "none"`なので、サイズだけ見れば除外できる。`clip-path`の枝は何も守っていないのに、実在する検出を潰していたことになる。外した上で、角丸のケースは回帰テストで固定した。
+そもそも除外したかったKaTeXのMathMLを測ってみると、`clientWidth: 1, clientHeight: 1, clipPath: "none"`だった。サイズを見るだけで除外できていて、`clip`と`clip-path`の判定は何も守っていない。守っていないのに実在する検出を潰していたので、外した。角丸を付けたデッキがちゃんと警告を出すことは、回帰テストで固定してある。
+
+サイズの判定も、要素まるごとを対象から外す形から、軸ごとに見る形に変えた。幅か高さのどちらかが1px以下ならその要素を丸ごと飛ばす、と書いていたら、もう片方の軸で起きている本物のはみ出しまで捨ててしまう。実際、幅を0に潰されたスロットが縦に12個の箇条書きを切り落としているのに、警告がまったく出ない状態になっていた。二段組みで片方のスロットが押し潰されるのはよくある壊れ方なので、これを見逃すのは困る。
+
+軸ごとに判定すれば、この漏れは塞がるし、KaTeXのMathMLは1x1pxで両方の軸が対象外になるので引き続き除外される。
 
 ### 警告であってエラーではない
 
