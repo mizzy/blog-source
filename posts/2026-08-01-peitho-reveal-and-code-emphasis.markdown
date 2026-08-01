@@ -1,6 +1,6 @@
 ---
 title: Peithoに段階表示（reveal）とコード行の強調を入れた
-date: 2026-08-01 12:00:00 +0900
+date: 2026-08-01 23:36:55 +0900
 ---
 
 自作プレゼンツール[Peitho](https://github.com/mizzy/peitho)の話の続き。発表中にスライドの内容を段階的に見せる機能をふたつ入れた。ひとつは箇条書きなどを1ステップずつ出す「段階表示」（[PR #341](https://github.com/mizzy/peitho/pull/341)ほか）、もうひとつはコードブロックの特定の行を強調する機能（[PR #381](https://github.com/mizzy/peitho/pull/381)）。
