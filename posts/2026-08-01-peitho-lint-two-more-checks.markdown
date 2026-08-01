@@ -53,7 +53,7 @@ warning: slide 1 content overflows the `body` slot vertically by 17px
 
 スロットのはみ出しはブラウザのレンダリング結果で、フォントやテーマCSSや環境で変わるし、意図的なこともある（長いログを枠に収めて見せる、とか）。判断が要るものは警告、というのが既存のはみ出し検査や文字サイズ検査と揃った扱いになる。
 
-実際、これを入れたらPeitho自身を紹介する`examples/peitho-tour`デッキのスライド11でコードブロックが14px切れているのが出てきた。CSSを調整して直した。
+実際、これを入れたらPeitho自身の紹介に使っているサンプルデッキで、コードブロックが14px切れているスライドが見つかった。CSSを調整して直した。
 
 ---
 
@@ -69,7 +69,7 @@ warning: slide 1 content overflows the `body` slot vertically by 17px
 
 ## サンプルデッキには効きすぎる
 
-`peitho-tour`デッキ（Peitho自身を紹介するサンプル）に今の`peitho lint`をかけると、はみ出し警告は0個だけど、文字サイズ警告が19個出る。
+さっき出てきた紹介用のサンプルデッキ（[Peitho Tour](https://peitho.gosu.ke/examples/peitho-tour/)）に今の`peitho lint`をかけると、はみ出し警告は0個になったけど、文字サイズ警告のほうが19個出る。
 
 ```
 warning: slide 11 has text at 12pt, below the recommended 24pt: "---"
