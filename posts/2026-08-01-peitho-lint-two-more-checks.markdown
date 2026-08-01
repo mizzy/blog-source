@@ -1,6 +1,6 @@
 ---
-title: peitho lintに文字サイズとスロット単位のはみ出し検査を入れた
-date: 2026-08-01 12:00:00 +0900
+title: peitho lintに検査を2つ足した
+date: 2026-08-01 23:42:38 +0900
 ---
 
 自作プレゼンツール[Peitho](https://github.com/mizzy/peitho)の話の続き。[以前入れた](/blog/2026/07/18/2/)`peitho lint`に検査を2つ足した。ひとつは文字が小さすぎないかの検査（[PR #386](https://github.com/mizzy/peitho/pull/386)）、もうひとつはスロット単位のはみ出し検査（[PR #389](https://github.com/mizzy/peitho/pull/389)）。
