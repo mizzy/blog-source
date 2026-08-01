@@ -29,7 +29,17 @@ date: 2026-08-01 12:00:00 +0900
 
 囲む対象は箇条書きに限らない。段落もコードブロックも画像も対象になるし、グループの中のブロックが別々のスロットに割り当たっても構わない（2カラムレイアウトで、テキストの後に画像を出す、みたいなことができる）。
 
-`:::`という記法は、既にPeithoにあった明示的スロット指定（`::: {slot=left}`）と同じもの。「これらのブロックはひとまとまりの並び」という構造の宣言であって、いつどう出すかはシェル側の仕事、という切り分けにしてある。Marpのように項目ごとにインラインのマーカーを書く形は、コンテンツの中に演出のタイミングが混ざるので採らなかった。
+`:::`という記法は、既にPeithoにあった明示的スロット指定（`::: {slot=left}`）と同じもの。「これらのブロックはひとまとまりの並び」という構造の宣言であって、いつどう出すかはシェル側の仕事、という切り分けにしてある。
+
+[Marpの段階表示](https://marpit.marp.app/fragmented-list)は別の方式を採っていて、箇条書きのマーカーを`-`や`+`ではなく`*`にすると、その項目が1つずつ出るようになる（番号付きリストなら`1.`ではなく`1)`）。
+
+```markdown
+* One
+* Two
+* Three
+```
+
+出力HTMLに項目ごとの`data-marpit-fragment`と`<section>`側の`data-marpit-fragments`が付く、という点はPeithoの`data-reveal-step`／`data-reveal-steps`とほぼ同じ形。違うのは記法のほうで、Markdownの標準的なリストマーカーの選択に演出の意味を乗せている。コンテンツとしては`-`と`*`で何も変わらないので、ソースを見ただけではその`*`が意図的なのか手癖なのか区別が付かないし、他のツールに持っていけば意味は消える。Peithoは、演出の対象になる範囲は明示的に囲んで宣言する形にした。
 
 ### 配布物には出ない
 
@@ -94,28 +104,10 @@ pub struct Deck<Phase> {
 
 ---
 
-## ついでにlintも強化した
-
-段階表示とは別件だけど、[前回書いた](/blog/2026/07/18/2/)`peitho lint`にチェックを2つ足した。
-
-ひとつは**文字サイズの検査**。24pt（描画上は32px）を下回るテキストがあるスライドに警告を出す。既存のはみ出し検査が「内容が多すぎる」を捕まえるのに対して、こっちは「収めるために縮めた」を捕まえる。
-
-```
-warning: slide 3 has text at 18pt, below the recommended 24pt: "Some long caption that was shrunk to f…"
-  help: raise the font size in the layout CSS, or move content to another slide instead of shrinking it
-```
-
-CSSの静的解析ではなく、既存のlintのヘッドレスChrome実行に相乗りして、テキストノードごとに実際の計算済みフォントサイズを測っている。カスケードも継承も`em`や`clamp()`も効いた後の「実際に何ptで表示されるのか」が知りたいので、そうするしかない。
-
-もうひとつは**スロット単位のはみ出し検査**。これまでのはみ出し検査はスライドの枠を基準にしていたんだけど、スロットのコンテナには`overflow: hidden`が効いているので、スロットの中で切れているぶんには`getBoundingClientRect()`が伸びず、スライドの枠を超えるまで検出できていなかった。実測すると、12項目の箇条書きのデッキで本文が17px隠れて箇条書きが1つ丸ごと見えていないのに、lintは「はみ出しなし」と言っていた。
-
-これも直したら、Peitho自身を紹介する`examples/peitho-tour`デッキのスライド11でコードブロックが14px切れているのが出てきた。lintを直すたびに自分のデッキの粗が出てくる。
-
----
-
 参考:
 
 - [mizzy/peitho](https://github.com/mizzy/peitho)
 - [段階表示のサンプルデッキ](https://peitho.gosu.ke/examples/incremental-reveal/)
 - [コード行強調のサンプルデッキ](https://peitho.gosu.ke/examples/code-emphasis/)
+- [Marpit: Fragmented list](https://marpit.marp.app/fragmented-list) — Marpの段階表示の記法
 - [前回の記事: Peithoにデッキの言語指定（lang frontmatter）を入れた](/blog/2026/07/31/2/)
