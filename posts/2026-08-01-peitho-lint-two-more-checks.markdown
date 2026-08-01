@@ -9,7 +9,7 @@ date: 2026-08-01 23:42:38 +0900
 
 ## 文字サイズの検査
 
-24ptを下回るテキストがあるスライドに警告を出すようにした。24ptという数字は、発表スライドの本文の下限としてよく言われる値を採っただけで、厳密な根拠があるわけではない。18ptで十分という人もいれば、会場が大きいなら30pt以上と言う人もいる。固定値にしていて、frontmatterでは変えられない。必要になったらキーを足せばいいので、今は設定を増やさない側に倒している。
+24ptを下回るテキストがあるスライドに警告を出すようにした。24ptという数字は、学会や大学が出している発表のアクセシビリティガイドラインでよく見る下限を採ったもの（[ARLのガイドライン](https://www.arl.org/accessibility-guidelines-for-powerpoint-presentations/)は「All slides should use a minimum font size of 24 points.」と書いている）。とはいえ普遍的な基準というわけでもなくて、用途別に12pt以上でいいとする資料もあれば、会場が大きいなら30pt以上と言う資料もある。固定値にしていて、frontmatterでは変えられない。必要になったらキーを足せばいいので、今は設定を増やさない側に倒している。
 
 ```
 warning: slide 3 has text at 18pt, below the recommended 24pt: "Some long caption that was shrunk to f…"
@@ -112,4 +112,5 @@ warning: slide 16 has text at 16.5pt, below the recommended 24pt: "Preview watch
 
 - [mizzy/peitho](https://github.com/mizzy/peitho)
 - [デモサイト peitho.gosu.ke](https://peitho.gosu.ke/)
+- [ARL: PowerPoint Guidelines for Presenters](https://www.arl.org/accessibility-guidelines-for-powerpoint-presentations/) — 24ptの根拠にしたガイドライン
 - [前回のlintの記事: Peithoにスライドのはみ出し検査（peitho lint）を入れた](/blog/2026/07/18/2/)
