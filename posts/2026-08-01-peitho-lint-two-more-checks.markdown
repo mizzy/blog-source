@@ -67,22 +67,6 @@ warning: slide 1 content overflows the `body` slot vertically by 17px
 
 ---
 
-## サンプルデッキには効きすぎる
-
-さっき出てきた紹介用のサンプルデッキ（[Peitho Tour](https://peitho.gosu.ke/examples/peitho-tour/)）に今の`peitho lint`をかけると、はみ出し警告は0個になったけど、文字サイズ警告のほうが19個出る。
-
-```
-warning: slide 11 has text at 12pt, below the recommended 24pt: "---"
-warning: slide 14 has text at 14.3pt, below the recommended 24pt: "error: slide 2 ('code-slide'), line 7: s…"
-warning: slide 16 has text at 16.5pt, below the recommended 24pt: "Preview watches the deck, its layouts, a…"
-```
-
-中身は12ptから18.8ptで、大半はMarkdownの記法やCLIの出力をそのまま見せているスライド。ただこのデッキはPeithoの機能を一通り使ってみせるためのサンプルで、実際に発表するものではない。会場の後ろから読めるか、という基準を当てる対象ではなかった。
-
-閾値を固定にした以上こうなるので、デッキの性質に応じて設定で変えられるようにするか、という話にはなりそう。
-
----
-
 参考:
 
 - [mizzy/peitho](https://github.com/mizzy/peitho)
