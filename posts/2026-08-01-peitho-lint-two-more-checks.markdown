@@ -66,7 +66,7 @@ return el.clientWidth <= 1 || el.clientHeight <= 1
     || style.clip !== "auto" || style.clipPath !== "none";
 ```
 
-これで試したら、さっきの箇条書きのデッキ（`body`スロットで17pxのはみ出しを報告していたやつ）が、`.body`に`clip-path: inset(0 round 12px)`を足した途端に何も報告しなくなった。ただの角丸である。
+これで試したら、さっきの箇条書きのデッキ（`body`スロットで17pxのはみ出しを報告していたやつ）が、`.body`に`clip-path: inset(0 round 12px)`——要素を角丸に切り抜くCSS、つまりただの装飾——を足した途端に何も報告しなくなった。
 
 理由は最後の行にある。角丸を付けると`clipPath`の値が`none`から`inset(0px round 12px)`に変わるので、`style.clipPath !== "none"`が真になり、`.body`が「隠れている要素」として測定対象から丸ごと外れる。そしてその`.body`こそが、箇条書きを切り落としていた当の要素だった。
 
