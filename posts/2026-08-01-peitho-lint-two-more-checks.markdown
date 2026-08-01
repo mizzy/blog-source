@@ -67,9 +67,9 @@ warning: slide 1 content overflows the `body` slot vertically by 17px
 
 ---
 
-## 自分のデッキの粗が出てくる
+## サンプルデッキには効きすぎる
 
-`peitho-tour`デッキに今の`peitho lint`をかけると、はみ出し警告は0個だけど、文字サイズ警告が19個出る。
+`peitho-tour`デッキ（Peitho自身を紹介するサンプル）に今の`peitho lint`をかけると、はみ出し警告は0個だけど、文字サイズ警告が19個出る。
 
 ```
 warning: slide 11 has text at 12pt, below the recommended 24pt: "---"
@@ -77,7 +77,9 @@ warning: slide 14 has text at 14.3pt, below the recommended 24pt: "error: slide 
 warning: slide 16 has text at 16.5pt, below the recommended 24pt: "Preview watches the deck, its layouts, a…"
 ```
 
-中身を見ると、12ptから18.8ptの範囲で、大半はコードブロックやコマンド出力を載せているスライド。Peithoの紹介デッキなので、Markdownの記法やCLIの出力を小さめのフォントで見せている箇所が多い。読める・読めないの判断は要るにせよ、24ptを下回っているのは事実なので、検査としては正しく効いている。
+中身は12ptから18.8ptで、大半はMarkdownの記法やCLIの出力をそのまま見せているスライド。デモサイトに置いてブラウザで読まれることが多いデッキだし、コードやコマンド出力を載せるスライドは、行の折り返しを避けるために小さくすることがそもそも多い。
+
+つまり19個のうちどれも、投影して読めないという意味の問題ではない。ただ閾値を固定にした以上こうなるので、デッキの性質に応じて設定で変えられるようにするか、という話にはなりそう。
 
 ---
 
