@@ -31,16 +31,6 @@ date: 2026-08-01 12:00:00 +0900
 
 `:::`という記法は、既にPeithoにあった明示的スロット指定（`::: {slot=left}`）と同じもの。「これらのブロックはひとまとまりの並び」という構造の宣言であって、いつどう出すかはシェル側の仕事、という切り分けにしてある。
 
-[Marpの段階表示](https://marpit.marp.app/fragmented-list)は別の方式を採っていて、箇条書きのマーカーを`-`や`+`ではなく`*`にすると、その項目が1つずつ出るようになる（番号付きリストなら`1.`ではなく`1)`）。
-
-```markdown
-* One
-* Two
-* Three
-```
-
-出力HTMLに項目ごとの`data-marpit-fragment`と`<section>`側の`data-marpit-fragments`が付く、という点はPeithoの`data-reveal-step`／`data-reveal-steps`とほぼ同じ形。違うのは記法のほうで、Markdownの標準的なリストマーカーの選択に演出の意味を乗せている。コンテンツとしては`-`と`*`で何も変わらないので、ソースを見ただけではその`*`が意図的なのか手癖なのか区別が付かないし、他のツールに持っていけば意味は消える。Peithoは、演出の対象になる範囲は明示的に囲んで宣言する形にした。
-
 ### 配布物には出ない
 
 段階表示が効くのは`peitho present`だけで、`peitho preview`、PDFエクスポート、`peitho lint`、公開用の`dist/`は全部最終状態（全部見えている状態）になる。
@@ -109,5 +99,4 @@ pub struct Deck<Phase> {
 - [mizzy/peitho](https://github.com/mizzy/peitho)
 - [段階表示のサンプルデッキ](https://peitho.gosu.ke/examples/incremental-reveal/)
 - [コード行強調のサンプルデッキ](https://peitho.gosu.ke/examples/code-emphasis/)
-- [Marpit: Fragmented list](https://marpit.marp.app/fragmented-list) — Marpの段階表示の記法
 - [前回の記事: Peithoにデッキの言語指定（lang frontmatter）を入れた](/blog/2026/07/31/2/)
