@@ -3,7 +3,7 @@ title: Peithoにツイートやリンクの埋め込み機能を入れた
 date: 2026-08-05 20:13:04 +0900
 ---
 
-自作プレゼンツール[Peitho](https://github.com/mizzy/peitho)の話の続き。スライドの中にツイートやYouTubeの動画を埋め込む機能を入れた（[PR #401](https://github.com/mizzy/peitho/pull/401)、[#403](https://github.com/mizzy/peitho/pull/403)、[#404](https://github.com/mizzy/peitho/pull/404)）。
+自作プレゼンツール[Peitho](https://github.com/mizzy/peitho)の話の続き。ツイートやYouTubeの動画のURLを書くと、スライドにその中身を貼れるようにした（[PR #401](https://github.com/mizzy/peitho/pull/401)、[#403](https://github.com/mizzy/peitho/pull/403)、[#404](https://github.com/mizzy/peitho/pull/404)）。貼られるのはスクリーンショットかカードで、動画が再生できるわけではない。
 
 書き方はこう。
 
