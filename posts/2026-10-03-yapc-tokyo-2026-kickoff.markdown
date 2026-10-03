@@ -57,7 +57,7 @@ date: 2026-10-03 10:49:03 +0900
 
 ## 発表以外のこと
 
-開始前にlesttratさんから、[micchie](https://x.com/micchiebear)さんがかけているスマートグラス、スライドのあんちょこを映せるよ、という話を聞き、micchieさんから製品名が[Even G2](https://www.evenrealities.com/ja-JP/smart-glasses)であることや、度付きの場合の値段や納期を教えてもらい、なんか買う流れになった。たまたま度付きのEven G2を扱っている[JUN GINZA銀座店](https://junginza.com/)からそれほど遠くないホテルに滞在してるので、これから行ってくる。
+開始前にlestrratさんから、[micchie](https://x.com/micchiebear)さんがかけているスマートグラス、スライドのあんちょこを映せるよ、という話を聞き、micchieさんから製品名が[Even G2](https://www.evenrealities.com/ja-JP/smart-glasses)であることや、度付きの場合の値段や納期を教えてもらい、なんか買う流れになった。たまたま度付きのEven G2を扱っている[JUN GINZA銀座店](https://junginza.com/)からそれほど遠くないホテルに滞在してるので、これから行ってくる。
 
 休憩時間に話しかけてくださった、Findyの[ばばしお](https://x.com/tokyo_887)さん、[いわさき](https://x.com/iwasakitchen)さん、ありがとうございました。グラニフの三戦シャドーTシャツに触れてくださってうれしかったです。
 
