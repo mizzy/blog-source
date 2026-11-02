@@ -3,7 +3,7 @@ title: 生成AIにRustで開発させるときのPC負荷対策
 date: 2026-11-02 13:50:53 +0900
 ---
 
-[Carina](https://github.com/carina-rs/carina)の開発は、ほぼClaude CodeとCodexにやらせている。リポジトリはcarina本体、aws、awscc、registry、githubの5つに分かれていて、それぞれのリポジトリで、複数のエージェントがworktreeを切って並行に作業する。
+[Carina](https://github.com/carina-rs/carina)の開発は、ほぼClaude CodeとCodexにやらせている。リポジトリはcarina本体、aws、awscc、registry、github、infraの6つに分かれていて、それぞれのリポジトリで、複数のエージェントがworktreeを切って並行に作業する。
 
 Rustのプロジェクトでこれをやると、worktreeの数だけ`target`ができて、そのどれもがビルドとテストを回す。ここ数日、PCが重い、ディスクが足りない、という状態になっていたので、やった対策をまとめておく。雑なメモです。
 
@@ -44,7 +44,7 @@ ln -s "$dest" "$wt/target"
 
 `--git-dir`と`--git-common-dir`が違えば、追加で作ったworktreeだと判断できる。メインのチェックアウトでは両方とも同じ`.git`を指すので、何もせずに抜ける。
 
-5つのリポジトリで、post-checkoutフックからこれを呼ぶ。
+infraを除くRustの5つのリポジトリで、post-checkoutフックからこれを呼ぶ。
 
 ```sh
 #!/bin/sh
